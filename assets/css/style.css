@@ -1,0 +1,19 @@
+.section {
+    background-color: #F5F5F5;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.table > thead:nth-child(1) > tr:nth-child(1) {
+    border: hidden !important;
+}
+
+th {
+    font-size: 9px;
+}
+
+.table > tbody > tr > td.content-align {
+    padding-top: 1.6rem;
+}
