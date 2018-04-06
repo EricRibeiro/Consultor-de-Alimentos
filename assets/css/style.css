@@ -4,6 +4,7 @@
 
 .navbar {
     margin-bottom: 0px;
+
 }
 
 .table > thead:nth-child(1) > tr:nth-child(1) {
@@ -16,4 +17,8 @@ th {
 
 .table > tbody > tr > td.content-align {
     padding-top: 1.6rem;
+}
+
+.tab-pane {
+    color:black;
 }
