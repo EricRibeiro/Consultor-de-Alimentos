@@ -26,8 +26,9 @@
     <div class="container">
         <div class="content-center brand">
             <img class="n-logo" src="./assets/img/now-logo.png" alt="">
-            <h1 class="h1-seo">IHC</h1>
-            <h3>Introdução Humanística a Calorias</h3>
+            <h1 class="h1-seo">Consultor de Alimentos</h1>
+            <h3>Escolhar uma opção de exibição de alimentos</h3>
+            <img class="n-logo" src="./assets/img/arrow-down.png" alt="" width="48px" height="48px">
         </div>
     </div>
 </div>
@@ -38,37 +39,37 @@
             <div class="col-md-6">
                 <p class="category">Exibir Alimentos por Restrição</p>
                 <div class="row">
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Selecionar Restrição</option>
+                                <option>Reduzidos em Carboidratos</option>
+                                <option>Ricos em Protéina</option>
+                                <option>Ricos em Cálcio</option>
+                                <option>Ricos em Ferro</option>
+                                <option>Ricos em Fibra</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
-                <br>
-                <br>
-                <br>
+                <div class="strike">
+                  <span class="category">
+                    ou
+                  </span>
+                </div>
 
                 <p class="category">Exibir Alimentos por Objetivo</p>
                 <div class="row">
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-round" type="button">Round</button>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select class="form-control" id="sel2">
+                                <option>Selecionar Objetivo</option>
+                                <option>Reduzir Percentual de Gordura</option>
+                                <option>Manter o Peso</option>
+                                <option>Ganhar Massa Magra</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,44 +82,15 @@
                         <div class="tab-content text-center">
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th class="text-center"></th>
-                                        <th class="text-center">Calorias</th>
-                                        <th class="text-center">Proteína</th>
-                                        <th class="text-center">Detalhes</th>
-                                    </tr>
+                                <tr>
+                                    <th class="text-center"></th>
+                                    <th class="text-center">Calorias</th>
+                                    <th class="text-center">Proteína</th>
+                                    <th class="text-center">Detalhes</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td class="content-align">Mark</td>
-                                    <td class="content-align">Otto</td>
-                                    <td class="content-align">Otto</td>
-                                    <td>
-                                        <button class="btn btn-primary btn-icon btn-round" type="button">
-                                            <i class="now-ui-icons ui-2_favourite-28"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="content-align">Jacob</td>
-                                    <td class="content-align">Thornton</td>
-                                    <td class="content-align">Thornton</td>
-                                    <td>
-                                        <button class="btn btn-primary btn-icon btn-round" type="button">
-                                            <i class="now-ui-icons ui-2_favourite-28"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="content-align">Larry</td>
-                                    <td class="content-align">the Bird</td>
-                                    <td class="content-align">the Bird</td>
-                                    <td>
-                                        <button class="btn btn-primary btn-icon btn-round" type="button">
-                                            <i class="now-ui-icons ui-2_favourite-28"></i>
-                                        </button>
-                                    </td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -136,35 +108,51 @@
         <div class="content-center brand">
             <h3>Quiz Nutricional</h3>
             <div class="card">
-                <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist" style="background-color: #4CAF50"">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
-                    </li>
+                <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist"
+                    style="background-color: #4CAF50">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
+                </li>
                 </ul>
                 <div class="card-body">
                     <!-- Tab panes -->
                     <div class="tab-content text-center">
                         <div class="tab-pane active" id="home1" role="tabpanel">
-                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this
+                                is the level that things could be at. So when you get something that has the name Kanye
+                                West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader
+                                of a company that ends up being worth billions of dollars, because I got the answers. I
+                                understand culture. I am the nucleus.</p>
                         </div>
                         <div class="tab-pane" id="profile1" role="tabpanel">
-                            <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                            <p> I will be the leader of a company that ends up being worth billions of dollars, because
+                                I got the answers. I understand culture. I am the nucleus. I think that’s a
+                                responsibility that I have, to push possibilities, to show people, this is the level
+                                that things could be at. I think that’s a responsibility that I have, to push
+                                possibilities, to show people, this is the level that things could be at. </p>
                         </div>
                         <div class="tab-pane" id="messages1" role="tabpanel">
-                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this
+                                is the level that things could be at. So when you get something that has the name Kanye
+                                West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader
+                                of a company that ends up being worth billions of dollars, because I got the answers. I
+                                understand culture. I am the nucleus.</p>
                         </div>
                         <div class="tab-pane" id="settings1" role="tabpanel">
                             <p>
-                                "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
+                                "I will be the leader of a company that ends up being worth billions of dollars, because
+                                I got the answers. I understand culture. I am the nucleus. I think that’s a
+                                responsibility that I have, to push possibilities, to show people, this is the level
+                                that things could be at."
                             </p>
                         </div>
                     </div>
@@ -214,15 +202,12 @@
 </footer>
 </div>
 </body>
+
 <!--   Core JS Files   -->
 <script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="./assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+<script src="./assets/js/script.js" type="text/javascript"></script>
+
 </html>

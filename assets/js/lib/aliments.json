@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "descricacao": "Arroz, integral, cozido",
+    "descricao": "Arroz, integral, cozido",
     "categoria": "Cereais e derivados",
     "umidade": "70.1386666666667",
     "energia": {
@@ -34,7 +34,7 @@
   },
   {
     "_id": 2,
-    "descricacao": "Arroz, integral, cru",
+    "descricao": "Arroz, integral, cru",
     "categoria": "Cereais e derivados",
     "umidade": "12.1798333333333",
     "energia": {
@@ -67,7 +67,7 @@
   },
   {
     "_id": 3,
-    "descricacao": "Arroz, tipo 1, cozido",
+    "descricao": "Arroz, tipo 1, cozido",
     "categoria": "Cereais e derivados",
     "umidade": "69.1136666666667",
     "energia": {
@@ -100,7 +100,7 @@
   },
   {
     "_id": 4,
-    "descricacao": "Arroz, tipo 1, cru",
+    "descricao": "Arroz, tipo 1, cru",
     "categoria": "Cereais e derivados",
     "umidade": "13.2245",
     "energia": {
@@ -133,7 +133,7 @@
   },
   {
     "_id": 5,
-    "descricacao": "Arroz, tipo 2, cozido",
+    "descricao": "Arroz, tipo 2, cozido",
     "categoria": "Cereais e derivados",
     "umidade": "68.7276666666667",
     "energia": {
@@ -166,7 +166,7 @@
   },
   {
     "_id": 6,
-    "descricacao": "Arroz, tipo 2, cru",
+    "descricao": "Arroz, tipo 2, cru",
     "categoria": "Cereais e derivados",
     "umidade": "13.16475",
     "energia": {
@@ -199,7 +199,7 @@
   },
   {
     "_id": 7,
-    "descricacao": "Aveia, flocos, crua",
+    "descricao": "Aveia, flocos, crua",
     "categoria": "Cereais e derivados",
     "umidade": "9.13333333333333",
     "energia": {
@@ -232,7 +232,7 @@
   },
   {
     "_id": 8,
-    "descricacao": "Biscoito, doce, maisena",
+    "descricao": "Biscoito, doce, maisena",
     "categoria": "Cereais e derivados",
     "umidade": "3.21666666666667",
     "energia": {
@@ -265,7 +265,7 @@
   },
   {
     "_id": 9,
-    "descricacao": "Biscoito, doce, recheado com chocolate",
+    "descricao": "Biscoito, doce, recheado com chocolate",
     "categoria": "Cereais e derivados",
     "umidade": "2.18333333333333",
     "energia": {
@@ -298,7 +298,7 @@
   },
   {
     "_id": 10,
-    "descricacao": "Biscoito, doce, recheado com morango",
+    "descricao": "Biscoito, doce, recheado com morango",
     "categoria": "Cereais e derivados",
     "umidade": "2.73333333333333",
     "energia": {
@@ -331,7 +331,7 @@
   },
   {
     "_id": 11,
-    "descricacao": "Biscoito, doce, wafer, recheado de chocolate",
+    "descricao": "Biscoito, doce, wafer, recheado de chocolate",
     "categoria": "Cereais e derivados",
     "umidade": "1.17",
     "energia": {
@@ -364,7 +364,7 @@
   },
   {
     "_id": 12,
-    "descricacao": "Biscoito, doce, wafer, recheado de morango",
+    "descricao": "Biscoito, doce, wafer, recheado de morango",
     "categoria": "Cereais e derivados",
     "umidade": "1.17333333333333",
     "energia": {
@@ -397,7 +397,7 @@
   },
   {
     "_id": 13,
-    "descricacao": "Biscoito, salgado, cream cracker",
+    "descricao": "Biscoito, salgado, cream cracker",
     "categoria": "Cereais e derivados",
     "umidade": "4.05666666666667",
     "energia": {
@@ -430,7 +430,7 @@
   },
   {
     "_id": 14,
-    "descricacao": "Bolo, mistura para",
+    "descricao": "Bolo, mistura para",
     "categoria": "Cereais e derivados",
     "umidade": "1",
     "energia": {
@@ -463,7 +463,7 @@
   },
   {
     "_id": 15,
-    "descricacao": "Bolo, pronto, aipim",
+    "descricao": "Bolo, pronto, aipim",
     "categoria": "Cereais e derivados",
     "umidade": "34.1336666666667",
     "energia": {
@@ -496,7 +496,7 @@
   },
   {
     "_id": 16,
-    "descricacao": "Bolo, pronto, chocolate",
+    "descricao": "Bolo, pronto, chocolate",
     "categoria": "Cereais e derivados",
     "umidade": "19.2763333333333",
     "energia": {
@@ -529,7 +529,7 @@
   },
   {
     "_id": 17,
-    "descricacao": "Bolo, pronto, coco",
+    "descricao": "Bolo, pronto, coco",
     "categoria": "Cereais e derivados",
     "umidade": "29.3203333333333",
     "energia": {
@@ -562,7 +562,7 @@
   },
   {
     "_id": 18,
-    "descricacao": "Bolo, pronto, milho",
+    "descricao": "Bolo, pronto, milho",
     "categoria": "Cereais e derivados",
     "umidade": "36.6883333333333",
     "energia": {
@@ -595,7 +595,7 @@
   },
   {
     "_id": 19,
-    "descricacao": "Canjica, branca, crua",
+    "descricao": "Canjica, branca, crua",
     "categoria": "Cereais e derivados",
     "umidade": "13.557",
     "energia": {
@@ -628,7 +628,7 @@
   },
   {
     "_id": 20,
-    "descricacao": "Canjica, com leite integral",
+    "descricao": "Canjica, com leite integral",
     "categoria": "Cereais e derivados",
     "umidade": "72.494",
     "energia": {
@@ -661,7 +661,7 @@
   },
   {
     "_id": 21,
-    "descricacao": "Cereais, milho, flocos, com sal",
+    "descricao": "Cereais, milho, flocos, com sal",
     "categoria": "Cereais e derivados",
     "umidade": "9.29333333333334",
     "energia": {
@@ -694,7 +694,7 @@
   },
   {
     "_id": 22,
-    "descricacao": "Cereais, milho, flocos, sem sal",
+    "descricao": "Cereais, milho, flocos, sem sal",
     "categoria": "Cereais e derivados",
     "umidade": "11.2233333333333",
     "energia": {
@@ -727,7 +727,7 @@
   },
   {
     "_id": 23,
-    "descricacao": "Cereais, mingau, milho, infantil",
+    "descricao": "Cereais, mingau, milho, infantil",
     "categoria": "Cereais e derivados",
     "umidade": "4.70333333333333",
     "energia": {
@@ -760,7 +760,7 @@
   },
   {
     "_id": 24,
-    "descricacao": "Cereais, mistura para vitamina, trigo, cevada e aveia",
+    "descricao": "Cereais, mistura para vitamina, trigo, cevada e aveia",
     "categoria": "Cereais e derivados",
     "umidade": "4.36666666666667",
     "energia": {
@@ -793,7 +793,7 @@
   },
   {
     "_id": 25,
-    "descricacao": "Cereal matinal, milho",
+    "descricao": "Cereal matinal, milho",
     "categoria": "Cereais e derivados",
     "umidade": "5.52666666666667",
     "energia": {
@@ -826,7 +826,7 @@
   },
   {
     "_id": 26,
-    "descricacao": "Cereal matinal, milho, açúcar",
+    "descricao": "Cereal matinal, milho, açúcar",
     "categoria": "Cereais e derivados",
     "umidade": "4.26666666666667",
     "energia": {
@@ -859,7 +859,7 @@
   },
   {
     "_id": 27,
-    "descricacao": "Creme de arroz, pó",
+    "descricao": "Creme de arroz, pó",
     "categoria": "Cereais e derivados",
     "umidade": "7.333",
     "energia": {
@@ -892,7 +892,7 @@
   },
   {
     "_id": 28,
-    "descricacao": "Creme de milho, pó",
+    "descricao": "Creme de milho, pó",
     "categoria": "Cereais e derivados",
     "umidade": "5.652",
     "energia": {
@@ -925,7 +925,7 @@
   },
   {
     "_id": 29,
-    "descricacao": "Curau, milho verde",
+    "descricao": "Curau, milho verde",
     "categoria": "Cereais e derivados",
     "umidade": "81.5646666666667",
     "energia": {
@@ -958,7 +958,7 @@
   },
   {
     "_id": 30,
-    "descricacao": "Curau, milho verde, mistura para",
+    "descricao": "Curau, milho verde, mistura para",
     "categoria": "Cereais e derivados",
     "umidade": "3.91633333333333",
     "energia": {
@@ -991,7 +991,7 @@
   },
   {
     "_id": 31,
-    "descricacao": "Farinha, de arroz, enriquecida",
+    "descricao": "Farinha, de arroz, enriquecida",
     "categoria": "Cereais e derivados",
     "umidade": "12.6933333333333",
     "energia": {
@@ -1024,7 +1024,7 @@
   },
   {
     "_id": 32,
-    "descricacao": "Farinha, de centeio, integral",
+    "descricao": "Farinha, de centeio, integral",
     "categoria": "Cereais e derivados",
     "umidade": "10.7766666666667",
     "energia": {
@@ -1057,7 +1057,7 @@
   },
   {
     "_id": 33,
-    "descricacao": "Farinha, de milho, amarela",
+    "descricao": "Farinha, de milho, amarela",
     "categoria": "Cereais e derivados",
     "umidade": "11.7733333333333",
     "energia": {
@@ -1090,7 +1090,7 @@
   },
   {
     "_id": 34,
-    "descricacao": "Farinha, de rosca",
+    "descricao": "Farinha, de rosca",
     "categoria": "Cereais e derivados",
     "umidade": "9.80666666666667",
     "energia": {
@@ -1123,7 +1123,7 @@
   },
   {
     "_id": 35,
-    "descricacao": "Farinha, de trigo",
+    "descricao": "Farinha, de trigo",
     "categoria": "Cereais e derivados",
     "umidade": "12.98",
     "energia": {
@@ -1156,7 +1156,7 @@
   },
   {
     "_id": 36,
-    "descricacao": "Farinha, láctea, de cereais",
+    "descricao": "Farinha, láctea, de cereais",
     "categoria": "Cereais e derivados",
     "umidade": "2.69666666666667",
     "energia": {
@@ -1189,7 +1189,7 @@
   },
   {
     "_id": 37,
-    "descricacao": "Lasanha, massa fresca, cozida",
+    "descricao": "Lasanha, massa fresca, cozida",
     "categoria": "Cereais e derivados",
     "umidade": "59.6463333333333",
     "energia": {
@@ -1222,7 +1222,7 @@
   },
   {
     "_id": 38,
-    "descricacao": "Lasanha, massa fresca, crua",
+    "descricao": "Lasanha, massa fresca, crua",
     "categoria": "Cereais e derivados",
     "umidade": "44.9856666666667",
     "energia": {
@@ -1255,7 +1255,7 @@
   },
   {
     "_id": 39,
-    "descricacao": "Macarrão, instantâneo",
+    "descricao": "Macarrão, instantâneo",
     "categoria": "Cereais e derivados",
     "umidade": "5.97333333333333",
     "energia": {
@@ -1288,7 +1288,7 @@
   },
   {
     "_id": 40,
-    "descricacao": "Macarrão, trigo, cru",
+    "descricao": "Macarrão, trigo, cru",
     "categoria": "Cereais e derivados",
     "umidade": "10.2433333333333",
     "energia": {
@@ -1321,7 +1321,7 @@
   },
   {
     "_id": 41,
-    "descricacao": "Macarrão, trigo, cru, com ovos",
+    "descricao": "Macarrão, trigo, cru, com ovos",
     "categoria": "Cereais e derivados",
     "umidade": "10.5633333333333",
     "energia": {
@@ -1354,7 +1354,7 @@
   },
   {
     "_id": 42,
-    "descricacao": "Milho, amido, cru",
+    "descricao": "Milho, amido, cru",
     "categoria": "Cereais e derivados",
     "umidade": "12.18333",
     "energia": {
@@ -1387,7 +1387,7 @@
   },
   {
     "_id": 43,
-    "descricacao": "Milho, fubá, cru",
+    "descricao": "Milho, fubá, cru",
     "categoria": "Cereais e derivados",
     "umidade": "11.4533333333333",
     "energia": {
@@ -1420,7 +1420,7 @@
   },
   {
     "_id": 44,
-    "descricacao": "Milho, verde, cru",
+    "descricao": "Milho, verde, cru",
     "categoria": "Cereais e derivados",
     "umidade": "63.5383333333333",
     "energia": {
@@ -1453,7 +1453,7 @@
   },
   {
     "_id": 45,
-    "descricacao": "Milho, verde, enlatado, drenado",
+    "descricao": "Milho, verde, enlatado, drenado",
     "categoria": "Cereais e derivados",
     "umidade": "76.2233333333333",
     "energia": {
@@ -1486,7 +1486,7 @@
   },
   {
     "_id": 46,
-    "descricacao": "Mingau tradicional, pó",
+    "descricao": "Mingau tradicional, pó",
     "categoria": "Cereais e derivados",
     "umidade": "8.14333333333333",
     "energia": {
@@ -1519,7 +1519,7 @@
   },
   {
     "_id": 47,
-    "descricacao": "Pamonha, barra para cozimento, pré-cozida",
+    "descricao": "Pamonha, barra para cozimento, pré-cozida",
     "categoria": "Cereais e derivados",
     "umidade": "61.3073333333333",
     "energia": {
@@ -1552,7 +1552,7 @@
   },
   {
     "_id": 48,
-    "descricacao": "Pão, aveia, forma",
+    "descricao": "Pão, aveia, forma",
     "categoria": "Cereais e derivados",
     "umidade": "19.9166666666667",
     "energia": {
@@ -1585,7 +1585,7 @@
   },
   {
     "_id": 49,
-    "descricacao": "Pão, de soja",
+    "descricao": "Pão, de soja",
     "categoria": "Cereais e derivados",
     "umidade": "26.0333333333333",
     "energia": {
@@ -1618,7 +1618,7 @@
   },
   {
     "_id": 50,
-    "descricacao": "Pão, glúten, forma",
+    "descricao": "Pão, glúten, forma",
     "categoria": "Cereais e derivados",
     "umidade": "40.6733333333333",
     "energia": {
@@ -1651,7 +1651,7 @@
   },
   {
     "_id": 51,
-    "descricacao": "Pão, milho, forma",
+    "descricao": "Pão, milho, forma",
     "categoria": "Cereais e derivados",
     "umidade": "30.4166666666667",
     "energia": {
@@ -1684,7 +1684,7 @@
   },
   {
     "_id": 52,
-    "descricacao": "Pão, trigo, forma, integral",
+    "descricao": "Pão, trigo, forma, integral",
     "categoria": "Cereais e derivados",
     "umidade": "34.7233333333333",
     "energia": {
@@ -1717,7 +1717,7 @@
   },
   {
     "_id": 53,
-    "descricacao": "Pão, trigo, francês",
+    "descricao": "Pão, trigo, francês",
     "categoria": "Cereais e derivados",
     "umidade": "28.4833333333333",
     "energia": {
@@ -1750,7 +1750,7 @@
   },
   {
     "_id": 54,
-    "descricacao": "Pão, trigo, sovado",
+    "descricao": "Pão, trigo, sovado",
     "categoria": "Cereais e derivados",
     "umidade": "25.7633333333333",
     "energia": {
@@ -1783,7 +1783,7 @@
   },
   {
     "_id": 55,
-    "descricacao": "Pastel, de carne, cru",
+    "descricao": "Pastel, de carne, cru",
     "categoria": "Cereais e derivados",
     "umidade": "34.3983333333333",
     "energia": {
@@ -1816,7 +1816,7 @@
   },
   {
     "_id": 56,
-    "descricacao": "Pastel, de carne, frito",
+    "descricao": "Pastel, de carne, frito",
     "categoria": "Cereais e derivados",
     "umidade": "22.9233333333333",
     "energia": {
@@ -1849,7 +1849,7 @@
   },
   {
     "_id": 57,
-    "descricacao": "Pastel, de queijo, cru",
+    "descricao": "Pastel, de queijo, cru",
     "categoria": "Cereais e derivados",
     "umidade": "31.2833333333333",
     "energia": {
@@ -1882,7 +1882,7 @@
   },
   {
     "_id": 58,
-    "descricacao": "Pastel, de queijo, frito",
+    "descricao": "Pastel, de queijo, frito",
     "categoria": "Cereais e derivados",
     "umidade": "17.541",
     "energia": {
@@ -1915,7 +1915,7 @@
   },
   {
     "_id": 59,
-    "descricacao": "Pastel, massa, crua",
+    "descricao": "Pastel, massa, crua",
     "categoria": "Cereais e derivados",
     "umidade": "27.066",
     "energia": {
@@ -1948,7 +1948,7 @@
   },
   {
     "_id": 60,
-    "descricacao": "Pastel, massa, frita",
+    "descricao": "Pastel, massa, frita",
     "categoria": "Cereais e derivados",
     "umidade": "0.969",
     "energia": {
@@ -1981,7 +1981,7 @@
   },
   {
     "_id": 61,
-    "descricacao": "Pipoca, com óleo de soja, sem sal",
+    "descricao": "Pipoca, com óleo de soja, sem sal",
     "categoria": "Cereais e derivados",
     "umidade": "2.819",
     "energia": {
@@ -2014,7 +2014,7 @@
   },
   {
     "_id": 62,
-    "descricacao": "Polenta, pré-cozida",
+    "descricao": "Polenta, pré-cozida",
     "categoria": "Cereais e derivados",
     "umidade": "72.74",
     "energia": {
@@ -2047,7 +2047,7 @@
   },
   {
     "_id": 63,
-    "descricacao": "Torrada, pão francês",
+    "descricao": "Torrada, pão francês",
     "categoria": "Cereais e derivados",
     "umidade": "9.047",
     "energia": {
@@ -2080,7 +2080,7 @@
   },
   {
     "_id": 64,
-    "descricacao": "Abóbora, cabotian, cozida",
+    "descricao": "Abóbora, cabotian, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "86.354",
     "energia": {
@@ -2113,7 +2113,7 @@
   },
   {
     "_id": 65,
-    "descricacao": "Abóbora, cabotian, crua",
+    "descricao": "Abóbora, cabotian, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "88.52",
     "energia": {
@@ -2146,7 +2146,7 @@
   },
   {
     "_id": 66,
-    "descricacao": "Abóbora, menina brasileira, crua",
+    "descricao": "Abóbora, menina brasileira, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.69",
     "energia": {
@@ -2179,7 +2179,7 @@
   },
   {
     "_id": 67,
-    "descricacao": "Abóbora, moranga, crua",
+    "descricao": "Abóbora, moranga, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.87",
     "energia": {
@@ -2212,7 +2212,7 @@
   },
   {
     "_id": 68,
-    "descricacao": "Abóbora, moranga, refogada",
+    "descricao": "Abóbora, moranga, refogada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.4573333333333",
     "energia": {
@@ -2245,7 +2245,7 @@
   },
   {
     "_id": 69,
-    "descricacao": "Abóbora, pescoço, crua",
+    "descricao": "Abóbora, pescoço, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.493",
     "energia": {
@@ -2278,7 +2278,7 @@
   },
   {
     "_id": 70,
-    "descricacao": "Abobrinha, italiana, cozida",
+    "descricao": "Abobrinha, italiana, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.2823333333333",
     "energia": {
@@ -2311,7 +2311,7 @@
   },
   {
     "_id": 71,
-    "descricacao": "Abobrinha, italiana, crua",
+    "descricao": "Abobrinha, italiana, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.8633333333333",
     "energia": {
@@ -2344,7 +2344,7 @@
   },
   {
     "_id": 72,
-    "descricacao": "Abobrinha, italiana, refogada",
+    "descricao": "Abobrinha, italiana, refogada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.4916666666667",
     "energia": {
@@ -2377,7 +2377,7 @@
   },
   {
     "_id": 73,
-    "descricacao": "Abobrinha, paulista, crua",
+    "descricao": "Abobrinha, paulista, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.8506666666667",
     "energia": {
@@ -2410,7 +2410,7 @@
   },
   {
     "_id": 74,
-    "descricacao": "Acelga, crua",
+    "descricao": "Acelga, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.1856666666667",
     "energia": {
@@ -2443,7 +2443,7 @@
   },
   {
     "_id": 75,
-    "descricacao": "Agrião, cru",
+    "descricao": "Agrião, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.9433333333333",
     "energia": {
@@ -2476,7 +2476,7 @@
   },
   {
     "_id": 76,
-    "descricacao": "Aipo, cru",
+    "descricao": "Aipo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.828",
     "energia": {
@@ -2509,7 +2509,7 @@
   },
   {
     "_id": 77,
-    "descricacao": "Alface, americana, crua",
+    "descricao": "Alface, americana, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "97.1686666666667",
     "energia": {
@@ -2542,7 +2542,7 @@
   },
   {
     "_id": 78,
-    "descricacao": "Alface, crespa, crua",
+    "descricao": "Alface, crespa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "96.0933333333333",
     "energia": {
@@ -2575,7 +2575,7 @@
   },
   {
     "_id": 79,
-    "descricacao": "Alface, lisa, crua",
+    "descricao": "Alface, lisa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95",
     "energia": {
@@ -2608,7 +2608,7 @@
   },
   {
     "_id": 80,
-    "descricacao": "Alface, roxa, crua",
+    "descricao": "Alface, roxa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.7283333333333",
     "energia": {
@@ -2641,7 +2641,7 @@
   },
   {
     "_id": 81,
-    "descricacao": "Alfavaca, crua",
+    "descricao": "Alfavaca, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.2076666666667",
     "energia": {
@@ -2674,7 +2674,7 @@
   },
   {
     "_id": 82,
-    "descricacao": "Alho, cru",
+    "descricao": "Alho, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "67.5466666666667",
     "energia": {
@@ -2707,7 +2707,7 @@
   },
   {
     "_id": 83,
-    "descricacao": "Alho-poró, cru",
+    "descricao": "Alho-poró, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.952",
     "energia": {
@@ -2740,7 +2740,7 @@
   },
   {
     "_id": 84,
-    "descricacao": "Almeirão, cru",
+    "descricao": "Almeirão, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.67",
     "energia": {
@@ -2773,7 +2773,7 @@
   },
   {
     "_id": 85,
-    "descricacao": "Almeirão, refogado",
+    "descricao": "Almeirão, refogado",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "86.5446666666667",
     "energia": {
@@ -2806,7 +2806,7 @@
   },
   {
     "_id": 86,
-    "descricacao": "Batata, baroa, cozida",
+    "descricao": "Batata, baroa, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "79.2606666666667",
     "energia": {
@@ -2839,7 +2839,7 @@
   },
   {
     "_id": 87,
-    "descricacao": "Batata, baroa, crua",
+    "descricao": "Batata, baroa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "73.69",
     "energia": {
@@ -2872,7 +2872,7 @@
   },
   {
     "_id": 88,
-    "descricacao": "Batata, doce, cozida",
+    "descricao": "Batata, doce, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "80.425",
     "energia": {
@@ -2905,7 +2905,7 @@
   },
   {
     "_id": 89,
-    "descricacao": "Batata, doce, crua",
+    "descricao": "Batata, doce, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "69.5133333333333",
     "energia": {
@@ -2938,7 +2938,7 @@
   },
   {
     "_id": 90,
-    "descricacao": "Batata, frita, tipo chips, industrializada",
+    "descricao": "Batata, frita, tipo chips, industrializada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "2.69733333333333",
     "energia": {
@@ -2971,7 +2971,7 @@
   },
   {
     "_id": 91,
-    "descricacao": "Batata, inglesa, cozida",
+    "descricao": "Batata, inglesa, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "86.3596666666667",
     "energia": {
@@ -3004,7 +3004,7 @@
   },
   {
     "_id": 92,
-    "descricacao": "Batata, inglesa, crua",
+    "descricao": "Batata, inglesa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "82.87",
     "energia": {
@@ -3037,7 +3037,7 @@
   },
   {
     "_id": 93,
-    "descricacao": "Batata, inglesa, frita",
+    "descricao": "Batata, inglesa, frita",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "44.121",
     "energia": {
@@ -3070,7 +3070,7 @@
   },
   {
     "_id": 94,
-    "descricacao": "Batata, inglesa, sauté",
+    "descricao": "Batata, inglesa, sauté",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "83.091",
     "energia": {
@@ -3103,7 +3103,7 @@
   },
   {
     "_id": 95,
-    "descricacao": "Berinjela, cozida",
+    "descricao": "Berinjela, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.4316666666667",
     "energia": {
@@ -3136,7 +3136,7 @@
   },
   {
     "_id": 96,
-    "descricacao": "Berinjela, crua",
+    "descricao": "Berinjela, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.8033333333333",
     "energia": {
@@ -3169,7 +3169,7 @@
   },
   {
     "_id": 97,
-    "descricacao": "Beterraba, cozida",
+    "descricao": "Beterraba, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.5733333333333",
     "energia": {
@@ -3202,7 +3202,7 @@
   },
   {
     "_id": 98,
-    "descricacao": "Beterraba, crua",
+    "descricao": "Beterraba, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "85.9833333333333",
     "energia": {
@@ -3235,7 +3235,7 @@
   },
   {
     "_id": 99,
-    "descricacao": "Biscoito, polvilho doce",
+    "descricao": "Biscoito, polvilho doce",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "5.43733333333333",
     "energia": {
@@ -3268,7 +3268,7 @@
   },
   {
     "_id": 100,
-    "descricacao": "Brócolis, cozido",
+    "descricao": "Brócolis, cozido",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.617",
     "energia": {
@@ -3301,7 +3301,7 @@
   },
   {
     "_id": 101,
-    "descricacao": "Brócolis, cru",
+    "descricao": "Brócolis, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.22",
     "energia": {
@@ -3334,7 +3334,7 @@
   },
   {
     "_id": 102,
-    "descricacao": "Cará, cozido",
+    "descricao": "Cará, cozido",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "78.8846666666667",
     "energia": {
@@ -3367,7 +3367,7 @@
   },
   {
     "_id": 103,
-    "descricacao": "Cará, cru",
+    "descricao": "Cará, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "73.6933333333333",
     "energia": {
@@ -3400,7 +3400,7 @@
   },
   {
     "_id": 104,
-    "descricacao": "Caruru, cru",
+    "descricao": "Caruru, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "87.6183333333333",
     "energia": {
@@ -3433,7 +3433,7 @@
   },
   {
     "_id": 105,
-    "descricacao": "Catalonha, crua",
+    "descricao": "Catalonha, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.7626666666667",
     "energia": {
@@ -3466,7 +3466,7 @@
   },
   {
     "_id": 106,
-    "descricacao": "Catalonha, refogada",
+    "descricao": "Catalonha, refogada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "87.4326666666667",
     "energia": {
@@ -3499,7 +3499,7 @@
   },
   {
     "_id": 107,
-    "descricacao": "Cebola, crua",
+    "descricao": "Cebola, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "88.92",
     "energia": {
@@ -3532,7 +3532,7 @@
   },
   {
     "_id": 108,
-    "descricacao": "Cebolinha, crua",
+    "descricao": "Cebolinha, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.88",
     "energia": {
@@ -3565,7 +3565,7 @@
   },
   {
     "_id": 109,
-    "descricacao": "Cenoura, cozida",
+    "descricao": "Cenoura, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.663",
     "energia": {
@@ -3598,7 +3598,7 @@
   },
   {
     "_id": 110,
-    "descricacao": "Cenoura, crua",
+    "descricao": "Cenoura, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.0833333333333",
     "energia": {
@@ -3631,7 +3631,7 @@
   },
   {
     "_id": 111,
-    "descricacao": "Chicória, crua",
+    "descricao": "Chicória, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.1366666666667",
     "energia": {
@@ -3664,7 +3664,7 @@
   },
   {
     "_id": 112,
-    "descricacao": "Chuchu, cozido",
+    "descricao": "Chuchu, cozido",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.5616666666667",
     "energia": {
@@ -3697,7 +3697,7 @@
   },
   {
     "_id": 113,
-    "descricacao": "Chuchu, cru",
+    "descricao": "Chuchu, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.8366666666667",
     "energia": {
@@ -3730,7 +3730,7 @@
   },
   {
     "_id": 114,
-    "descricacao": "Coentro, folhas desidratadas",
+    "descricao": "Coentro, folhas desidratadas",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "10.63",
     "energia": {
@@ -3763,7 +3763,7 @@
   },
   {
     "_id": 115,
-    "descricacao": "Couve, manteiga, crua",
+    "descricao": "Couve, manteiga, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.9",
     "energia": {
@@ -3796,7 +3796,7 @@
   },
   {
     "_id": 116,
-    "descricacao": "Couve, manteiga, refogada ",
+    "descricao": "Couve, manteiga, refogada ",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "81.5273333333333",
     "energia": {
@@ -3829,7 +3829,7 @@
   },
   {
     "_id": 117,
-    "descricacao": "Couve-flor, crua",
+    "descricao": "Couve-flor, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.77",
     "energia": {
@@ -3862,7 +3862,7 @@
   },
   {
     "_id": 118,
-    "descricacao": "Couve-flor, cozida",
+    "descricao": "Couve-flor, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.3383333333333",
     "energia": {
@@ -3895,7 +3895,7 @@
   },
   {
     "_id": 119,
-    "descricacao": "Espinafre, Nova Zelândia, cru",
+    "descricao": "Espinafre, Nova Zelândia, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.03",
     "energia": {
@@ -3928,7 +3928,7 @@
   },
   {
     "_id": 120,
-    "descricacao": "Espinafre, Nova Zelândia, refogado",
+    "descricao": "Espinafre, Nova Zelândia, refogado",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "86.573",
     "energia": {
@@ -3961,7 +3961,7 @@
   },
   {
     "_id": 121,
-    "descricacao": "Farinha, de mandioca, crua",
+    "descricao": "Farinha, de mandioca, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "9.38666666666667",
     "energia": {
@@ -3994,7 +3994,7 @@
   },
   {
     "_id": 122,
-    "descricacao": "Farinha, de mandioca, torrada",
+    "descricao": "Farinha, de mandioca, torrada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "8.34",
     "energia": {
@@ -4027,7 +4027,7 @@
   },
   {
     "_id": 123,
-    "descricacao": "Farinha, de puba",
+    "descricao": "Farinha, de puba",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "9.801",
     "energia": {
@@ -4060,7 +4060,7 @@
   },
   {
     "_id": 124,
-    "descricacao": "Fécula, de mandioca",
+    "descricao": "Fécula, de mandioca",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "17.7666666666667",
     "energia": {
@@ -4093,7 +4093,7 @@
   },
   {
     "_id": 125,
-    "descricacao": "Feijão, broto, cru",
+    "descricao": "Feijão, broto, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "87.4813333333333",
     "energia": {
@@ -4126,7 +4126,7 @@
   },
   {
     "_id": 126,
-    "descricacao": "Inhame, cru",
+    "descricao": "Inhame, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "73.3133333333333",
     "energia": {
@@ -4159,7 +4159,7 @@
   },
   {
     "_id": 127,
-    "descricacao": "Jiló, cru",
+    "descricao": "Jiló, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.63",
     "energia": {
@@ -4192,7 +4192,7 @@
   },
   {
     "_id": 128,
-    "descricacao": "Jurubeba, crua",
+    "descricao": "Jurubeba, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "66.6353333333333",
     "energia": {
@@ -4225,7 +4225,7 @@
   },
   {
     "_id": 129,
-    "descricacao": "Mandioca, cozida",
+    "descricao": "Mandioca, cozida",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "68.6866666666667",
     "energia": {
@@ -4258,7 +4258,7 @@
   },
   {
     "_id": 130,
-    "descricacao": "Mandioca, crua",
+    "descricao": "Mandioca, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "61.8433333333333",
     "energia": {
@@ -4291,7 +4291,7 @@
   },
   {
     "_id": 131,
-    "descricacao": "Mandioca, farofa, temperada",
+    "descricao": "Mandioca, farofa, temperada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "6.42",
     "energia": {
@@ -4324,7 +4324,7 @@
   },
   {
     "_id": 132,
-    "descricacao": "Mandioca, frita",
+    "descricao": "Mandioca, frita",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "36.5656666666667",
     "energia": {
@@ -4357,7 +4357,7 @@
   },
   {
     "_id": 133,
-    "descricacao": "Manjericão, cru",
+    "descricao": "Manjericão, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.9566666666667",
     "energia": {
@@ -4390,7 +4390,7 @@
   },
   {
     "_id": 134,
-    "descricacao": "Maxixe, cru",
+    "descricao": "Maxixe, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.06",
     "energia": {
@@ -4423,7 +4423,7 @@
   },
   {
     "_id": 135,
-    "descricacao": "Mostarda, folha, crua",
+    "descricao": "Mostarda, folha, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.43",
     "energia": {
@@ -4456,7 +4456,7 @@
   },
   {
     "_id": 136,
-    "descricacao": "Nhoque, batata, cozido",
+    "descricao": "Nhoque, batata, cozido",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "54.954",
     "energia": {
@@ -4489,7 +4489,7 @@
   },
   {
     "_id": 137,
-    "descricacao": "Nabo, cru",
+    "descricao": "Nabo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.8433333333333",
     "energia": {
@@ -4522,7 +4522,7 @@
   },
   {
     "_id": 138,
-    "descricacao": "Palmito, juçara, em conserva",
+    "descricao": "Palmito, juçara, em conserva",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.3666666666667",
     "energia": {
@@ -4555,7 +4555,7 @@
   },
   {
     "_id": 139,
-    "descricacao": "Palmito, pupunha, em conserva",
+    "descricao": "Palmito, pupunha, em conserva",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "89.444",
     "energia": {
@@ -4588,7 +4588,7 @@
   },
   {
     "_id": 140,
-    "descricacao": "Pão, de queijo, assado",
+    "descricao": "Pão, de queijo, assado",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "33.736",
     "energia": {
@@ -4621,7 +4621,7 @@
   },
   {
     "_id": 141,
-    "descricacao": "Pão, de queijo, cru",
+    "descricao": "Pão, de queijo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "41.837",
     "energia": {
@@ -4654,7 +4654,7 @@
   },
   {
     "_id": 142,
-    "descricacao": "Pepino, cru",
+    "descricao": "Pepino, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "96.7866666666667",
     "energia": {
@@ -4687,7 +4687,7 @@
   },
   {
     "_id": 143,
-    "descricacao": "Pimentão, amarelo, cru",
+    "descricao": "Pimentão, amarelo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "91.8766666666667",
     "energia": {
@@ -4720,7 +4720,7 @@
   },
   {
     "_id": 144,
-    "descricacao": "Pimentão, verde, cru",
+    "descricao": "Pimentão, verde, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.52",
     "energia": {
@@ -4753,7 +4753,7 @@
   },
   {
     "_id": 145,
-    "descricacao": "Pimentão, vermelho, cru",
+    "descricao": "Pimentão, vermelho, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.9033333333333",
     "energia": {
@@ -4786,7 +4786,7 @@
   },
   {
     "_id": 146,
-    "descricacao": "Polvilho, doce",
+    "descricao": "Polvilho, doce",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "12.5833333333333",
     "energia": {
@@ -4819,7 +4819,7 @@
   },
   {
     "_id": 147,
-    "descricacao": "Quiabo, cru",
+    "descricao": "Quiabo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.5753333333333",
     "energia": {
@@ -4852,7 +4852,7 @@
   },
   {
     "_id": 148,
-    "descricacao": "Rabanete, cru",
+    "descricao": "Rabanete, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.0633333333333",
     "energia": {
@@ -4885,7 +4885,7 @@
   },
   {
     "_id": 149,
-    "descricacao": "Repolho, branco, cru",
+    "descricao": "Repolho, branco, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.72",
     "energia": {
@@ -4918,7 +4918,7 @@
   },
   {
     "_id": 150,
-    "descricacao": "Repolho, roxo, cru",
+    "descricao": "Repolho, roxo, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.0843333333333",
     "energia": {
@@ -4951,7 +4951,7 @@
   },
   {
     "_id": 151,
-    "descricacao": "Repolho, roxo, refogado",
+    "descricao": "Repolho, roxo, refogado",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "88.699",
     "energia": {
@@ -4984,7 +4984,7 @@
   },
   {
     "_id": 152,
-    "descricacao": "Rúcula, crua",
+    "descricao": "Rúcula, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "94.8156666666667",
     "energia": {
@@ -5017,7 +5017,7 @@
   },
   {
     "_id": 153,
-    "descricacao": "Salsa, crua",
+    "descricao": "Salsa, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "88.65",
     "energia": {
@@ -5050,7 +5050,7 @@
   },
   {
     "_id": 154,
-    "descricacao": "Seleta de legumes, enlatada",
+    "descricao": "Seleta de legumes, enlatada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "82.1466666666667",
     "energia": {
@@ -5083,7 +5083,7 @@
   },
   {
     "_id": 155,
-    "descricacao": "Serralha, crua",
+    "descricao": "Serralha, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.2483333333333",
     "energia": {
@@ -5116,7 +5116,7 @@
   },
   {
     "_id": 156,
-    "descricacao": "Taioba, crua",
+    "descricao": "Taioba, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "89.243",
     "energia": {
@@ -5149,7 +5149,7 @@
   },
   {
     "_id": 157,
-    "descricacao": "Tomate, com semente, cru",
+    "descricao": "Tomate, com semente, cru",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "95.1266666666667",
     "energia": {
@@ -5182,7 +5182,7 @@
   },
   {
     "_id": 158,
-    "descricacao": "Tomate, extrato",
+    "descricao": "Tomate, extrato",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "79.6633",
     "energia": {
@@ -5215,7 +5215,7 @@
   },
   {
     "_id": 159,
-    "descricacao": "Tomate, molho industrializado",
+    "descricao": "Tomate, molho industrializado",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "88.1366666666667",
     "energia": {
@@ -5248,7 +5248,7 @@
   },
   {
     "_id": 160,
-    "descricacao": "Tomate, purê",
+    "descricao": "Tomate, purê",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "90.7933333333333",
     "energia": {
@@ -5281,7 +5281,7 @@
   },
   {
     "_id": 161,
-    "descricacao": "Tomate, salada",
+    "descricao": "Tomate, salada",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "93.632",
     "energia": {
@@ -5314,7 +5314,7 @@
   },
   {
     "_id": 162,
-    "descricacao": "Vagem, crua",
+    "descricao": "Vagem, crua",
     "categoria": "Verduras, hortaliças e derivados",
     "umidade": "92.1666666666667",
     "energia": {
@@ -5347,7 +5347,7 @@
   },
   {
     "_id": 163,
-    "descricacao": "Abacate, cru",
+    "descricao": "Abacate, cru",
     "categoria": "Frutas e derivados",
     "umidade": "83.7866666666667",
     "energia": {
@@ -5380,7 +5380,7 @@
   },
   {
     "_id": 164,
-    "descricacao": "Abacaxi, cru",
+    "descricao": "Abacaxi, cru",
     "categoria": "Frutas e derivados",
     "umidade": "86.3166666666667",
     "energia": {
@@ -5413,7 +5413,7 @@
   },
   {
     "_id": 165,
-    "descricacao": "Abacaxi, polpa, congelada",
+    "descricao": "Abacaxi, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "91.2946666666667",
     "energia": {
@@ -5446,7 +5446,7 @@
   },
   {
     "_id": 166,
-    "descricacao": "Abiu, cru",
+    "descricao": "Abiu, cru",
     "categoria": "Frutas e derivados",
     "umidade": "83.1443333333333",
     "energia": {
@@ -5479,7 +5479,7 @@
   },
   {
     "_id": 167,
-    "descricacao": "Açaí, polpa, com xarope de guaraná e glucose",
+    "descricao": "Açaí, polpa, com xarope de guaraná e glucose",
     "categoria": "Frutas e derivados",
     "umidade": "73.8786666666667",
     "energia": {
@@ -5512,7 +5512,7 @@
   },
   {
     "_id": 168,
-    "descricacao": "Açaí, polpa, congelada",
+    "descricao": "Açaí, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "88.7003333333333",
     "energia": {
@@ -5545,7 +5545,7 @@
   },
   {
     "_id": 169,
-    "descricacao": "Acerola, crua",
+    "descricao": "Acerola, crua",
     "categoria": "Frutas e derivados",
     "umidade": "90.5306666666667",
     "energia": {
@@ -5578,7 +5578,7 @@
   },
   {
     "_id": 170,
-    "descricacao": "Acerola, polpa, congelada",
+    "descricao": "Acerola, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "93.6096666666667",
     "energia": {
@@ -5611,7 +5611,7 @@
   },
   {
     "_id": 171,
-    "descricacao": "Ameixa, calda, enlatada ",
+    "descricao": "Ameixa, calda, enlatada ",
     "categoria": "Frutas e derivados",
     "umidade": "52.174",
     "energia": {
@@ -5644,7 +5644,7 @@
   },
   {
     "_id": 172,
-    "descricacao": "Ameixa, crua",
+    "descricao": "Ameixa, crua",
     "categoria": "Frutas e derivados",
     "umidade": "84.77",
     "energia": {
@@ -5677,7 +5677,7 @@
   },
   {
     "_id": 173,
-    "descricacao": "Ameixa, em calda, enlatada, drenada ",
+    "descricao": "Ameixa, em calda, enlatada, drenada ",
     "categoria": "Frutas e derivados",
     "umidade": "50.3393333333333",
     "energia": {
@@ -5710,7 +5710,7 @@
   },
   {
     "_id": 174,
-    "descricacao": "Atemóia, crua",
+    "descricao": "Atemóia, crua",
     "categoria": "Frutas e derivados",
     "umidade": "72.736",
     "energia": {
@@ -5743,7 +5743,7 @@
   },
   {
     "_id": 175,
-    "descricacao": "Banana, da terra, crua",
+    "descricao": "Banana, da terra, crua",
     "categoria": "Frutas e derivados",
     "umidade": "63.8766666666667",
     "energia": {
@@ -5776,7 +5776,7 @@
   },
   {
     "_id": 176,
-    "descricacao": "Banana, doce em barra",
+    "descricao": "Banana, doce em barra",
     "categoria": "Frutas e derivados",
     "umidade": "21.126",
     "energia": {
@@ -5809,7 +5809,7 @@
   },
   {
     "_id": 177,
-    "descricacao": "Banana, figo, crua",
+    "descricao": "Banana, figo, crua",
     "categoria": "Frutas e derivados",
     "umidade": "70.074",
     "energia": {
@@ -5842,7 +5842,7 @@
   },
   {
     "_id": 178,
-    "descricacao": "Banana, maçã, crua",
+    "descricao": "Banana, maçã, crua",
     "categoria": "Frutas e derivados",
     "umidade": "75.23",
     "energia": {
@@ -5875,7 +5875,7 @@
   },
   {
     "_id": 179,
-    "descricacao": "Banana, nanica, crua",
+    "descricao": "Banana, nanica, crua",
     "categoria": "Frutas e derivados",
     "umidade": "73.7966666666667",
     "energia": {
@@ -5908,7 +5908,7 @@
   },
   {
     "_id": 180,
-    "descricacao": "Banana, ouro, crua",
+    "descricao": "Banana, ouro, crua",
     "categoria": "Frutas e derivados",
     "umidade": "68.1766666666667",
     "energia": {
@@ -5941,7 +5941,7 @@
   },
   {
     "_id": 181,
-    "descricacao": "Banana, pacova, crua",
+    "descricao": "Banana, pacova, crua",
     "categoria": "Frutas e derivados",
     "umidade": "77.7106666666667",
     "energia": {
@@ -5974,7 +5974,7 @@
   },
   {
     "_id": 182,
-    "descricacao": "Banana, prata, crua",
+    "descricao": "Banana, prata, crua",
     "categoria": "Frutas e derivados",
     "umidade": "71.8633333333333",
     "energia": {
@@ -6007,7 +6007,7 @@
   },
   {
     "_id": 183,
-    "descricacao": "Cacau, cru",
+    "descricao": "Cacau, cru",
     "categoria": "Frutas e derivados",
     "umidade": "79.2086666666667",
     "energia": {
@@ -6040,7 +6040,7 @@
   },
   {
     "_id": 184,
-    "descricacao": "Cajá-Manga, cru",
+    "descricao": "Cajá-Manga, cru",
     "categoria": "Frutas e derivados",
     "umidade": "86.8943333333333",
     "energia": {
@@ -6073,7 +6073,7 @@
   },
   {
     "_id": 185,
-    "descricacao": "Cajá, polpa, congelada",
+    "descricao": "Cajá, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "92.4436666666667",
     "energia": {
@@ -6106,7 +6106,7 @@
   },
   {
     "_id": 186,
-    "descricacao": "Caju, cru",
+    "descricao": "Caju, cru",
     "categoria": "Frutas e derivados",
     "umidade": "88.11333",
     "energia": {
@@ -6139,7 +6139,7 @@
   },
   {
     "_id": 187,
-    "descricacao": "Caju, polpa, congelada",
+    "descricao": "Caju, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "89.817",
     "energia": {
@@ -6172,7 +6172,7 @@
   },
   {
     "_id": 188,
-    "descricacao": "Caju, suco concentrado, envasado",
+    "descricao": "Caju, suco concentrado, envasado",
     "categoria": "Frutas e derivados",
     "umidade": "88.3686666666667",
     "energia": {
@@ -6205,7 +6205,7 @@
   },
   {
     "_id": 189,
-    "descricacao": "Caqui, chocolate, cru",
+    "descricao": "Caqui, chocolate, cru",
     "categoria": "Frutas e derivados",
     "umidade": "79.724",
     "energia": {
@@ -6238,7 +6238,7 @@
   },
   {
     "_id": 190,
-    "descricacao": "Carambola, crua",
+    "descricao": "Carambola, crua",
     "categoria": "Frutas e derivados",
     "umidade": "87.096",
     "energia": {
@@ -6271,7 +6271,7 @@
   },
   {
     "_id": 191,
-    "descricacao": "Ciriguela, crua",
+    "descricao": "Ciriguela, crua",
     "categoria": "Frutas e derivados",
     "umidade": "78.685",
     "energia": {
@@ -6304,7 +6304,7 @@
   },
   {
     "_id": 192,
-    "descricacao": "Cupuaçu, cru",
+    "descricao": "Cupuaçu, cru",
     "categoria": "Frutas e derivados",
     "umidade": "86.2306666666667",
     "energia": {
@@ -6337,7 +6337,7 @@
   },
   {
     "_id": 193,
-    "descricacao": "Cupuaçu, polpa, congelada",
+    "descricao": "Cupuaçu, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "86.553",
     "energia": {
@@ -6370,7 +6370,7 @@
   },
   {
     "_id": 194,
-    "descricacao": "Figo, cru",
+    "descricao": "Figo, cru",
     "categoria": "Frutas e derivados",
     "umidade": "88.1866666666667",
     "energia": {
@@ -6403,7 +6403,7 @@
   },
   {
     "_id": 195,
-    "descricacao": "Figo, enlatado, em calda",
+    "descricao": "Figo, enlatado, em calda",
     "categoria": "Frutas e derivados",
     "umidade": "48.77",
     "energia": {
@@ -6436,7 +6436,7 @@
   },
   {
     "_id": 196,
-    "descricacao": "Fruta-pão, crua",
+    "descricao": "Fruta-pão, crua",
     "categoria": "Frutas e derivados",
     "umidade": "80.869",
     "energia": {
@@ -6469,7 +6469,7 @@
   },
   {
     "_id": 197,
-    "descricacao": "Goiaba, branca, com casca, crua",
+    "descricao": "Goiaba, branca, com casca, crua",
     "categoria": "Frutas e derivados",
     "umidade": "85.69",
     "energia": {
@@ -6502,7 +6502,7 @@
   },
   {
     "_id": 198,
-    "descricacao": "Goiaba, doce em pasta",
+    "descricao": "Goiaba, doce em pasta",
     "categoria": "Frutas e derivados",
     "umidade": "24.78",
     "energia": {
@@ -6535,7 +6535,7 @@
   },
   {
     "_id": 199,
-    "descricacao": "Goiaba, doce, cascão",
+    "descricao": "Goiaba, doce, cascão",
     "categoria": "Frutas e derivados",
     "umidade": "20.2606666666667",
     "energia": {
@@ -6568,7 +6568,7 @@
   },
   {
     "_id": 200,
-    "descricacao": "Goiaba, vermelha, com casca, crua",
+    "descricao": "Goiaba, vermelha, com casca, crua",
     "categoria": "Frutas e derivados",
     "umidade": "84.98",
     "energia": {
@@ -6601,7 +6601,7 @@
   },
   {
     "_id": 201,
-    "descricacao": "Graviola, crua",
+    "descricao": "Graviola, crua",
     "categoria": "Frutas e derivados",
     "umidade": "82.1533333333333",
     "energia": {
@@ -6634,7 +6634,7 @@
   },
   {
     "_id": 202,
-    "descricacao": "Graviola, polpa, congelada",
+    "descricao": "Graviola, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "89.163",
     "energia": {
@@ -6667,7 +6667,7 @@
   },
   {
     "_id": 203,
-    "descricacao": "Jabuticaba, crua",
+    "descricao": "Jabuticaba, crua",
     "categoria": "Frutas e derivados",
     "umidade": "83.6466666666667",
     "energia": {
@@ -6700,7 +6700,7 @@
   },
   {
     "_id": 204,
-    "descricacao": "Jaca, crua",
+    "descricao": "Jaca, crua",
     "categoria": "Frutas e derivados",
     "umidade": "75.0743333333333",
     "energia": {
@@ -6733,7 +6733,7 @@
   },
   {
     "_id": 205,
-    "descricacao": "Jambo, cru",
+    "descricao": "Jambo, cru",
     "categoria": "Frutas e derivados",
     "umidade": "92.101",
     "energia": {
@@ -6766,7 +6766,7 @@
   },
   {
     "_id": 206,
-    "descricacao": "Jamelão, cru",
+    "descricao": "Jamelão, cru",
     "categoria": "Frutas e derivados",
     "umidade": "87.6743333333333",
     "energia": {
@@ -6799,7 +6799,7 @@
   },
   {
     "_id": 207,
-    "descricacao": "Kiwi, cru",
+    "descricao": "Kiwi, cru",
     "categoria": "Frutas e derivados",
     "umidade": "85.8766666666667",
     "energia": {
@@ -6832,7 +6832,7 @@
   },
   {
     "_id": 208,
-    "descricacao": "Laranja, baía, crua",
+    "descricao": "Laranja, baía, crua",
     "categoria": "Frutas e derivados",
     "umidade": "87.08",
     "energia": {
@@ -6865,7 +6865,7 @@
   },
   {
     "_id": 209,
-    "descricacao": "Laranja, baía, suco",
+    "descricao": "Laranja, baía, suco",
     "categoria": "Frutas e derivados",
     "umidade": "90.2466666666667",
     "energia": {
@@ -6898,7 +6898,7 @@
   },
   {
     "_id": 210,
-    "descricacao": "Laranja, da terra, crua",
+    "descricao": "Laranja, da terra, crua",
     "categoria": "Frutas e derivados",
     "umidade": "85.3793333333334",
     "energia": {
@@ -6931,7 +6931,7 @@
   },
   {
     "_id": 211,
-    "descricacao": "Laranja, da terra, suco",
+    "descricao": "Laranja, da terra, suco",
     "categoria": "Frutas e derivados",
     "umidade": "89.22",
     "energia": {
@@ -6964,7 +6964,7 @@
   },
   {
     "_id": 212,
-    "descricacao": "Laranja, lima, crua",
+    "descricao": "Laranja, lima, crua",
     "categoria": "Frutas e derivados",
     "umidade": "86.974",
     "energia": {
@@ -6997,7 +6997,7 @@
   },
   {
     "_id": 213,
-    "descricacao": "Laranja, lima, suco",
+    "descricao": "Laranja, lima, suco",
     "categoria": "Frutas e derivados",
     "umidade": "89.6806666666667",
     "energia": {
@@ -7030,7 +7030,7 @@
   },
   {
     "_id": 214,
-    "descricacao": "Laranja, pêra, crua",
+    "descricao": "Laranja, pêra, crua",
     "categoria": "Frutas e derivados",
     "umidade": "89.55",
     "energia": {
@@ -7063,7 +7063,7 @@
   },
   {
     "_id": 215,
-    "descricacao": "Laranja, pêra, suco",
+    "descricao": "Laranja, pêra, suco",
     "categoria": "Frutas e derivados",
     "umidade": "91.2933333333333",
     "energia": {
@@ -7096,7 +7096,7 @@
   },
   {
     "_id": 216,
-    "descricacao": "Laranja, valência, crua",
+    "descricao": "Laranja, valência, crua",
     "categoria": "Frutas e derivados",
     "umidade": "86.9413333333333",
     "energia": {
@@ -7129,7 +7129,7 @@
   },
   {
     "_id": 217,
-    "descricacao": "Laranja, valência, suco",
+    "descricao": "Laranja, valência, suco",
     "categoria": "Frutas e derivados",
     "umidade": "90.5303333333333",
     "energia": {
@@ -7162,7 +7162,7 @@
   },
   {
     "_id": 218,
-    "descricacao": "Limão, cravo, suco",
+    "descricao": "Limão, cravo, suco",
     "categoria": "Frutas e derivados",
     "umidade": "94.189",
     "energia": {
@@ -7195,7 +7195,7 @@
   },
   {
     "_id": 219,
-    "descricacao": "Limão, galego, suco",
+    "descricao": "Limão, galego, suco",
     "categoria": "Frutas e derivados",
     "umidade": "91.7966666666667",
     "energia": {
@@ -7228,7 +7228,7 @@
   },
   {
     "_id": 220,
-    "descricacao": "Limão, tahiti, cru",
+    "descricao": "Limão, tahiti, cru",
     "categoria": "Frutas e derivados",
     "umidade": "87.4273333333333",
     "energia": {
@@ -7261,7 +7261,7 @@
   },
   {
     "_id": 221,
-    "descricacao": "Maçã, Argentina, com casca, crua",
+    "descricao": "Maçã, Argentina, com casca, crua",
     "categoria": "Frutas e derivados",
     "umidade": "82.649",
     "energia": {
@@ -7294,7 +7294,7 @@
   },
   {
     "_id": 222,
-    "descricacao": "Maçã, Fuji, com casca, crua",
+    "descricao": "Maçã, Fuji, com casca, crua",
     "categoria": "Frutas e derivados",
     "umidade": "84.3366666666667",
     "energia": {
@@ -7327,7 +7327,7 @@
   },
   {
     "_id": 223,
-    "descricacao": "Macaúba, crua",
+    "descricao": "Macaúba, crua",
     "categoria": "Frutas e derivados",
     "umidade": "41.5266666666667",
     "energia": {
@@ -7360,7 +7360,7 @@
   },
   {
     "_id": 224,
-    "descricacao": " Mamão, doce em calda, drenado",
+    "descricao": " Mamão, doce em calda, drenado",
     "categoria": "Frutas e derivados",
     "umidade": "45.529",
     "energia": {
@@ -7393,7 +7393,7 @@
   },
   {
     "_id": 225,
-    "descricacao": "Mamão, Formosa, cru",
+    "descricao": "Mamão, Formosa, cru",
     "categoria": "Frutas e derivados",
     "umidade": "86.9266666666667",
     "energia": {
@@ -7426,7 +7426,7 @@
   },
   {
     "_id": 226,
-    "descricacao": "Mamão, Papaia, cru",
+    "descricao": "Mamão, Papaia, cru",
     "categoria": "Frutas e derivados",
     "umidade": "88.583",
     "energia": {
@@ -7459,7 +7459,7 @@
   },
   {
     "_id": 227,
-    "descricacao": " Mamão verde, doce em calda, drenado",
+    "descricao": " Mamão verde, doce em calda, drenado",
     "categoria": "Frutas e derivados",
     "umidade": "41.8806666666667",
     "energia": {
@@ -7492,7 +7492,7 @@
   },
   {
     "_id": 228,
-    "descricacao": "Manga, Haden, crua",
+    "descricao": "Manga, Haden, crua",
     "categoria": "Frutas e derivados",
     "umidade": "82.2876666666667",
     "energia": {
@@ -7525,7 +7525,7 @@
   },
   {
     "_id": 229,
-    "descricacao": "Manga, Palmer, crua",
+    "descricao": "Manga, Palmer, crua",
     "categoria": "Frutas e derivados",
     "umidade": "79.7356666666667",
     "energia": {
@@ -7558,7 +7558,7 @@
   },
   {
     "_id": 230,
-    "descricacao": "Manga, polpa, congelada",
+    "descricao": "Manga, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "86.4983333333333",
     "energia": {
@@ -7591,7 +7591,7 @@
   },
   {
     "_id": 231,
-    "descricacao": "Manga, Tommy Atkins, crua",
+    "descricao": "Manga, Tommy Atkins, crua",
     "categoria": "Frutas e derivados",
     "umidade": "85.8133333333334",
     "energia": {
@@ -7624,7 +7624,7 @@
   },
   {
     "_id": 232,
-    "descricacao": "Maracujá, cru",
+    "descricao": "Maracujá, cru",
     "categoria": "Frutas e derivados",
     "umidade": "82.8533333333333",
     "energia": {
@@ -7657,7 +7657,7 @@
   },
   {
     "_id": 233,
-    "descricacao": "Maracujá, polpa, congelada",
+    "descricao": "Maracujá, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "88.8953333333333",
     "energia": {
@@ -7690,7 +7690,7 @@
   },
   {
     "_id": 234,
-    "descricacao": "Maracujá, suco concentrado, envasado",
+    "descricao": "Maracujá, suco concentrado, envasado",
     "categoria": "Frutas e derivados",
     "umidade": "88.942",
     "energia": {
@@ -7723,7 +7723,7 @@
   },
   {
     "_id": 235,
-    "descricacao": "Melancia, crua",
+    "descricao": "Melancia, crua",
     "categoria": "Frutas e derivados",
     "umidade": "90.6666666666667",
     "energia": {
@@ -7756,7 +7756,7 @@
   },
   {
     "_id": 236,
-    "descricacao": "Melão, cru",
+    "descricao": "Melão, cru",
     "categoria": "Frutas e derivados",
     "umidade": "91.28",
     "energia": {
@@ -7789,7 +7789,7 @@
   },
   {
     "_id": 237,
-    "descricacao": "Mexerica, Murcote, crua",
+    "descricao": "Mexerica, Murcote, crua",
     "categoria": "Frutas e derivados",
     "umidade": "83.652",
     "energia": {
@@ -7822,7 +7822,7 @@
   },
   {
     "_id": 238,
-    "descricacao": "Mexerica, Rio, crua",
+    "descricao": "Mexerica, Rio, crua",
     "categoria": "Frutas e derivados",
     "umidade": "89.5693333333333",
     "energia": {
@@ -7855,7 +7855,7 @@
   },
   {
     "_id": 239,
-    "descricacao": "Morango, cru",
+    "descricao": "Morango, cru",
     "categoria": "Frutas e derivados",
     "umidade": "91.5266666666667",
     "energia": {
@@ -7888,7 +7888,7 @@
   },
   {
     "_id": 240,
-    "descricacao": "Nêspera, crua",
+    "descricao": "Nêspera, crua",
     "categoria": "Frutas e derivados",
     "umidade": "87.7643333333333",
     "energia": {
@@ -7921,7 +7921,7 @@
   },
   {
     "_id": 241,
-    "descricacao": "Pequi, cru",
+    "descricao": "Pequi, cru",
     "categoria": "Frutas e derivados",
     "umidade": "65.8886666666667",
     "energia": {
@@ -7954,7 +7954,7 @@
   },
   {
     "_id": 242,
-    "descricacao": "Pêra, Park, crua",
+    "descricao": "Pêra, Park, crua",
     "categoria": "Frutas e derivados",
     "umidade": "83.1863333333333",
     "energia": {
@@ -7987,7 +7987,7 @@
   },
   {
     "_id": 243,
-    "descricacao": "Pêra, Williams, crua",
+    "descricao": "Pêra, Williams, crua",
     "categoria": "Frutas e derivados",
     "umidade": "85.0333333333334",
     "energia": {
@@ -8020,7 +8020,7 @@
   },
   {
     "_id": 244,
-    "descricacao": "Pêssego, Aurora, cru",
+    "descricao": "Pêssego, Aurora, cru",
     "categoria": "Frutas e derivados",
     "umidade": "89.3213333333333",
     "energia": {
@@ -8053,7 +8053,7 @@
   },
   {
     "_id": 245,
-    "descricacao": "Pêssego, enlatado, em calda",
+    "descricao": "Pêssego, enlatado, em calda",
     "categoria": "Frutas e derivados",
     "umidade": "82.1866666666667",
     "energia": {
@@ -8086,7 +8086,7 @@
   },
   {
     "_id": 246,
-    "descricacao": "Pinha, crua",
+    "descricao": "Pinha, crua",
     "categoria": "Frutas e derivados",
     "umidade": "75.0496666666667",
     "energia": {
@@ -8119,7 +8119,7 @@
   },
   {
     "_id": 247,
-    "descricacao": "Pitanga, crua",
+    "descricao": "Pitanga, crua",
     "categoria": "Frutas e derivados",
     "umidade": "88.293",
     "energia": {
@@ -8152,7 +8152,7 @@
   },
   {
     "_id": 248,
-    "descricacao": "Pitanga, polpa, congelada",
+    "descricao": "Pitanga, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "94.572",
     "energia": {
@@ -8185,7 +8185,7 @@
   },
   {
     "_id": 249,
-    "descricacao": "Romã, crua",
+    "descricao": "Romã, crua",
     "categoria": "Frutas e derivados",
     "umidade": "83.9866666666667",
     "energia": {
@@ -8218,7 +8218,7 @@
   },
   {
     "_id": 250,
-    "descricacao": "Tamarindo, cru",
+    "descricao": "Tamarindo, cru",
     "categoria": "Frutas e derivados",
     "umidade": "21.95",
     "energia": {
@@ -8251,7 +8251,7 @@
   },
   {
     "_id": 251,
-    "descricacao": "Tangerina, Poncã, crua",
+    "descricao": "Tangerina, Poncã, crua",
     "categoria": "Frutas e derivados",
     "umidade": "89.2233333333333",
     "energia": {
@@ -8284,7 +8284,7 @@
   },
   {
     "_id": 252,
-    "descricacao": "Tangerina, Poncã, suco",
+    "descricao": "Tangerina, Poncã, suco",
     "categoria": "Frutas e derivados",
     "umidade": "90.44",
     "energia": {
@@ -8317,7 +8317,7 @@
   },
   {
     "_id": 253,
-    "descricacao": "Tucumã, cru",
+    "descricao": "Tucumã, cru",
     "categoria": "Frutas e derivados",
     "umidade": "51.2603333333333",
     "energia": {
@@ -8350,7 +8350,7 @@
   },
   {
     "_id": 254,
-    "descricacao": "Umbu, cru",
+    "descricao": "Umbu, cru",
     "categoria": "Frutas e derivados",
     "umidade": "89.25",
     "energia": {
@@ -8383,7 +8383,7 @@
   },
   {
     "_id": 255,
-    "descricacao": "Umbu, polpa, congelada",
+    "descricao": "Umbu, polpa, congelada",
     "categoria": "Frutas e derivados",
     "umidade": "90.185",
     "energia": {
@@ -8416,7 +8416,7 @@
   },
   {
     "_id": 256,
-    "descricacao": "Uva, Itália, crua",
+    "descricao": "Uva, Itália, crua",
     "categoria": "Frutas e derivados",
     "umidade": "84.9666666666667",
     "energia": {
@@ -8449,7 +8449,7 @@
   },
   {
     "_id": 257,
-    "descricacao": "Uva, Rubi, crua",
+    "descricao": "Uva, Rubi, crua",
     "categoria": "Frutas e derivados",
     "umidade": "86.084",
     "energia": {
@@ -8482,7 +8482,7 @@
   },
   {
     "_id": 258,
-    "descricacao": "Uva, suco concentrado, envasado",
+    "descricao": "Uva, suco concentrado, envasado",
     "categoria": "Frutas e derivados",
     "umidade": "85.1296666666667",
     "energia": {
@@ -8515,7 +8515,7 @@
   },
   {
     "_id": 259,
-    "descricacao": "Azeite, de dendê",
+    "descricao": "Azeite, de dendê",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8548,7 +8548,7 @@
   },
   {
     "_id": 260,
-    "descricacao": "Azeite, de oliva, extra virgem",
+    "descricao": "Azeite, de oliva, extra virgem",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8581,7 +8581,7 @@
   },
   {
     "_id": 261,
-    "descricacao": "Manteiga, com sal",
+    "descricao": "Manteiga, com sal",
     "categoria": "Gorduras e óleos",
     "umidade": "15.7873333333333",
     "energia": {
@@ -8614,7 +8614,7 @@
   },
   {
     "_id": 262,
-    "descricacao": "Manteiga, sem sal",
+    "descricao": "Manteiga, sem sal",
     "categoria": "Gorduras e óleos",
     "umidade": "13.6273333333333",
     "energia": {
@@ -8647,7 +8647,7 @@
   },
   {
     "_id": 263,
-    "descricacao": "Margarina, com óleo hidrogenado, com sal (65% de lipídeos)",
+    "descricao": "Margarina, com óleo hidrogenado, com sal (65% de lipídeos)",
     "categoria": "Gorduras e óleos",
     "umidade": "32.2313333333333",
     "energia": {
@@ -8680,7 +8680,7 @@
   },
   {
     "_id": 264,
-    "descricacao": "Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)",
+    "descricao": "Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)",
     "categoria": "Gorduras e óleos",
     "umidade": "19.5856666666667",
     "energia": {
@@ -8713,7 +8713,7 @@
   },
   {
     "_id": 265,
-    "descricacao": "Margarina, com óleo interesterificado, com sal (65%de lipídeos)",
+    "descricao": "Margarina, com óleo interesterificado, com sal (65%de lipídeos)",
     "categoria": "Gorduras e óleos",
     "umidade": "31.969",
     "energia": {
@@ -8746,7 +8746,7 @@
   },
   {
     "_id": 266,
-    "descricacao": "Margarina, com óleo interesterificado, sem sal (65% de lipídeos)",
+    "descricao": "Margarina, com óleo interesterificado, sem sal (65% de lipídeos)",
     "categoria": "Gorduras e óleos",
     "umidade": "33.37",
     "energia": {
@@ -8779,7 +8779,7 @@
   },
   {
     "_id": 267,
-    "descricacao": "Óleo, de babaçu",
+    "descricao": "Óleo, de babaçu",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8812,7 +8812,7 @@
   },
   {
     "_id": 268,
-    "descricacao": "Óleo, de canola",
+    "descricao": "Óleo, de canola",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8845,7 +8845,7 @@
   },
   {
     "_id": 269,
-    "descricacao": "Óleo, de girassol",
+    "descricao": "Óleo, de girassol",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8878,7 +8878,7 @@
   },
   {
     "_id": 270,
-    "descricacao": "Óleo, de milho",
+    "descricao": "Óleo, de milho",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8911,7 +8911,7 @@
   },
   {
     "_id": 271,
-    "descricacao": "Óleo, de pequi",
+    "descricao": "Óleo, de pequi",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8944,7 +8944,7 @@
   },
   {
     "_id": 272,
-    "descricacao": "Óleo, de soja",
+    "descricao": "Óleo, de soja",
     "categoria": "Gorduras e óleos",
     "umidade": "NA",
     "energia": {
@@ -8977,7 +8977,7 @@
   },
   {
     "_id": 273,
-    "descricacao": "Abadejo, filé, congelado, assado",
+    "descricao": "Abadejo, filé, congelado, assado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "74.3223333333333",
     "energia": {
@@ -9010,7 +9010,7 @@
   },
   {
     "_id": 274,
-    "descricacao": "Abadejo, filé, congelado,cozido",
+    "descricao": "Abadejo, filé, congelado,cozido",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.7336666666667",
     "energia": {
@@ -9043,7 +9043,7 @@
   },
   {
     "_id": 275,
-    "descricacao": "Abadejo, filé, congelado, cru",
+    "descricao": "Abadejo, filé, congelado, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "86.4166666666667",
     "energia": {
@@ -9076,7 +9076,7 @@
   },
   {
     "_id": 276,
-    "descricacao": "Abadejo, filé, congelado, grelhado",
+    "descricao": "Abadejo, filé, congelado, grelhado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "70.957",
     "energia": {
@@ -9109,7 +9109,7 @@
   },
   {
     "_id": 277,
-    "descricacao": "Atum, conserva em óleo",
+    "descricao": "Atum, conserva em óleo",
     "categoria": "Pescados e frutos do mar",
     "umidade": "64.5",
     "energia": {
@@ -9142,7 +9142,7 @@
   },
   {
     "_id": 278,
-    "descricacao": "Atum, fresco, cru",
+    "descricao": "Atum, fresco, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "73.0533333333333",
     "energia": {
@@ -9175,7 +9175,7 @@
   },
   {
     "_id": 279,
-    "descricacao": "Bacalhau, salgado, cru",
+    "descricao": "Bacalhau, salgado, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "47.8866666666667",
     "energia": {
@@ -9208,7 +9208,7 @@
   },
   {
     "_id": 280,
-    "descricacao": "Bacalhau, salgado, refogado",
+    "descricao": "Bacalhau, salgado, refogado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "65.909",
     "energia": {
@@ -9241,7 +9241,7 @@
   },
   {
     "_id": 281,
-    "descricacao": "Cação, posta, com farinha de trigo, frita",
+    "descricao": "Cação, posta, com farinha de trigo, frita",
     "categoria": "Pescados e frutos do mar",
     "umidade": "60.6233333333333",
     "energia": {
@@ -9274,7 +9274,7 @@
   },
   {
     "_id": 282,
-    "descricacao": "Cação, posta, cozida",
+    "descricao": "Cação, posta, cozida",
     "categoria": "Pescados e frutos do mar",
     "umidade": "75.9283333333333",
     "energia": {
@@ -9307,7 +9307,7 @@
   },
   {
     "_id": 283,
-    "descricacao": "Cação, posta, crua",
+    "descricao": "Cação, posta, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "81.3766666666667",
     "energia": {
@@ -9340,7 +9340,7 @@
   },
   {
     "_id": 284,
-    "descricacao": "Camarão, Rio Grande, grande, cozido",
+    "descricao": "Camarão, Rio Grande, grande, cozido",
     "categoria": "Pescados e frutos do mar",
     "umidade": "78.707",
     "energia": {
@@ -9373,7 +9373,7 @@
   },
   {
     "_id": 285,
-    "descricacao": "Camarão, Rio Grande, grande, cru",
+    "descricao": "Camarão, Rio Grande, grande, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "89.1336666666667",
     "energia": {
@@ -9406,7 +9406,7 @@
   },
   {
     "_id": 286,
-    "descricacao": "Camarão, Sete Barbas, sem cabeça, com casca, frito",
+    "descricao": "Camarão, Sete Barbas, sem cabeça, com casca, frito",
     "categoria": "Pescados e frutos do mar",
     "umidade": "61.0393333333333",
     "energia": {
@@ -9439,7 +9439,7 @@
   },
   {
     "_id": 287,
-    "descricacao": "Caranguejo, cozido",
+    "descricao": "Caranguejo, cozido",
     "categoria": "Pescados e frutos do mar",
     "umidade": "76.9966666666667",
     "energia": {
@@ -9472,7 +9472,7 @@
   },
   {
     "_id": 288,
-    "descricacao": "Corimba, cru",
+    "descricao": "Corimba, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "75.6433333333333",
     "energia": {
@@ -9505,7 +9505,7 @@
   },
   {
     "_id": 289,
-    "descricacao": "Corimbatá, assado",
+    "descricao": "Corimbatá, assado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "59.9266666666667",
     "energia": {
@@ -9538,7 +9538,7 @@
   },
   {
     "_id": 290,
-    "descricacao": "Corimbatá, cozido",
+    "descricao": "Corimbatá, cozido",
     "categoria": "Pescados e frutos do mar",
     "umidade": "64.562",
     "energia": {
@@ -9571,7 +9571,7 @@
   },
   {
     "_id": 291,
-    "descricacao": "Corvina de água doce, crua",
+    "descricao": "Corvina de água doce, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.2466666666667",
     "energia": {
@@ -9604,7 +9604,7 @@
   },
   {
     "_id": 292,
-    "descricacao": "Corvina do mar, crua",
+    "descricao": "Corvina do mar, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.3533333333333",
     "energia": {
@@ -9637,7 +9637,7 @@
   },
   {
     "_id": 293,
-    "descricacao": "Corvina grande, assada",
+    "descricao": "Corvina grande, assada",
     "categoria": "Pescados e frutos do mar",
     "umidade": "69.0263333333333",
     "energia": {
@@ -9670,7 +9670,7 @@
   },
   {
     "_id": 294,
-    "descricacao": "Corvina grande, cozida",
+    "descricao": "Corvina grande, cozida",
     "categoria": "Pescados e frutos do mar",
     "umidade": "73.6093333333333",
     "energia": {
@@ -9703,7 +9703,7 @@
   },
   {
     "_id": 295,
-    "descricacao": "Dourada de água doce, fresca",
+    "descricao": "Dourada de água doce, fresca",
     "categoria": "Pescados e frutos do mar",
     "umidade": "76.16",
     "energia": {
@@ -9736,7 +9736,7 @@
   },
   {
     "_id": 296,
-    "descricacao": "Lambari, congelado, cru",
+    "descricao": "Lambari, congelado, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "71.8866666666667",
     "energia": {
@@ -9769,7 +9769,7 @@
   },
   {
     "_id": 297,
-    "descricacao": "Lambari, congelado, frito",
+    "descricao": "Lambari, congelado, frito",
     "categoria": "Pescados e frutos do mar",
     "umidade": "40.138",
     "energia": {
@@ -9802,7 +9802,7 @@
   },
   {
     "_id": 298,
-    "descricacao": "Lambari, fresco, cru",
+    "descricao": "Lambari, fresco, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "72.1656666666667",
     "energia": {
@@ -9835,7 +9835,7 @@
   },
   {
     "_id": 299,
-    "descricacao": "Manjuba, com farinha de trigo, frita",
+    "descricao": "Manjuba, com farinha de trigo, frita",
     "categoria": "Pescados e frutos do mar",
     "umidade": "41.305",
     "energia": {
@@ -9868,7 +9868,7 @@
   },
   {
     "_id": 300,
-    "descricacao": "Manjuba, frita",
+    "descricao": "Manjuba, frita",
     "categoria": "Pescados e frutos do mar",
     "umidade": "40.6806666666667",
     "energia": {
@@ -9901,7 +9901,7 @@
   },
   {
     "_id": 301,
-    "descricacao": "Merluza, filé, assado",
+    "descricao": "Merluza, filé, assado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "70.7273333333333",
     "energia": {
@@ -9934,7 +9934,7 @@
   },
   {
     "_id": 302,
-    "descricacao": "Merluza, filé, cru",
+    "descricao": "Merluza, filé, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "82.0733333333333",
     "energia": {
@@ -9967,7 +9967,7 @@
   },
   {
     "_id": 303,
-    "descricacao": "Merluza, filé, frito",
+    "descricao": "Merluza, filé, frito",
     "categoria": "Pescados e frutos do mar",
     "umidade": "63.4616666666667",
     "energia": {
@@ -10000,7 +10000,7 @@
   },
   {
     "_id": 304,
-    "descricacao": "Pescada, branca, crua",
+    "descricao": "Pescada, branca, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.57",
     "energia": {
@@ -10033,7 +10033,7 @@
   },
   {
     "_id": 305,
-    "descricacao": "Pescada, branca, frita",
+    "descricao": "Pescada, branca, frita",
     "categoria": "Pescados e frutos do mar",
     "umidade": "57.0033333333333",
     "energia": {
@@ -10066,7 +10066,7 @@
   },
   {
     "_id": 306,
-    "descricacao": "Pescada, filé, com farinha de trigo, frito",
+    "descricao": "Pescada, filé, com farinha de trigo, frito",
     "categoria": "Pescados e frutos do mar",
     "umidade": "53.202",
     "energia": {
@@ -10099,7 +10099,7 @@
   },
   {
     "_id": 307,
-    "descricacao": "Pescada, filé, cru",
+    "descricao": "Pescada, filé, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.52",
     "energia": {
@@ -10132,7 +10132,7 @@
   },
   {
     "_id": 308,
-    "descricacao": "Pescada, filé, frito",
+    "descricao": "Pescada, filé, frito",
     "categoria": "Pescados e frutos do mar",
     "umidade": "66.804",
     "energia": {
@@ -10165,7 +10165,7 @@
   },
   {
     "_id": 309,
-    "descricacao": "Pescada, filé, molho escabeche",
+    "descricao": "Pescada, filé, molho escabeche",
     "categoria": "Pescados e frutos do mar",
     "umidade": "74.5323333333333",
     "energia": {
@@ -10198,7 +10198,7 @@
   },
   {
     "_id": 310,
-    "descricacao": "Pescadinha, crua",
+    "descricao": "Pescadinha, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "80.6233333333333",
     "energia": {
@@ -10231,7 +10231,7 @@
   },
   {
     "_id": 311,
-    "descricacao": "Pintado, assado",
+    "descricao": "Pintado, assado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "56.98",
     "energia": {
@@ -10264,7 +10264,7 @@
   },
   {
     "_id": 312,
-    "descricacao": "Pintado, cru",
+    "descricao": "Pintado, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "80.27",
     "energia": {
@@ -10297,7 +10297,7 @@
   },
   {
     "_id": 313,
-    "descricacao": "Pintado, grelhado",
+    "descricao": "Pintado, grelhado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "65.4943333333333",
     "energia": {
@@ -10330,7 +10330,7 @@
   },
   {
     "_id": 314,
-    "descricacao": "Porquinho, cru",
+    "descricao": "Porquinho, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.1666666666667",
     "energia": {
@@ -10363,7 +10363,7 @@
   },
   {
     "_id": 315,
-    "descricacao": "Salmão, filé, com pele, fresco,  grelhado",
+    "descricao": "Salmão, filé, com pele, fresco,  grelhado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "60.9273333333333",
     "energia": {
@@ -10396,7 +10396,7 @@
   },
   {
     "_id": 316,
-    "descricacao": "Salmão, sem pele, fresco, cru",
+    "descricao": "Salmão, sem pele, fresco, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "68.984",
     "energia": {
@@ -10429,7 +10429,7 @@
   },
   {
     "_id": 317,
-    "descricacao": "Salmão, sem pele, fresco, grelhado",
+    "descricao": "Salmão, sem pele, fresco, grelhado",
     "categoria": "Pescados e frutos do mar",
     "umidade": "58.128",
     "energia": {
@@ -10462,7 +10462,7 @@
   },
   {
     "_id": 318,
-    "descricacao": "Sardinha, assada",
+    "descricao": "Sardinha, assada",
     "categoria": "Pescados e frutos do mar",
     "umidade": "60.08",
     "energia": {
@@ -10495,7 +10495,7 @@
   },
   {
     "_id": 319,
-    "descricacao": "Sardinha, conserva em óleo",
+    "descricao": "Sardinha, conserva em óleo",
     "categoria": "Pescados e frutos do mar",
     "umidade": "55.1426666666667",
     "energia": {
@@ -10528,7 +10528,7 @@
   },
   {
     "_id": 320,
-    "descricacao": "Sardinha, frita",
+    "descricao": "Sardinha, frita",
     "categoria": "Pescados e frutos do mar",
     "umidade": "48.489",
     "energia": {
@@ -10561,7 +10561,7 @@
   },
   {
     "_id": 321,
-    "descricacao": "Sardinha, inteira, crua",
+    "descricao": "Sardinha, inteira, crua",
     "categoria": "Pescados e frutos do mar",
     "umidade": "76.64",
     "energia": {
@@ -10594,7 +10594,7 @@
   },
   {
     "_id": 322,
-    "descricacao": "Tucunaré, filé, congelado, cru",
+    "descricao": "Tucunaré, filé, congelado, cru",
     "categoria": "Pescados e frutos do mar",
     "umidade": "79.8833333333333",
     "energia": {
@@ -10627,7 +10627,7 @@
   },
   {
     "_id": 323,
-    "descricacao": "Apresuntado",
+    "descricao": "Apresuntado",
     "categoria": "Carnes e derivados",
     "umidade": "73.72",
     "energia": {
@@ -10660,7 +10660,7 @@
   },
   {
     "_id": 324,
-    "descricacao": "Caldo de carne, tablete",
+    "descricao": "Caldo de carne, tablete",
     "categoria": "Carnes e derivados",
     "umidade": "2.93",
     "energia": {
@@ -10693,7 +10693,7 @@
   },
   {
     "_id": 325,
-    "descricacao": "Caldo de galinha, tablete",
+    "descricao": "Caldo de galinha, tablete",
     "categoria": "Carnes e derivados",
     "umidade": "3.38266666666667",
     "energia": {
@@ -10726,7 +10726,7 @@
   },
   {
     "_id": 326,
-    "descricacao": "Carne, bovina, acém, moído, cozido",
+    "descricao": "Carne, bovina, acém, moído, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "61.62",
     "energia": {
@@ -10759,7 +10759,7 @@
   },
   {
     "_id": 327,
-    "descricacao": "Carne, bovina, acém, moído, cru",
+    "descricao": "Carne, bovina, acém, moído, cru",
     "categoria": "Carnes e derivados",
     "umidade": "72.7033333333333",
     "energia": {
@@ -10792,7 +10792,7 @@
   },
   {
     "_id": 328,
-    "descricacao": "Carne, bovina, acém, sem gordura, cozido",
+    "descricao": "Carne, bovina, acém, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "60.3833333333333",
     "energia": {
@@ -10825,7 +10825,7 @@
   },
   {
     "_id": 329,
-    "descricacao": "Carne, bovina, acém, sem gordura, cru",
+    "descricao": "Carne, bovina, acém, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "71.5166666666667",
     "energia": {
@@ -10858,7 +10858,7 @@
   },
   {
     "_id": 330,
-    "descricacao": "Carne, bovina, almôndegas, cruas",
+    "descricao": "Carne, bovina, almôndegas, cruas",
     "categoria": "Carnes e derivados",
     "umidade": "64.2833333333334",
     "energia": {
@@ -10891,7 +10891,7 @@
   },
   {
     "_id": 331,
-    "descricacao": "Carne, bovina, almôndegas, fritas",
+    "descricao": "Carne, bovina, almôndegas, fritas",
     "categoria": "Carnes e derivados",
     "umidade": "48.0876666666667",
     "energia": {
@@ -10924,7 +10924,7 @@
   },
   {
     "_id": 332,
-    "descricacao": "Carne, bovina, bucho, cozido",
+    "descricao": "Carne, bovina, bucho, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "74.1233333333333",
     "energia": {
@@ -10957,7 +10957,7 @@
   },
   {
     "_id": 333,
-    "descricacao": "Carne, bovina, bucho, cru",
+    "descricao": "Carne, bovina, bucho, cru",
     "categoria": "Carnes e derivados",
     "umidade": "74.9666666666667",
     "energia": {
@@ -10990,7 +10990,7 @@
   },
   {
     "_id": 334,
-    "descricacao": "Carne, bovina, capa de contra-filé, com gordura, crua",
+    "descricao": "Carne, bovina, capa de contra-filé, com gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "64.7733333333333",
     "energia": {
@@ -11023,7 +11023,7 @@
   },
   {
     "_id": 335,
-    "descricacao": "Carne, bovina, capa de contra-filé, com gordura, grelhada",
+    "descricao": "Carne, bovina, capa de contra-filé, com gordura, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "47.88",
     "energia": {
@@ -11056,7 +11056,7 @@
   },
   {
     "_id": 336,
-    "descricacao": "Carne, bovina, capa de contra-filé, sem gordura, crua",
+    "descricao": "Carne, bovina, capa de contra-filé, sem gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "72.9866666666667",
     "energia": {
@@ -11089,7 +11089,7 @@
   },
   {
     "_id": 337,
-    "descricacao": "Carne, bovina, capa de contra-filé, sem gordura, grelhada",
+    "descricao": "Carne, bovina, capa de contra-filé, sem gordura, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "53.7433333333333",
     "energia": {
@@ -11122,7 +11122,7 @@
   },
   {
     "_id": 338,
-    "descricacao": "Carne, bovina, charque, cozido",
+    "descricao": "Carne, bovina, charque, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "45.789",
     "energia": {
@@ -11155,7 +11155,7 @@
   },
   {
     "_id": 339,
-    "descricacao": "Carne, bovina, charque, cru",
+    "descricao": "Carne, bovina, charque, cru",
     "categoria": "Carnes e derivados",
     "umidade": "44.4656666666667",
     "energia": {
@@ -11188,7 +11188,7 @@
   },
   {
     "_id": 340,
-    "descricacao": "Carne, bovina, contra-filé, à milanesa",
+    "descricao": "Carne, bovina, contra-filé, à milanesa",
     "categoria": "Carnes e derivados",
     "umidade": "42.1646666666667",
     "energia": {
@@ -11221,7 +11221,7 @@
   },
   {
     "_id": 341,
-    "descricacao": "Carne, bovina, contra-filé de costela, cru",
+    "descricao": "Carne, bovina, contra-filé de costela, cru",
     "categoria": "Carnes e derivados",
     "umidade": "66.38",
     "energia": {
@@ -11254,7 +11254,7 @@
   },
   {
     "_id": 342,
-    "descricacao": "Carne, bovina, contra-filé de costela, grelhado",
+    "descricao": "Carne, bovina, contra-filé de costela, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "52.1933333333333",
     "energia": {
@@ -11287,7 +11287,7 @@
   },
   {
     "_id": 343,
-    "descricacao": "Carne, bovina, contra-filé, com gordura, cru",
+    "descricao": "Carne, bovina, contra-filé, com gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "65.747",
     "energia": {
@@ -11320,7 +11320,7 @@
   },
   {
     "_id": 344,
-    "descricacao": "Carne, bovina, contra-filé, com gordura, grelhado",
+    "descricao": "Carne, bovina, contra-filé, com gordura, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "51.7066666666667",
     "energia": {
@@ -11353,7 +11353,7 @@
   },
   {
     "_id": 345,
-    "descricacao": "Carne, bovina, contra-filé, sem gordura, cru",
+    "descricao": "Carne, bovina, contra-filé, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "69.1433333333333",
     "energia": {
@@ -11386,7 +11386,7 @@
   },
   {
     "_id": 346,
-    "descricacao": "Carne, bovina, contra-filé, sem gordura, grelhado",
+    "descricao": "Carne, bovina, contra-filé, sem gordura, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "57.5333333333333",
     "energia": {
@@ -11419,7 +11419,7 @@
   },
   {
     "_id": 347,
-    "descricacao": "Carne, bovina, costela, assada",
+    "descricao": "Carne, bovina, costela, assada",
     "categoria": "Carnes e derivados",
     "umidade": "43.1866666666667",
     "energia": {
@@ -11452,7 +11452,7 @@
   },
   {
     "_id": 348,
-    "descricacao": "Carne, bovina, costela, crua",
+    "descricao": "Carne, bovina, costela, crua",
     "categoria": "Carnes e derivados",
     "umidade": "52.73",
     "energia": {
@@ -11485,7 +11485,7 @@
   },
   {
     "_id": 349,
-    "descricacao": "Carne, bovina, coxão duro, sem gordura, cozido",
+    "descricao": "Carne, bovina, coxão duro, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "58.5333333333333",
     "energia": {
@@ -11518,7 +11518,7 @@
   },
   {
     "_id": 350,
-    "descricacao": "Carne, bovina, coxão duro, sem gordura, cru",
+    "descricao": "Carne, bovina, coxão duro, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "69.8033333333333",
     "energia": {
@@ -11551,7 +11551,7 @@
   },
   {
     "_id": 351,
-    "descricacao": "Carne, bovina, coxão mole, sem gordura, cozido",
+    "descricao": "Carne, bovina, coxão mole, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "58.0433333333333",
     "energia": {
@@ -11584,7 +11584,7 @@
   },
   {
     "_id": 352,
-    "descricacao": "Carne, bovina, coxão mole, sem gordura, cru",
+    "descricao": "Carne, bovina, coxão mole, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "68.5966666666667",
     "energia": {
@@ -11617,7 +11617,7 @@
   },
   {
     "_id": 353,
-    "descricacao": "Carne, bovina, cupim, assado",
+    "descricao": "Carne, bovina, cupim, assado",
     "categoria": "Carnes e derivados",
     "umidade": "48.417",
     "energia": {
@@ -11650,7 +11650,7 @@
   },
   {
     "_id": 354,
-    "descricacao": "Carne, bovina, cupim, cru",
+    "descricao": "Carne, bovina, cupim, cru",
     "categoria": "Carnes e derivados",
     "umidade": "64.83",
     "energia": {
@@ -11683,7 +11683,7 @@
   },
   {
     "_id": 355,
-    "descricacao": "Carne, bovina, fígado, cru",
+    "descricao": "Carne, bovina, fígado, cru",
     "categoria": "Carnes e derivados",
     "umidade": "71.33",
     "energia": {
@@ -11716,7 +11716,7 @@
   },
   {
     "_id": 356,
-    "descricacao": "Carne, bovina, fígado, grelhado",
+    "descricao": "Carne, bovina, fígado, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "54.97",
     "energia": {
@@ -11749,7 +11749,7 @@
   },
   {
     "_id": 357,
-    "descricacao": "Carne, bovina, filé mingnon, sem gordura, cru",
+    "descricao": "Carne, bovina, filé mingnon, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "71.89",
     "energia": {
@@ -11782,7 +11782,7 @@
   },
   {
     "_id": 358,
-    "descricacao": "Carne, bovina, filé mingnon, sem gordura, grelhado",
+    "descricao": "Carne, bovina, filé mingnon, sem gordura, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "56.9966666666667",
     "energia": {
@@ -11815,7 +11815,7 @@
   },
   {
     "_id": 359,
-    "descricacao": "Carne, bovina, flanco, sem gordura, cozido",
+    "descricao": "Carne, bovina, flanco, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "61.9833333333333",
     "energia": {
@@ -11848,7 +11848,7 @@
   },
   {
     "_id": 360,
-    "descricacao": "Carne, bovina, flanco, sem gordura, cru",
+    "descricao": "Carne, bovina, flanco, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "72.07",
     "energia": {
@@ -11881,7 +11881,7 @@
   },
   {
     "_id": 361,
-    "descricacao": "Carne, bovina, fraldinha, com gordura, cozida",
+    "descricao": "Carne, bovina, fraldinha, com gordura, cozida",
     "categoria": "Carnes e derivados",
     "umidade": "49.7233333333333",
     "energia": {
@@ -11914,7 +11914,7 @@
   },
   {
     "_id": 362,
-    "descricacao": "Carne, bovina, fraldinha, com gordura, crua",
+    "descricao": "Carne, bovina, fraldinha, com gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "65.4433333333333",
     "energia": {
@@ -11947,7 +11947,7 @@
   },
   {
     "_id": 363,
-    "descricacao": "Carne, bovina, lagarto, cozido",
+    "descricao": "Carne, bovina, lagarto, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "57.63",
     "energia": {
@@ -11980,7 +11980,7 @@
   },
   {
     "_id": 364,
-    "descricacao": "Carne, bovina, lagarto, cru",
+    "descricao": "Carne, bovina, lagarto, cru",
     "categoria": "Carnes e derivados",
     "umidade": "70.9733333333333",
     "energia": {
@@ -12013,7 +12013,7 @@
   },
   {
     "_id": 365,
-    "descricacao": "Carne, bovina, língua, cozida",
+    "descricao": "Carne, bovina, língua, cozida",
     "categoria": "Carnes e derivados",
     "umidade": "53.4133333333333",
     "energia": {
@@ -12046,7 +12046,7 @@
   },
   {
     "_id": 366,
-    "descricacao": "Carne, bovina, língua, crua",
+    "descricao": "Carne, bovina, língua, crua",
     "categoria": "Carnes e derivados",
     "umidade": "65.0166666666667",
     "energia": {
@@ -12079,7 +12079,7 @@
   },
   {
     "_id": 367,
-    "descricacao": "Carne, bovina, maminha, crua",
+    "descricao": "Carne, bovina, maminha, crua",
     "categoria": "Carnes e derivados",
     "umidade": "69.99",
     "energia": {
@@ -12112,7 +12112,7 @@
   },
   {
     "_id": 368,
-    "descricacao": "Carne, bovina, maminha, grelhada",
+    "descricao": "Carne, bovina, maminha, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "65.2796666666667",
     "energia": {
@@ -12145,7 +12145,7 @@
   },
   {
     "_id": 369,
-    "descricacao": "Carne, bovina, miolo de alcatra, sem gordura, cru",
+    "descricao": "Carne, bovina, miolo de alcatra, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "69.4933333333333",
     "energia": {
@@ -12178,7 +12178,7 @@
   },
   {
     "_id": 370,
-    "descricacao": "Carne, bovina, miolo de alcatra, sem gordura, grelhado",
+    "descricao": "Carne, bovina, miolo de alcatra, sem gordura, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "52.43",
     "energia": {
@@ -12211,7 +12211,7 @@
   },
   {
     "_id": 371,
-    "descricacao": "Carne, bovina, músculo, sem gordura, cozido",
+    "descricao": "Carne, bovina, músculo, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "62.82",
     "energia": {
@@ -12244,7 +12244,7 @@
   },
   {
     "_id": 372,
-    "descricacao": "Carne, bovina, músculo, sem gordura, cru",
+    "descricao": "Carne, bovina, músculo, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "72.3533333333333",
     "energia": {
@@ -12277,7 +12277,7 @@
   },
   {
     "_id": 373,
-    "descricacao": "Carne, bovina, paleta, com gordura, crua",
+    "descricao": "Carne, bovina, paleta, com gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "70.62",
     "energia": {
@@ -12310,7 +12310,7 @@
   },
   {
     "_id": 374,
-    "descricacao": "Carne, bovina, paleta, sem gordura, cozida",
+    "descricao": "Carne, bovina, paleta, sem gordura, cozida",
     "categoria": "Carnes e derivados",
     "umidade": "62.9433333333333",
     "energia": {
@@ -12343,7 +12343,7 @@
   },
   {
     "_id": 375,
-    "descricacao": "Carne, bovina, paleta, sem gordura, crua",
+    "descricao": "Carne, bovina, paleta, sem gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "72.0833333333333",
     "energia": {
@@ -12376,7 +12376,7 @@
   },
   {
     "_id": 376,
-    "descricacao": "Carne, bovina, patinho, sem gordura, cru",
+    "descricao": "Carne, bovina, patinho, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "72.9066666666667",
     "energia": {
@@ -12409,7 +12409,7 @@
   },
   {
     "_id": 377,
-    "descricacao": "Carne, bovina, patinho, sem gordura, grelhado",
+    "descricao": "Carne, bovina, patinho, sem gordura, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "55.15",
     "energia": {
@@ -12442,7 +12442,7 @@
   },
   {
     "_id": 378,
-    "descricacao": "Carne, bovina, peito, sem gordura, cozido",
+    "descricao": "Carne, bovina, peito, sem gordura, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "51.1766666666667",
     "energia": {
@@ -12475,7 +12475,7 @@
   },
   {
     "_id": 379,
-    "descricacao": "Carne, bovina, peito, sem gordura, cru",
+    "descricao": "Carne, bovina, peito, sem gordura, cru",
     "categoria": "Carnes e derivados",
     "umidade": "61.4866666666667",
     "energia": {
@@ -12508,7 +12508,7 @@
   },
   {
     "_id": 380,
-    "descricacao": "Carne, bovina, picanha, com gordura, crua",
+    "descricao": "Carne, bovina, picanha, com gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "65.64",
     "energia": {
@@ -12541,7 +12541,7 @@
   },
   {
     "_id": 381,
-    "descricacao": "Carne, bovina, picanha, com gordura, grelhada",
+    "descricao": "Carne, bovina, picanha, com gordura, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "53.3873333333333",
     "energia": {
@@ -12574,7 +12574,7 @@
   },
   {
     "_id": 382,
-    "descricacao": "Carne, bovina, picanha, sem gordura, crua",
+    "descricao": "Carne, bovina, picanha, sem gordura, crua",
     "categoria": "Carnes e derivados",
     "umidade": "72.4233333333333",
     "energia": {
@@ -12607,7 +12607,7 @@
   },
   {
     "_id": 383,
-    "descricacao": "Carne, bovina, picanha, sem gordura, grelhada",
+    "descricao": "Carne, bovina, picanha, sem gordura, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "54.6333333333333",
     "energia": {
@@ -12640,7 +12640,7 @@
   },
   {
     "_id": 384,
-    "descricacao": "Carne, bovina, seca, cozida",
+    "descricao": "Carne, bovina, seca, cozida",
     "categoria": "Carnes e derivados",
     "umidade": "47.19",
     "energia": {
@@ -12673,7 +12673,7 @@
   },
   {
     "_id": 385,
-    "descricacao": "Carne, bovina, seca, crua",
+    "descricao": "Carne, bovina, seca, crua",
     "categoria": "Carnes e derivados",
     "umidade": "39.236",
     "energia": {
@@ -12706,7 +12706,7 @@
   },
   {
     "_id": 386,
-    "descricacao": "Coxinha de frango, frita",
+    "descricao": "Coxinha de frango, frita",
     "categoria": "Carnes e derivados",
     "umidade": "42.2106666666667",
     "energia": {
@@ -12739,7 +12739,7 @@
   },
   {
     "_id": 387,
-    "descricacao": "Croquete, de carne, cru",
+    "descricao": "Croquete, de carne, cru",
     "categoria": "Carnes e derivados",
     "umidade": "55.9556666666667",
     "energia": {
@@ -12772,7 +12772,7 @@
   },
   {
     "_id": 388,
-    "descricacao": "Croquete, de carne, frito",
+    "descricao": "Croquete, de carne, frito",
     "categoria": "Carnes e derivados",
     "umidade": "39.235",
     "energia": {
@@ -12805,7 +12805,7 @@
   },
   {
     "_id": 389,
-    "descricacao": "Empada de frango, pré-cozida, assada",
+    "descricao": "Empada de frango, pré-cozida, assada",
     "categoria": "Carnes e derivados",
     "umidade": "28.1923333333333",
     "energia": {
@@ -12838,7 +12838,7 @@
   },
   {
     "_id": 390,
-    "descricacao": "Empada, de frango, pré-cozida",
+    "descricao": "Empada, de frango, pré-cozida",
     "categoria": "Carnes e derivados",
     "umidade": "32.0313333333333",
     "energia": {
@@ -12871,7 +12871,7 @@
   },
   {
     "_id": 391,
-    "descricacao": "Frango, asa, com pele, crua",
+    "descricao": "Frango, asa, com pele, crua",
     "categoria": "Carnes e derivados",
     "umidade": "67.47",
     "energia": {
@@ -12904,7 +12904,7 @@
   },
   {
     "_id": 392,
-    "descricacao": "Frango, caipira, inteiro, com pele, cozido",
+    "descricao": "Frango, caipira, inteiro, com pele, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "59.6856666666667",
     "energia": {
@@ -12937,7 +12937,7 @@
   },
   {
     "_id": 393,
-    "descricacao": "Frango, caipira, inteiro, sem pele, cozido",
+    "descricao": "Frango, caipira, inteiro, sem pele, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "61.4153333333333",
     "energia": {
@@ -12970,7 +12970,7 @@
   },
   {
     "_id": 394,
-    "descricacao": "Frango, coração, cru",
+    "descricao": "Frango, coração, cru",
     "categoria": "Carnes e derivados",
     "umidade": "69.05",
     "energia": {
@@ -13003,7 +13003,7 @@
   },
   {
     "_id": 395,
-    "descricacao": "Frango, coração, grelhado",
+    "descricao": "Frango, coração, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "63.5116666666667",
     "energia": {
@@ -13036,7 +13036,7 @@
   },
   {
     "_id": 396,
-    "descricacao": "Frango, coxa, com pele, assada",
+    "descricao": "Frango, coxa, com pele, assada",
     "categoria": "Carnes e derivados",
     "umidade": "59.7926666666667",
     "energia": {
@@ -13069,7 +13069,7 @@
   },
   {
     "_id": 397,
-    "descricacao": "Frango, coxa, com pele, crua",
+    "descricao": "Frango, coxa, com pele, crua",
     "categoria": "Carnes e derivados",
     "umidade": "72.85",
     "energia": {
@@ -13102,7 +13102,7 @@
   },
   {
     "_id": 398,
-    "descricacao": "Frango, coxa, sem pele, cozida",
+    "descricao": "Frango, coxa, sem pele, cozida",
     "categoria": "Carnes e derivados",
     "umidade": "66.6576666666667",
     "energia": {
@@ -13135,7 +13135,7 @@
   },
   {
     "_id": 399,
-    "descricacao": "Frango, coxa, sem pele, crua",
+    "descricao": "Frango, coxa, sem pele, crua",
     "categoria": "Carnes e derivados",
     "umidade": "76.4166666666667",
     "energia": {
@@ -13168,7 +13168,7 @@
   },
   {
     "_id": 400,
-    "descricacao": "Frango, fígado, cru",
+    "descricao": "Frango, fígado, cru",
     "categoria": "Carnes e derivados",
     "umidade": "77.75",
     "energia": {
@@ -13201,7 +13201,7 @@
   },
   {
     "_id": 401,
-    "descricacao": "Frango, filé, à milanesa",
+    "descricao": "Frango, filé, à milanesa",
     "categoria": "Carnes e derivados",
     "umidade": "54.89",
     "energia": {
@@ -13234,7 +13234,7 @@
   },
   {
     "_id": 402,
-    "descricacao": "Frango, inteiro, com pele, cru",
+    "descricao": "Frango, inteiro, com pele, cru",
     "categoria": "Carnes e derivados",
     "umidade": "66.54",
     "energia": {
@@ -13267,7 +13267,7 @@
   },
   {
     "_id": 403,
-    "descricacao": "Frango, inteiro, sem pele, assado",
+    "descricao": "Frango, inteiro, sem pele, assado",
     "categoria": "Carnes e derivados",
     "umidade": "63.1973333333333",
     "energia": {
@@ -13300,7 +13300,7 @@
   },
   {
     "_id": 404,
-    "descricacao": "Frango, inteiro, sem pele, cozido",
+    "descricao": "Frango, inteiro, sem pele, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "67.4526666666667",
     "energia": {
@@ -13333,7 +13333,7 @@
   },
   {
     "_id": 405,
-    "descricacao": "Frango, inteiro, sem pele, cru",
+    "descricao": "Frango, inteiro, sem pele, cru",
     "categoria": "Carnes e derivados",
     "umidade": "74.8566666666667",
     "energia": {
@@ -13366,7 +13366,7 @@
   },
   {
     "_id": 406,
-    "descricacao": "Frango, peito, com pele, assado",
+    "descricao": "Frango, peito, com pele, assado",
     "categoria": "Carnes e derivados",
     "umidade": "58.5366666666667",
     "energia": {
@@ -13399,7 +13399,7 @@
   },
   {
     "_id": 407,
-    "descricacao": "Frango, peito, com pele, cru",
+    "descricao": "Frango, peito, com pele, cru",
     "categoria": "Carnes e derivados",
     "umidade": "71.9433333333333",
     "energia": {
@@ -13432,7 +13432,7 @@
   },
   {
     "_id": 408,
-    "descricacao": "Frango, peito, sem pele, cozido",
+    "descricao": "Frango, peito, sem pele, cozido",
     "categoria": "Carnes e derivados",
     "umidade": "65.569",
     "energia": {
@@ -13465,7 +13465,7 @@
   },
   {
     "_id": 409,
-    "descricacao": "Frango, peito, sem pele, cru",
+    "descricao": "Frango, peito, sem pele, cru",
     "categoria": "Carnes e derivados",
     "umidade": "74.7933333333333",
     "energia": {
@@ -13498,7 +13498,7 @@
   },
   {
     "_id": 410,
-    "descricacao": "Frango, peito, sem pele, grelhado",
+    "descricao": "Frango, peito, sem pele, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "63.8093333333333",
     "energia": {
@@ -13531,7 +13531,7 @@
   },
   {
     "_id": 411,
-    "descricacao": "Frango, sobrecoxa, com pele, assada",
+    "descricao": "Frango, sobrecoxa, com pele, assada",
     "categoria": "Carnes e derivados",
     "umidade": "55.0043333333333",
     "energia": {
@@ -13564,7 +13564,7 @@
   },
   {
     "_id": 412,
-    "descricacao": "Frango, sobrecoxa, com pele, crua",
+    "descricao": "Frango, sobrecoxa, com pele, crua",
     "categoria": "Carnes e derivados",
     "umidade": "63.58",
     "energia": {
@@ -13597,7 +13597,7 @@
   },
   {
     "_id": 413,
-    "descricacao": "Frango, sobrecoxa, sem pele, assada",
+    "descricao": "Frango, sobrecoxa, sem pele, assada",
     "categoria": "Carnes e derivados",
     "umidade": "55.63",
     "energia": {
@@ -13630,7 +13630,7 @@
   },
   {
     "_id": 414,
-    "descricacao": "Frango, sobrecoxa, sem pele, crua",
+    "descricao": "Frango, sobrecoxa, sem pele, crua",
     "categoria": "Carnes e derivados",
     "umidade": "72.7066666666667",
     "energia": {
@@ -13663,7 +13663,7 @@
   },
   {
     "_id": 415,
-    "descricacao": "Hambúrguer, bovino, cru",
+    "descricao": "Hambúrguer, bovino, cru",
     "categoria": "Carnes e derivados",
     "umidade": "63.6046666666667",
     "energia": {
@@ -13696,7 +13696,7 @@
   },
   {
     "_id": 416,
-    "descricacao": "Hambúrguer, bovino, frito",
+    "descricao": "Hambúrguer, bovino, frito",
     "categoria": "Carnes e derivados",
     "umidade": "52.4566666666667",
     "energia": {
@@ -13729,7 +13729,7 @@
   },
   {
     "_id": 417,
-    "descricacao": "Hambúrguer, bovino, grelhado",
+    "descricao": "Hambúrguer, bovino, grelhado",
     "categoria": "Carnes e derivados",
     "umidade": "59.2276666666667",
     "energia": {
@@ -13762,7 +13762,7 @@
   },
   {
     "_id": 418,
-    "descricacao": "Lingüiça, frango, crua",
+    "descricao": "Lingüiça, frango, crua",
     "categoria": "Carnes e derivados",
     "umidade": "64.7606666666667",
     "energia": {
@@ -13795,7 +13795,7 @@
   },
   {
     "_id": 419,
-    "descricacao": "Lingüiça, frango, frita",
+    "descricao": "Lingüiça, frango, frita",
     "categoria": "Carnes e derivados",
     "umidade": "59.5706666666667",
     "energia": {
@@ -13828,7 +13828,7 @@
   },
   {
     "_id": 420,
-    "descricacao": "Lingüiça, frango, grelhada",
+    "descricao": "Lingüiça, frango, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "58.583",
     "energia": {
@@ -13861,7 +13861,7 @@
   },
   {
     "_id": 421,
-    "descricacao": "Lingüiça, porco, crua",
+    "descricao": "Lingüiça, porco, crua",
     "categoria": "Carnes e derivados",
     "umidade": "62.4826666666667",
     "energia": {
@@ -13894,7 +13894,7 @@
   },
   {
     "_id": 422,
-    "descricacao": "Lingüiça, porco, frita",
+    "descricao": "Lingüiça, porco, frita",
     "categoria": "Carnes e derivados",
     "umidade": "54.6093333333333",
     "energia": {
@@ -13927,7 +13927,7 @@
   },
   {
     "_id": 423,
-    "descricacao": "Lingüiça, porco, grelhada",
+    "descricao": "Lingüiça, porco, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "50.4793333333333",
     "energia": {
@@ -13960,7 +13960,7 @@
   },
   {
     "_id": 424,
-    "descricacao": "Mortadela",
+    "descricao": "Mortadela",
     "categoria": "Carnes e derivados",
     "umidade": "56.4393333333333",
     "energia": {
@@ -13993,7 +13993,7 @@
   },
   {
     "_id": 425,
-    "descricacao": "Peru, congelado, assado",
+    "descricao": "Peru, congelado, assado",
     "categoria": "Carnes e derivados",
     "umidade": "65.323",
     "energia": {
@@ -14026,7 +14026,7 @@
   },
   {
     "_id": 426,
-    "descricacao": "Peru, congelado, cru",
+    "descricao": "Peru, congelado, cru",
     "categoria": "Carnes e derivados",
     "umidade": "78.1766666666667",
     "energia": {
@@ -14059,7 +14059,7 @@
   },
   {
     "_id": 427,
-    "descricacao": "Porco, bisteca, crua",
+    "descricao": "Porco, bisteca, crua",
     "categoria": "Carnes e derivados",
     "umidade": "67.7033333333333",
     "energia": {
@@ -14092,7 +14092,7 @@
   },
   {
     "_id": 428,
-    "descricacao": "Porco, bisteca, frita",
+    "descricao": "Porco, bisteca, frita",
     "categoria": "Carnes e derivados",
     "umidade": "47.3266666666667",
     "energia": {
@@ -14125,7 +14125,7 @@
   },
   {
     "_id": 429,
-    "descricacao": "Porco, bisteca, grelhada",
+    "descricao": "Porco, bisteca, grelhada",
     "categoria": "Carnes e derivados",
     "umidade": "51.8436666666667",
     "energia": {
@@ -14158,7 +14158,7 @@
   },
   {
     "_id": 430,
-    "descricacao": "Porco, costela, assada",
+    "descricao": "Porco, costela, assada",
     "categoria": "Carnes e derivados",
     "umidade": "36.92",
     "energia": {
@@ -14191,7 +14191,7 @@
   },
   {
     "_id": 431,
-    "descricacao": "Porco, costela, crua",
+    "descricao": "Porco, costela, crua",
     "categoria": "Carnes e derivados",
     "umidade": "61.21",
     "energia": {
@@ -14224,7 +14224,7 @@
   },
   {
     "_id": 432,
-    "descricacao": "Porco, lombo, assado",
+    "descricao": "Porco, lombo, assado",
     "categoria": "Carnes e derivados",
     "umidade": "56.5606666666667",
     "energia": {
@@ -14257,7 +14257,7 @@
   },
   {
     "_id": 433,
-    "descricacao": "Porco, lombo, cru",
+    "descricao": "Porco, lombo, cru",
     "categoria": "Carnes e derivados",
     "umidade": "67.7333333333333",
     "energia": {
@@ -14290,7 +14290,7 @@
   },
   {
     "_id": 434,
-    "descricacao": "Porco, orelha, salgada, crua",
+    "descricao": "Porco, orelha, salgada, crua",
     "categoria": "Carnes e derivados",
     "umidade": "59.6666666666667",
     "energia": {
@@ -14323,7 +14323,7 @@
   },
   {
     "_id": 435,
-    "descricacao": "Porco, pernil, assado",
+    "descricao": "Porco, pernil, assado",
     "categoria": "Carnes e derivados",
     "umidade": "49.2563333333333",
     "energia": {
@@ -14356,7 +14356,7 @@
   },
   {
     "_id": 436,
-    "descricacao": "Porco, pernil, cru",
+    "descricao": "Porco, pernil, cru",
     "categoria": "Carnes e derivados",
     "umidade": "67.08",
     "energia": {
@@ -14389,7 +14389,7 @@
   },
   {
     "_id": 437,
-    "descricacao": "Porco, rabo, salgado, cru",
+    "descricao": "Porco, rabo, salgado, cru",
     "categoria": "Carnes e derivados",
     "umidade": "43.7896666666667",
     "energia": {
@@ -14422,7 +14422,7 @@
   },
   {
     "_id": 438,
-    "descricacao": "Presunto, com capa de gordura",
+    "descricao": "Presunto, com capa de gordura",
     "categoria": "Carnes e derivados",
     "umidade": "73.9463333333333",
     "energia": {
@@ -14455,7 +14455,7 @@
   },
   {
     "_id": 439,
-    "descricacao": "Presunto, sem capa de gordura",
+    "descricao": "Presunto, sem capa de gordura",
     "categoria": "Carnes e derivados",
     "umidade": "77.181",
     "energia": {
@@ -14488,7 +14488,7 @@
   },
   {
     "_id": 440,
-    "descricacao": "Quibe, assado",
+    "descricao": "Quibe, assado",
     "categoria": "Carnes e derivados",
     "umidade": "69.018",
     "energia": {
@@ -14521,7 +14521,7 @@
   },
   {
     "_id": 441,
-    "descricacao": "Quibe, cru",
+    "descricao": "Quibe, cru",
     "categoria": "Carnes e derivados",
     "umidade": "74.509",
     "energia": {
@@ -14554,7 +14554,7 @@
   },
   {
     "_id": 442,
-    "descricacao": "Quibe, frito",
+    "descricao": "Quibe, frito",
     "categoria": "Carnes e derivados",
     "umidade": "53.9636666666667",
     "energia": {
@@ -14587,7 +14587,7 @@
   },
   {
     "_id": 443,
-    "descricacao": "Salame",
+    "descricao": "Salame",
     "categoria": "Carnes e derivados",
     "umidade": "34.7033333333333",
     "energia": {
@@ -14620,7 +14620,7 @@
   },
   {
     "_id": 444,
-    "descricacao": "Toucinho, cru",
+    "descricao": "Toucinho, cru",
     "categoria": "Carnes e derivados",
     "umidade": "27.6066666666667",
     "energia": {
@@ -14653,7 +14653,7 @@
   },
   {
     "_id": 445,
-    "descricacao": "Toucinho, frito",
+    "descricao": "Toucinho, frito",
     "categoria": "Carnes e derivados",
     "umidade": "6.32533333333333",
     "energia": {
@@ -14686,7 +14686,7 @@
   },
   {
     "_id": 446,
-    "descricacao": "Bebida láctea, pêssego",
+    "descricao": "Bebida láctea, pêssego",
     "categoria": "Leite e derivados",
     "umidade": "87.6933333333333",
     "energia": {
@@ -14719,7 +14719,7 @@
   },
   {
     "_id": 447,
-    "descricacao": "Creme de Leite",
+    "descricao": "Creme de Leite",
     "categoria": "Leite e derivados",
     "umidade": "70.8926666666667",
     "energia": {
@@ -14752,7 +14752,7 @@
   },
   {
     "_id": 448,
-    "descricacao": "Iogurte, natural",
+    "descricao": "Iogurte, natural",
     "categoria": "Leite e derivados",
     "umidade": "90.04",
     "energia": {
@@ -14785,7 +14785,7 @@
   },
   {
     "_id": 449,
-    "descricacao": "Iogurte, natural, desnatado",
+    "descricao": "Iogurte, natural, desnatado",
     "categoria": "Leite e derivados",
     "umidade": "89.2163333333333",
     "energia": {
@@ -14818,7 +14818,7 @@
   },
   {
     "_id": 450,
-    "descricacao": "Iogurte, sabor abacaxi",
+    "descricao": "Iogurte, sabor abacaxi",
     "categoria": "Leite e derivados",
     "umidade": "*",
     "energia": {
@@ -14851,7 +14851,7 @@
   },
   {
     "_id": 451,
-    "descricacao": "Iogurte, sabor morango",
+    "descricao": "Iogurte, sabor morango",
     "categoria": "Leite e derivados",
     "umidade": "84.6333333333333",
     "energia": {
@@ -14884,7 +14884,7 @@
   },
   {
     "_id": 452,
-    "descricacao": "Iogurte, sabor pêssego",
+    "descricao": "Iogurte, sabor pêssego",
     "categoria": "Leite e derivados",
     "umidade": "85.0566666666667",
     "energia": {
@@ -14917,7 +14917,7 @@
   },
   {
     "_id": 453,
-    "descricacao": "Leite, condensado",
+    "descricao": "Leite, condensado",
     "categoria": "Leite e derivados",
     "umidade": "26.96",
     "energia": {
@@ -14950,7 +14950,7 @@
   },
   {
     "_id": 454,
-    "descricacao": "Leite, de cabra",
+    "descricao": "Leite, de cabra",
     "categoria": "Leite e derivados",
     "umidade": "87.0706666666667",
     "energia": {
@@ -14983,7 +14983,7 @@
   },
   {
     "_id": 455,
-    "descricacao": "Leite, de vaca, achocolatado",
+    "descricao": "Leite, de vaca, achocolatado",
     "categoria": "Leite e derivados",
     "umidade": "80.8936666666667",
     "energia": {
@@ -15016,7 +15016,7 @@
   },
   {
     "_id": 456,
-    "descricacao": "Leite, de vaca, desnatado, pó",
+    "descricao": "Leite, de vaca, desnatado, pó",
     "categoria": "Leite e derivados",
     "umidade": "3.1",
     "energia": {
@@ -15049,7 +15049,7 @@
   },
   {
     "_id": 457,
-    "descricacao": "Leite, de vaca, desnatado, UHT",
+    "descricao": "Leite, de vaca, desnatado, UHT",
     "categoria": "Leite e derivados",
     "umidade": "*",
     "energia": {
@@ -15082,7 +15082,7 @@
   },
   {
     "_id": 458,
-    "descricacao": "Leite, de vaca, integral",
+    "descricao": "Leite, de vaca, integral",
     "categoria": "Leite e derivados",
     "umidade": "*",
     "energia": {
@@ -15115,7 +15115,7 @@
   },
   {
     "_id": 459,
-    "descricacao": "Leite, de vaca, integral, pó",
+    "descricao": "Leite, de vaca, integral, pó",
     "categoria": "Leite e derivados",
     "umidade": "2.7",
     "energia": {
@@ -15148,7 +15148,7 @@
   },
   {
     "_id": 460,
-    "descricacao": "Leite, fermentado",
+    "descricao": "Leite, fermentado",
     "categoria": "Leite e derivados",
     "umidade": "81.8793333333333",
     "energia": {
@@ -15181,7 +15181,7 @@
   },
   {
     "_id": 461,
-    "descricacao": "Queijo, minas, frescal",
+    "descricao": "Queijo, minas, frescal",
     "categoria": "Leite e derivados",
     "umidade": "56.1246666666667",
     "energia": {
@@ -15214,7 +15214,7 @@
   },
   {
     "_id": 462,
-    "descricacao": "Queijo, minas, meia cura",
+    "descricao": "Queijo, minas, meia cura",
     "categoria": "Leite e derivados",
     "umidade": "47.1183333333333",
     "energia": {
@@ -15247,7 +15247,7 @@
   },
   {
     "_id": 463,
-    "descricacao": "Queijo, mozarela",
+    "descricao": "Queijo, mozarela",
     "categoria": "Leite e derivados",
     "umidade": "45.3383333333333",
     "energia": {
@@ -15280,7 +15280,7 @@
   },
   {
     "_id": 464,
-    "descricacao": "Queijo, parmesão",
+    "descricao": "Queijo, parmesão",
     "categoria": "Leite e derivados",
     "umidade": "21.2466666666667",
     "energia": {
@@ -15313,7 +15313,7 @@
   },
   {
     "_id": 465,
-    "descricacao": "Queijo, pasteurizado",
+    "descricao": "Queijo, pasteurizado",
     "categoria": "Leite e derivados",
     "umidade": "54.4213333333333",
     "energia": {
@@ -15346,7 +15346,7 @@
   },
   {
     "_id": 466,
-    "descricacao": "Queijo, petit suisse, morango",
+    "descricao": "Queijo, petit suisse, morango",
     "categoria": "Leite e derivados",
     "umidade": "72.215",
     "energia": {
@@ -15379,7 +15379,7 @@
   },
   {
     "_id": 467,
-    "descricacao": "Queijo, prato",
+    "descricao": "Queijo, prato",
     "categoria": "Leite e derivados",
     "umidade": "42.4443333333333",
     "energia": {
@@ -15412,7 +15412,7 @@
   },
   {
     "_id": 468,
-    "descricacao": "Queijo, requeijão, cremoso",
+    "descricao": "Queijo, requeijão, cremoso",
     "categoria": "Leite e derivados",
     "umidade": "62.4663333333333",
     "energia": {
@@ -15445,7 +15445,7 @@
   },
   {
     "_id": 469,
-    "descricacao": "Queijo, ricota",
+    "descricao": "Queijo, ricota",
     "categoria": "Leite e derivados",
     "umidade": "73.5706666666667",
     "energia": {
@@ -15478,7 +15478,7 @@
   },
   {
     "_id": 470,
-    "descricacao": "Bebida isotônica, sabores variados",
+    "descricao": "Bebida isotônica, sabores variados",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "93.5066666666667",
     "energia": {
@@ -15511,7 +15511,7 @@
   },
   {
     "_id": 471,
-    "descricacao": "Café, infusão 10%",
+    "descricao": "Café, infusão 10%",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "97.372",
     "energia": {
@@ -15544,7 +15544,7 @@
   },
   {
     "_id": 472,
-    "descricacao": "Cana, aguardente 1",
+    "descricao": "Cana, aguardente 1",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "",
     "energia": {
@@ -15577,7 +15577,7 @@
   },
   {
     "_id": 473,
-    "descricacao": "Cana, caldo de",
+    "descricao": "Cana, caldo de",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "81.7276666666667",
     "energia": {
@@ -15610,7 +15610,7 @@
   },
   {
     "_id": 474,
-    "descricacao": "Cerveja, pilsen 2",
+    "descricao": "Cerveja, pilsen 2",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "92.38",
     "energia": {
@@ -15643,7 +15643,7 @@
   },
   {
     "_id": 475,
-    "descricacao": "Chá, erva-doce, infusão 5%",
+    "descricao": "Chá, erva-doce, infusão 5%",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "99.6086666666667",
     "energia": {
@@ -15676,7 +15676,7 @@
   },
   {
     "_id": 476,
-    "descricacao": "Chá, mate, infusão 5%",
+    "descricao": "Chá, mate, infusão 5%",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "99.305",
     "energia": {
@@ -15709,7 +15709,7 @@
   },
   {
     "_id": 477,
-    "descricacao": "Chá, preto, infusão 5%",
+    "descricao": "Chá, preto, infusão 5%",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "99.3703333333333",
     "energia": {
@@ -15742,7 +15742,7 @@
   },
   {
     "_id": 478,
-    "descricacao": "Coco, água de",
+    "descricao": "Coco, água de",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "94.252",
     "energia": {
@@ -15775,7 +15775,7 @@
   },
   {
     "_id": 479,
-    "descricacao": "Refrigerante, tipo água tônica",
+    "descricao": "Refrigerante, tipo água tônica",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "92.0066666666667",
     "energia": {
@@ -15808,7 +15808,7 @@
   },
   {
     "_id": 480,
-    "descricacao": "Refrigerante, tipo cola",
+    "descricao": "Refrigerante, tipo cola",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "91.2766666666667",
     "energia": {
@@ -15841,7 +15841,7 @@
   },
   {
     "_id": 481,
-    "descricacao": "Refrigerante, tipo guaraná",
+    "descricao": "Refrigerante, tipo guaraná",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "89.9566666666667",
     "energia": {
@@ -15874,7 +15874,7 @@
   },
   {
     "_id": 482,
-    "descricacao": "Refrigerante, tipo laranja",
+    "descricao": "Refrigerante, tipo laranja",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "88.1733333333333",
     "energia": {
@@ -15907,7 +15907,7 @@
   },
   {
     "_id": 483,
-    "descricacao": "Refrigerante, tipo limão",
+    "descricao": "Refrigerante, tipo limão",
     "categoria": "Bebidas (alcoólicas e não alcoólicas)",
     "umidade": "89.69",
     "energia": {
@@ -15940,7 +15940,7 @@
   },
   {
     "_id": 484,
-    "descricacao": "Omelete, de queijo",
+    "descricao": "Omelete, de queijo",
     "categoria": "Ovos e derivados",
     "umidade": "60.4916666666667",
     "energia": {
@@ -15973,7 +15973,7 @@
   },
   {
     "_id": 485,
-    "descricacao": "Ovo, de codorna, inteiro, cru",
+    "descricao": "Ovo, de codorna, inteiro, cru",
     "categoria": "Ovos e derivados",
     "umidade": "71.67",
     "energia": {
@@ -16006,7 +16006,7 @@
   },
   {
     "_id": 486,
-    "descricacao": "Ovo, de galinha, clara, cozida/10minutos",
+    "descricao": "Ovo, de galinha, clara, cozida/10minutos",
     "categoria": "Ovos e derivados",
     "umidade": "85.2276666666667",
     "energia": {
@@ -16039,7 +16039,7 @@
   },
   {
     "_id": 487,
-    "descricacao": "Ovo, de galinha, gema, cozida/10minutos",
+    "descricao": "Ovo, de galinha, gema, cozida/10minutos",
     "categoria": "Ovos e derivados",
     "umidade": "50.0226666666667",
     "energia": {
@@ -16072,7 +16072,7 @@
   },
   {
     "_id": 488,
-    "descricacao": "Ovo, de galinha, inteiro, cozido/10minutos",
+    "descricao": "Ovo, de galinha, inteiro, cozido/10minutos",
     "categoria": "Ovos e derivados",
     "umidade": "75.7656666666667",
     "energia": {
@@ -16105,7 +16105,7 @@
   },
   {
     "_id": 489,
-    "descricacao": "Ovo, de galinha, inteiro, cru",
+    "descricao": "Ovo, de galinha, inteiro, cru",
     "categoria": "Ovos e derivados",
     "umidade": "75.6",
     "energia": {
@@ -16138,7 +16138,7 @@
   },
   {
     "_id": 490,
-    "descricacao": "Ovo, de galinha, inteiro, frito",
+    "descricao": "Ovo, de galinha, inteiro, frito",
     "categoria": "Ovos e derivados",
     "umidade": "63.4973333333333",
     "energia": {
@@ -16171,7 +16171,7 @@
   },
   {
     "_id": 491,
-    "descricacao": "Achocolatado, pó",
+    "descricao": "Achocolatado, pó",
     "categoria": "Produtos açucarados",
     "umidade": "1.10333333333333",
     "energia": {
@@ -16204,7 +16204,7 @@
   },
   {
     "_id": 492,
-    "descricacao": "Açúcar, cristal",
+    "descricao": "Açúcar, cristal",
     "categoria": "Produtos açucarados",
     "umidade": "0.05",
     "energia": {
@@ -16237,7 +16237,7 @@
   },
   {
     "_id": 493,
-    "descricacao": "Açúcar, mascavo",
+    "descricao": "Açúcar, mascavo",
     "categoria": "Produtos açucarados",
     "umidade": "3.324",
     "energia": {
@@ -16270,7 +16270,7 @@
   },
   {
     "_id": 494,
-    "descricacao": "Açúcar, refinado",
+    "descricao": "Açúcar, refinado",
     "categoria": "Produtos açucarados",
     "umidade": "0.12",
     "energia": {
@@ -16303,7 +16303,7 @@
   },
   {
     "_id": 495,
-    "descricacao": "Chocolate, ao leite",
+    "descricao": "Chocolate, ao leite",
     "categoria": "Produtos açucarados",
     "umidade": "1.25666666666667",
     "energia": {
@@ -16336,7 +16336,7 @@
   },
   {
     "_id": 496,
-    "descricacao": "Chocolate, ao leite, com castanha do Pará",
+    "descricao": "Chocolate, ao leite, com castanha do Pará",
     "categoria": "Produtos açucarados",
     "umidade": "1.21433333333333",
     "energia": {
@@ -16369,7 +16369,7 @@
   },
   {
     "_id": 497,
-    "descricacao": "Chocolate, ao leite, dietético",
+    "descricao": "Chocolate, ao leite, dietético",
     "categoria": "Produtos açucarados",
     "umidade": "1.732",
     "energia": {
@@ -16402,7 +16402,7 @@
   },
   {
     "_id": 498,
-    "descricacao": "Chocolate, meio amargo",
+    "descricao": "Chocolate, meio amargo",
     "categoria": "Produtos açucarados",
     "umidade": "1.02166666666667",
     "energia": {
@@ -16435,7 +16435,7 @@
   },
   {
     "_id": 499,
-    "descricacao": "Cocada branca",
+    "descricao": "Cocada branca",
     "categoria": "Produtos açucarados",
     "umidade": "3.42366666666667",
     "energia": {
@@ -16468,7 +16468,7 @@
   },
   {
     "_id": 500,
-    "descricacao": "Doce, de abóbora, cremoso",
+    "descricao": "Doce, de abóbora, cremoso",
     "categoria": "Produtos açucarados",
     "umidade": "43.88",
     "energia": {
@@ -16501,7 +16501,7 @@
   },
   {
     "_id": 501,
-    "descricacao": "Doce, de leite, cremoso",
+    "descricao": "Doce, de leite, cremoso",
     "categoria": "Produtos açucarados",
     "umidade": "27.5",
     "energia": {
@@ -16534,7 +16534,7 @@
   },
   {
     "_id": 502,
-    "descricacao": "Geléia, mocotó, natural",
+    "descricao": "Geléia, mocotó, natural",
     "categoria": "Produtos açucarados",
     "umidade": "73.48",
     "energia": {
@@ -16567,7 +16567,7 @@
   },
   {
     "_id": 503,
-    "descricacao": "Glicose de milho",
+    "descricao": "Glicose de milho",
     "categoria": "Produtos açucarados",
     "umidade": "20.4133333333333",
     "energia": {
@@ -16600,7 +16600,7 @@
   },
   {
     "_id": 504,
-    "descricacao": "Maria mole",
+    "descricao": "Maria mole",
     "categoria": "Produtos açucarados",
     "umidade": "21.5716666666667",
     "energia": {
@@ -16633,7 +16633,7 @@
   },
   {
     "_id": 505,
-    "descricacao": "Maria mole, coco queimado",
+    "descricao": "Maria mole, coco queimado",
     "categoria": "Produtos açucarados",
     "umidade": "20.7316666666667",
     "energia": {
@@ -16666,7 +16666,7 @@
   },
   {
     "_id": 506,
-    "descricacao": "Marmelada",
+    "descricao": "Marmelada",
     "categoria": "Produtos açucarados",
     "umidade": "28.4986666666667",
     "energia": {
@@ -16699,7 +16699,7 @@
   },
   {
     "_id": 507,
-    "descricacao": "Mel, de abelha",
+    "descricao": "Mel, de abelha",
     "categoria": "Produtos açucarados",
     "umidade": "15.8233333333333",
     "energia": {
@@ -16732,7 +16732,7 @@
   },
   {
     "_id": 508,
-    "descricacao": "Melado",
+    "descricao": "Melado",
     "categoria": "Produtos açucarados",
     "umidade": "22.0866666666667",
     "energia": {
@@ -16765,7 +16765,7 @@
   },
   {
     "_id": 509,
-    "descricacao": "Quindim",
+    "descricao": "Quindim",
     "categoria": "Produtos açucarados",
     "umidade": "23.93",
     "energia": {
@@ -16798,7 +16798,7 @@
   },
   {
     "_id": 510,
-    "descricacao": "Rapadura",
+    "descricao": "Rapadura",
     "categoria": "Produtos açucarados",
     "umidade": "7.09533333333333",
     "energia": {
@@ -16831,7 +16831,7 @@
   },
   {
     "_id": 511,
-    "descricacao": "Café, pó, torrado",
+    "descricao": "Café, pó, torrado",
     "categoria": "Miscelâneas",
     "umidade": "2.93",
     "energia": {
@@ -16864,7 +16864,7 @@
   },
   {
     "_id": 512,
-    "descricacao": "Capuccino, pó",
+    "descricao": "Capuccino, pó",
     "categoria": "Miscelâneas",
     "umidade": "2.60333333333333",
     "energia": {
@@ -16897,7 +16897,7 @@
   },
   {
     "_id": 513,
-    "descricacao": "Fermento em pó, químico",
+    "descricao": "Fermento em pó, químico",
     "categoria": "Miscelâneas",
     "umidade": "7.07666666666667",
     "energia": {
@@ -16930,7 +16930,7 @@
   },
   {
     "_id": 514,
-    "descricacao": "Fermento, biológico, levedura, tablete",
+    "descricao": "Fermento, biológico, levedura, tablete",
     "categoria": "Miscelâneas",
     "umidade": "71.901",
     "energia": {
@@ -16963,7 +16963,7 @@
   },
   {
     "_id": 515,
-    "descricacao": "Gelatina, sabores variados, pó",
+    "descricao": "Gelatina, sabores variados, pó",
     "categoria": "Miscelâneas",
     "umidade": "1.24333333333333",
     "energia": {
@@ -16996,7 +16996,7 @@
   },
   {
     "_id": 516,
-    "descricacao": "Sal, dietético",
+    "descricao": "Sal, dietético",
     "categoria": "Miscelâneas",
     "umidade": "0.596666666666667",
     "energia": {
@@ -17029,7 +17029,7 @@
   },
   {
     "_id": 517,
-    "descricacao": "Sal, grosso",
+    "descricao": "Sal, grosso",
     "categoria": "Miscelâneas",
     "umidade": "0.413333333333333",
     "energia": {
@@ -17062,7 +17062,7 @@
   },
   {
     "_id": 518,
-    "descricacao": "Shoyu",
+    "descricao": "Shoyu",
     "categoria": "Miscelâneas",
     "umidade": "70.6266666666667",
     "energia": {
@@ -17095,7 +17095,7 @@
   },
   {
     "_id": 519,
-    "descricacao": "Tempero a base de sal",
+    "descricao": "Tempero a base de sal",
     "categoria": "Miscelâneas",
     "umidade": "7.65",
     "energia": {
@@ -17128,7 +17128,7 @@
   },
   {
     "_id": 520,
-    "descricacao": "Azeitona, preta, conserva",
+    "descricao": "Azeitona, preta, conserva",
     "categoria": "Outros alimentos industrializados",
     "umidade": "68.464",
     "energia": {
@@ -17161,7 +17161,7 @@
   },
   {
     "_id": 521,
-    "descricacao": "Azeitona, verde, conserva",
+    "descricao": "Azeitona, verde, conserva",
     "categoria": "Outros alimentos industrializados",
     "umidade": "76.259",
     "energia": {
@@ -17194,7 +17194,7 @@
   },
   {
     "_id": 522,
-    "descricacao": "Chantilly, spray, com gordura vegetal",
+    "descricao": "Chantilly, spray, com gordura vegetal",
     "categoria": "Outros alimentos industrializados",
     "umidade": "55.1426666",
     "energia": {
@@ -17227,7 +17227,7 @@
   },
   {
     "_id": 523,
-    "descricacao": "Leite, de coco",
+    "descricao": "Leite, de coco",
     "categoria": "Outros alimentos industrializados",
     "umidade": "77.9836666666667",
     "energia": {
@@ -17260,7 +17260,7 @@
   },
   {
     "_id": 524,
-    "descricacao": "Maionese, tradicional com ovos",
+    "descricao": "Maionese, tradicional com ovos",
     "categoria": "Outros alimentos industrializados",
     "umidade": "58.4236666666667",
     "energia": {
@@ -17293,7 +17293,7 @@
   },
   {
     "_id": 525,
-    "descricacao": "Acarajé",
+    "descricao": "Acarajé",
     "categoria": "Alimentos preparados",
     "umidade": "50.464",
     "energia": {
@@ -17326,7 +17326,7 @@
   },
   {
     "_id": 526,
-    "descricacao": "Arroz carreteiro",
+    "descricao": "Arroz carreteiro",
     "categoria": "Alimentos preparados",
     "umidade": "68.0356666666667",
     "energia": {
@@ -17359,7 +17359,7 @@
   },
   {
     "_id": 527,
-    "descricacao": "Baião de dois, arroz e feijão-de-corda",
+    "descricao": "Baião de dois, arroz e feijão-de-corda",
     "categoria": "Alimentos preparados",
     "umidade": "69.0513333333333",
     "energia": {
@@ -17392,7 +17392,7 @@
   },
   {
     "_id": 528,
-    "descricacao": "Barreado",
+    "descricao": "Barreado",
     "categoria": "Alimentos preparados",
     "umidade": "71.1673333333333",
     "energia": {
@@ -17425,7 +17425,7 @@
   },
   {
     "_id": 529,
-    "descricacao": "Bife à cavalo, com contra filé",
+    "descricao": "Bife à cavalo, com contra filé",
     "categoria": "Alimentos preparados",
     "umidade": "54.212",
     "energia": {
@@ -17458,7 +17458,7 @@
   },
   {
     "_id": 530,
-    "descricacao": "Bolinho de arroz",
+    "descricao": "Bolinho de arroz",
     "categoria": "Alimentos preparados",
     "umidade": "41.5",
     "energia": {
@@ -17491,7 +17491,7 @@
   },
   {
     "_id": 531,
-    "descricacao": "Camarão à baiana",
+    "descricao": "Camarão à baiana",
     "categoria": "Alimentos preparados",
     "umidade": "81.9893333333333",
     "energia": {
@@ -17524,7 +17524,7 @@
   },
   {
     "_id": 532,
-    "descricacao": "Charuto, de repolho",
+    "descricao": "Charuto, de repolho",
     "categoria": "Alimentos preparados",
     "umidade": "81.5486666666667",
     "energia": {
@@ -17557,7 +17557,7 @@
   },
   {
     "_id": 533,
-    "descricacao": "Cuscuz, de milho, cozido com sal",
+    "descricao": "Cuscuz, de milho, cozido com sal",
     "categoria": "Alimentos preparados",
     "umidade": "71.137",
     "energia": {
@@ -17590,7 +17590,7 @@
   },
   {
     "_id": 534,
-    "descricacao": "Cuscuz, paulista",
+    "descricao": "Cuscuz, paulista",
     "categoria": "Alimentos preparados",
     "umidade": "68.9366666666667",
     "energia": {
@@ -17623,7 +17623,7 @@
   },
   {
     "_id": 535,
-    "descricacao": "Cuxá, molho",
+    "descricao": "Cuxá, molho",
     "categoria": "Alimentos preparados",
     "umidade": "80.994",
     "energia": {
@@ -17656,7 +17656,7 @@
   },
   {
     "_id": 536,
-    "descricacao": "Dobradinha",
+    "descricao": "Dobradinha",
     "categoria": "Alimentos preparados",
     "umidade": "75.267",
     "energia": {
@@ -17689,7 +17689,7 @@
   },
   {
     "_id": 537,
-    "descricacao": "Estrogonofe de carne",
+    "descricao": "Estrogonofe de carne",
     "categoria": "Alimentos preparados",
     "umidade": "70.1283333333333",
     "energia": {
@@ -17722,7 +17722,7 @@
   },
   {
     "_id": 538,
-    "descricacao": "Estrogonofe de frango",
+    "descricao": "Estrogonofe de frango",
     "categoria": "Alimentos preparados",
     "umidade": "70.8923333333333",
     "energia": {
@@ -17755,7 +17755,7 @@
   },
   {
     "_id": 539,
-    "descricacao": "Feijão tropeiro mineiro",
+    "descricao": "Feijão tropeiro mineiro",
     "categoria": "Alimentos preparados",
     "umidade": "61.6676666666667",
     "energia": {
@@ -17788,7 +17788,7 @@
   },
   {
     "_id": 540,
-    "descricacao": "Feijoada",
+    "descricao": "Feijoada",
     "categoria": "Alimentos preparados",
     "umidade": "71.8013333333333",
     "energia": {
@@ -17821,7 +17821,7 @@
   },
   {
     "_id": 541,
-    "descricacao": "Frango, com açafrão",
+    "descricao": "Frango, com açafrão",
     "categoria": "Alimentos preparados",
     "umidade": "79.5246666666667",
     "energia": {
@@ -17854,7 +17854,7 @@
   },
   {
     "_id": 542,
-    "descricacao": "Macarrão, molho bolognesa",
+    "descricao": "Macarrão, molho bolognesa",
     "categoria": "Alimentos preparados",
     "umidade": "71.4123333333333",
     "energia": {
@@ -17887,7 +17887,7 @@
   },
   {
     "_id": 543,
-    "descricacao": "Maniçoba",
+    "descricao": "Maniçoba",
     "categoria": "Alimentos preparados",
     "umidade": "76.3953333333333",
     "energia": {
@@ -17920,7 +17920,7 @@
   },
   {
     "_id": 544,
-    "descricacao": "Quibebe",
+    "descricao": "Quibebe",
     "categoria": "Alimentos preparados",
     "umidade": "81.106",
     "energia": {
@@ -17953,7 +17953,7 @@
   },
   {
     "_id": 545,
-    "descricacao": "Salada, de legumes, com maionese",
+    "descricao": "Salada, de legumes, com maionese",
     "categoria": "Alimentos preparados",
     "umidade": "82.0373333333333",
     "energia": {
@@ -17986,7 +17986,7 @@
   },
   {
     "_id": 546,
-    "descricacao": "Salada, de legumes, cozida no vapor",
+    "descricao": "Salada, de legumes, cozida no vapor",
     "categoria": "Alimentos preparados",
     "umidade": "89.979",
     "energia": {
@@ -18019,7 +18019,7 @@
   },
   {
     "_id": 547,
-    "descricacao": "Salpicão, de frango",
+    "descricao": "Salpicão, de frango",
     "categoria": "Alimentos preparados",
     "umidade": "72.5276666666667",
     "energia": {
@@ -18052,7 +18052,7 @@
   },
   {
     "_id": 548,
-    "descricacao": "Sarapatel",
+    "descricao": "Sarapatel",
     "categoria": "Alimentos preparados",
     "umidade": "74.9513333333333",
     "energia": {
@@ -18085,7 +18085,7 @@
   },
   {
     "_id": 549,
-    "descricacao": "Tabule",
+    "descricao": "Tabule",
     "categoria": "Alimentos preparados",
     "umidade": "85.77",
     "energia": {
@@ -18118,7 +18118,7 @@
   },
   {
     "_id": 550,
-    "descricacao": "Tacacá",
+    "descricao": "Tacacá",
     "categoria": "Alimentos preparados",
     "umidade": "85.193",
     "energia": {
@@ -18151,7 +18151,7 @@
   },
   {
     "_id": 551,
-    "descricacao": "Tapioca, com manteiga",
+    "descricao": "Tapioca, com manteiga",
     "categoria": "Alimentos preparados",
     "umidade": "24.9023333333333",
     "energia": {
@@ -18184,7 +18184,7 @@
   },
   {
     "_id": 552,
-    "descricacao": "Tucupi, com pimenta-de-cheiro",
+    "descricao": "Tucupi, com pimenta-de-cheiro",
     "categoria": "Alimentos preparados",
     "umidade": "91.8843333333333",
     "energia": {
@@ -18217,7 +18217,7 @@
   },
   {
     "_id": 553,
-    "descricacao": "Vaca atolada",
+    "descricao": "Vaca atolada",
     "categoria": "Alimentos preparados",
     "umidade": "74.9513333333333",
     "energia": {
@@ -18250,7 +18250,7 @@
   },
   {
     "_id": 554,
-    "descricacao": "Vatapá",
+    "descricao": "Vatapá",
     "categoria": "Alimentos preparados",
     "umidade": "58.3623333333333",
     "energia": {
@@ -18283,7 +18283,7 @@
   },
   {
     "_id": 555,
-    "descricacao": "Virado à paulista",
+    "descricao": "Virado à paulista",
     "categoria": "Alimentos preparados",
     "umidade": "48.5903333333333",
     "energia": {
@@ -18316,7 +18316,7 @@
   },
   {
     "_id": 556,
-    "descricacao": "Yakisoba",
+    "descricao": "Yakisoba",
     "categoria": "Alimentos preparados",
     "umidade": "69.3766666666667",
     "energia": {
@@ -18349,7 +18349,7 @@
   },
   {
     "_id": 557,
-    "descricacao": "Amendoim, grão, cru",
+    "descricao": "Amendoim, grão, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "6.427",
     "energia": {
@@ -18382,7 +18382,7 @@
   },
   {
     "_id": 558,
-    "descricacao": "Amendoim, torrado, salgado",
+    "descricao": "Amendoim, torrado, salgado",
     "categoria": "Leguminosas e derivados",
     "umidade": "1.68666666666667",
     "energia": {
@@ -18415,7 +18415,7 @@
   },
   {
     "_id": 559,
-    "descricacao": "Ervilha, em vagem",
+    "descricao": "Ervilha, em vagem",
     "categoria": "Leguminosas e derivados",
     "umidade": "76.8413333333333",
     "energia": {
@@ -18448,7 +18448,7 @@
   },
   {
     "_id": 560,
-    "descricacao": "Ervilha, enlatada, drenada",
+    "descricao": "Ervilha, enlatada, drenada",
     "categoria": "Leguminosas e derivados",
     "umidade": "80.1433333333333",
     "energia": {
@@ -18481,7 +18481,7 @@
   },
   {
     "_id": 561,
-    "descricacao": "Feijão, carioca, cozido",
+    "descricao": "Feijão, carioca, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "80.3506333333333",
     "energia": {
@@ -18514,7 +18514,7 @@
   },
   {
     "_id": 562,
-    "descricacao": "Feijão, carioca, cru",
+    "descricao": "Feijão, carioca, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "13.9966666666667",
     "energia": {
@@ -18547,7 +18547,7 @@
   },
   {
     "_id": 563,
-    "descricacao": "Feijão, fradinho, cozido",
+    "descricao": "Feijão, fradinho, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "80.0093333333333",
     "energia": {
@@ -18580,7 +18580,7 @@
   },
   {
     "_id": 564,
-    "descricacao": "Feijão, fradinho, cru",
+    "descricao": "Feijão, fradinho, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "12.6966666666667",
     "energia": {
@@ -18613,7 +18613,7 @@
   },
   {
     "_id": 565,
-    "descricacao": "Feijão, jalo, cozido",
+    "descricao": "Feijão, jalo, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "75.8423333333333",
     "energia": {
@@ -18646,7 +18646,7 @@
   },
   {
     "_id": 566,
-    "descricacao": "Feijão, jalo, cru",
+    "descricao": "Feijão, jalo, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "13.5333333333333",
     "energia": {
@@ -18679,7 +18679,7 @@
   },
   {
     "_id": 567,
-    "descricacao": "Feijão, preto, cozido",
+    "descricao": "Feijão, preto, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "80.218",
     "energia": {
@@ -18712,7 +18712,7 @@
   },
   {
     "_id": 568,
-    "descricacao": "Feijão, preto, cru",
+    "descricao": "Feijão, preto, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "14.8766666666667",
     "energia": {
@@ -18745,7 +18745,7 @@
   },
   {
     "_id": 569,
-    "descricacao": "Feijão, rajado, cozido",
+    "descricao": "Feijão, rajado, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "77.8643333333333",
     "energia": {
@@ -18778,7 +18778,7 @@
   },
   {
     "_id": 570,
-    "descricacao": "Feijão, rajado, cru",
+    "descricao": "Feijão, rajado, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "14.9633333333333",
     "energia": {
@@ -18811,7 +18811,7 @@
   },
   {
     "_id": 571,
-    "descricacao": "Feijão, rosinha, cozido",
+    "descricao": "Feijão, rosinha, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "82.581",
     "energia": {
@@ -18844,7 +18844,7 @@
   },
   {
     "_id": 572,
-    "descricacao": "Feijão, rosinha, cru",
+    "descricao": "Feijão, rosinha, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "11.9533333333333",
     "energia": {
@@ -18877,7 +18877,7 @@
   },
   {
     "_id": 573,
-    "descricacao": "Feijão, roxo, cozido",
+    "descricao": "Feijão, roxo, cozido",
     "categoria": "Leguminosas e derivados",
     "umidade": "79.986",
     "energia": {
@@ -18910,7 +18910,7 @@
   },
   {
     "_id": 574,
-    "descricacao": "Feijão, roxo, cru",
+    "descricao": "Feijão, roxo, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "12.6366666666667",
     "energia": {
@@ -18943,7 +18943,7 @@
   },
   {
     "_id": 575,
-    "descricacao": "Grão-de-bico, cru",
+    "descricao": "Grão-de-bico, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "12.29",
     "energia": {
@@ -18976,7 +18976,7 @@
   },
   {
     "_id": 576,
-    "descricacao": "Guandu, cru",
+    "descricao": "Guandu, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "11.449",
     "energia": {
@@ -19009,7 +19009,7 @@
   },
   {
     "_id": 577,
-    "descricacao": "Lentilha, cozida",
+    "descricao": "Lentilha, cozida",
     "categoria": "Leguminosas e derivados",
     "umidade": "76.2506666666667",
     "energia": {
@@ -19042,7 +19042,7 @@
   },
   {
     "_id": 578,
-    "descricacao": "Lentilha, crua",
+    "descricao": "Lentilha, crua",
     "categoria": "Leguminosas e derivados",
     "umidade": "11.4666666666667",
     "energia": {
@@ -19075,7 +19075,7 @@
   },
   {
     "_id": 579,
-    "descricacao": "Paçoca, amendoim",
+    "descricao": "Paçoca, amendoim",
     "categoria": "Leguminosas e derivados",
     "umidade": "1.801",
     "energia": {
@@ -19108,7 +19108,7 @@
   },
   {
     "_id": 580,
-    "descricacao": "Pé-de-moleque, amendoim",
+    "descricao": "Pé-de-moleque, amendoim",
     "categoria": "Leguminosas e derivados",
     "umidade": "2.91",
     "energia": {
@@ -19141,7 +19141,7 @@
   },
   {
     "_id": 581,
-    "descricacao": "Soja, farinha",
+    "descricao": "Soja, farinha",
     "categoria": "Leguminosas e derivados",
     "umidade": "5.75",
     "energia": {
@@ -19174,7 +19174,7 @@
   },
   {
     "_id": 582,
-    "descricacao": "Soja, extrato solúvel, natural, fluido",
+    "descricao": "Soja, extrato solúvel, natural, fluido",
     "categoria": "Leguminosas e derivados",
     "umidade": "91.284",
     "energia": {
@@ -19207,7 +19207,7 @@
   },
   {
     "_id": 583,
-    "descricacao": "Soja, extrato solúvel, pó",
+    "descricao": "Soja, extrato solúvel, pó",
     "categoria": "Leguminosas e derivados",
     "umidade": "4.46833333333333",
     "energia": {
@@ -19240,7 +19240,7 @@
   },
   {
     "_id": 584,
-    "descricacao": "Soja, queijo (tofu)",
+    "descricao": "Soja, queijo (tofu)",
     "categoria": "Leguminosas e derivados",
     "umidade": "86.646",
     "energia": {
@@ -19273,7 +19273,7 @@
   },
   {
     "_id": 585,
-    "descricacao": "Tremoço, cru",
+    "descricao": "Tremoço, cru",
     "categoria": "Leguminosas e derivados",
     "umidade": "9.692",
     "energia": {
@@ -19306,7 +19306,7 @@
   },
   {
     "_id": 586,
-    "descricacao": "Tremoço, em conserva",
+    "descricao": "Tremoço, em conserva",
     "categoria": "Leguminosas e derivados",
     "umidade": "67.6843333333333",
     "energia": {
@@ -19339,7 +19339,7 @@
   },
   {
     "_id": 587,
-    "descricacao": "Amêndoa, torrada, salgada",
+    "descricao": "Amêndoa, torrada, salgada",
     "categoria": "Nozes e sementes",
     "umidade": "3.106",
     "energia": {
@@ -19372,7 +19372,7 @@
   },
   {
     "_id": 588,
-    "descricacao": "Castanha-de-caju, torrada, salgada",
+    "descricao": "Castanha-de-caju, torrada, salgada",
     "categoria": "Nozes e sementes",
     "umidade": "3.464",
     "energia": {
@@ -19405,7 +19405,7 @@
   },
   {
     "_id": 589,
-    "descricacao": "Castanha-do-Brasil, crua",
+    "descricao": "Castanha-do-Brasil, crua",
     "categoria": "Nozes e sementes",
     "umidade": "3.524",
     "energia": {
@@ -19438,7 +19438,7 @@
   },
   {
     "_id": 590,
-    "descricacao": "Coco, cru",
+    "descricao": "Coco, cru",
     "categoria": "Nozes e sementes",
     "umidade": "42.9611666666667",
     "energia": {
@@ -19471,7 +19471,7 @@
   },
   {
     "_id": 591,
-    "descricacao": "Coco,  verde, cru",
+    "descricao": "Coco,  verde, cru",
     "categoria": "Nozes e sementes",
     "umidade": "*",
     "energia": {
@@ -19504,7 +19504,7 @@
   },
   {
     "_id": 592,
-    "descricacao": "Farinha, de mesocarpo de babaçu, crua",
+    "descricao": "Farinha, de mesocarpo de babaçu, crua",
     "categoria": "Nozes e sementes",
     "umidade": "15.8233333333333",
     "energia": {
@@ -19537,7 +19537,7 @@
   },
   {
     "_id": 593,
-    "descricacao": "Gergelim, semente",
+    "descricao": "Gergelim, semente",
     "categoria": "Nozes e sementes",
     "umidade": "3.85933333333333",
     "energia": {
@@ -19570,7 +19570,7 @@
   },
   {
     "_id": 594,
-    "descricacao": "Linhaça, semente",
+    "descricao": "Linhaça, semente",
     "categoria": "Nozes e sementes",
     "umidade": "6.683",
     "energia": {
@@ -19603,7 +19603,7 @@
   },
   {
     "_id": 595,
-    "descricacao": "Pinhão, cozido",
+    "descricao": "Pinhão, cozido",
     "categoria": "Nozes e sementes",
     "umidade": "50.5133333333333",
     "energia": {
@@ -19636,7 +19636,7 @@
   },
   {
     "_id": 596,
-    "descricacao": "Pupunha, cozida",
+    "descricao": "Pupunha, cozida",
     "categoria": "Nozes e sementes",
     "umidade": "54.46",
     "energia": {
@@ -19669,7 +19669,7 @@
   },
   {
     "_id": 597,
-    "descricacao": "Noz, crua",
+    "descricao": "Noz, crua",
     "categoria": "Nozes e sementes",
     "umidade": "6.24466666666667",
     "energia": {

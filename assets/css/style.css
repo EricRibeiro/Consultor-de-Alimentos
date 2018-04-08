@@ -22,3 +22,53 @@ th {
 .tab-pane {
     color:black;
 }
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #9A9A9A;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    width: 10px;
+    height: 10px;
+    border: none;
+    font-family: 'Glyphicons Halflings';
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret:before {
+    content: "\e003";
+}
+
+.form-control {
+    background-color: white !important;
+}
