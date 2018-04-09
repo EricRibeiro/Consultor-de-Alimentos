@@ -20,7 +20,7 @@ th {
 }
 
 .tab-pane {
-    color:black;
+    color: black;
 }
 
 .strike {
@@ -92,5 +92,19 @@ table.dataTable {
 
 .modal-body {
     margin-left: 15%;
+}
+
+#aliments_info {
+    color: #868e96 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #81C784 !important;
+    border-color: #81C784 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #81C784 !important;
+    border-color: #81C784 !important;
 }
 
