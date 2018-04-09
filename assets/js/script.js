@@ -16,18 +16,18 @@ function loadDefaultTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
-        table += "<thead>";
-            table += "<tr>";
-                table += "<th class='text-center'>Descrição</th>";
-                table += "<th class='text-center'>Calorias</th>";
-                table += "<th class='text-center'>Proteína</th>";
-                table += "<th class='text-center'>Detalhes</th>";
-                table += "<th hidden>Calorias Sort</th>";
-                table += "<th hidden>Proteína Sort</th>";
-        table += "</thead>";
-        table += "<tbody>";
-        table += "</tbody>";
+    table += "<table id='aliments' class='table'>";
+    table += "<thead>";
+    table += "<tr>";
+    table += "<th class='text-center'>Descrição</th>";
+    table += "<th class='text-center'>Calorias</th>";
+    table += "<th class='text-center'>Proteína</th>";
+    table += "<th class='text-center'>Detalhes</th>";
+    table += "<th hidden>Calorias Sort</th>";
+    table += "<th hidden>Proteína Sort</th>";
+    table += "</thead>";
+    table += "<tbody>";
+    table += "</tbody>";
     table += "</table>";
 
     $('#aliments-table').append(table);
@@ -53,7 +53,7 @@ function loadLowCarbTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
+    table += "<table id='aliments' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
@@ -74,7 +74,7 @@ function loadLowCarbTable() {
         var caloria = aliments[i].energia.kcal;
         caloria = parseFloat(caloria);
 
-        if(caloria < 15 && !isNaN(caloria)) {
+        if (caloria < 15 && !isNaN(caloria)) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
@@ -96,7 +96,7 @@ function loadProteinTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
+    table += "<table id='aliments' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
@@ -117,7 +117,7 @@ function loadProteinTable() {
         var proteina = aliments[i].proteina;
         proteina = parseFloat(proteina);
 
-        if(proteina > 30 && !isNaN(proteina)) {
+        if (proteina > 30 && !isNaN(proteina)) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
@@ -139,7 +139,7 @@ function loadCalciumTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
+    table += "<table id='aliments' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
@@ -160,7 +160,7 @@ function loadCalciumTable() {
         var calcio = aliments[i].calcio;
         calcio = parseFloat(calcio);
 
-        if(calcio > 50 && !isNaN(calcio)) {
+        if (calcio > 50 && !isNaN(calcio)) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
@@ -182,7 +182,7 @@ function loadIronTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
+    table += "<table id='aliments' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
@@ -203,7 +203,7 @@ function loadIronTable() {
         var ferro = aliments[i].ferro;
         ferro = parseFloat(ferro);
 
-        if(ferro > 5 && !isNaN(ferro)) {
+        if (ferro > 5 && !isNaN(ferro)) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
@@ -225,7 +225,7 @@ function loadFiberTable() {
     var table = "";
     var content = "";
 
-    table +=  "<table id='aliments' class='table'>";
+    table += "<table id='aliments' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
@@ -246,7 +246,7 @@ function loadFiberTable() {
         var fibra = aliments[i].fibra_alimentar;
         fibra = parseFloat(fibra);
 
-        if(fibra > 15 && !isNaN(fibra)) {
+        if (fibra > 15 && !isNaN(fibra)) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
@@ -264,8 +264,112 @@ function loadFiberTable() {
     customizeTableComponents();
 }
 
+function loadLowFatTable() {
+    var table = "";
+    var content = "";
+
+    table += "<table id='aliments' class='table'>";
+    table += "<thead>";
+    table += "<tr>";
+    table += "<th class='text-center'>Descrição</th>";
+    table += "<th class='text-center'>Calorias</th>";
+    table += "<th hidden>-</th>";
+    table += "<th class='text-center'>Detalhes</th>";
+    table += "<th hidden>Calorias Sort</th>";
+    table += "<th hidden>-</th>";
+    table += "</thead>";
+    table += "<tbody>";
+    table += "</tbody>";
+    table += "</table>";
+
+    $('#aliments-table').html("");
+    $('#aliments-table').append(table);
+
+    for (var i = 0; i < aliments.length; i++) {
+        var calcium = aliments[i].calcio;
+        var fiber = aliments[i].fibra_alimentar;
+        var protein = aliments[i].proteina;
+
+        calcium = parseFloat(calcium);
+        fiber = parseFloat(fiber);
+        protein = parseFloat(protein);
+
+        isCalciumValid = (calcium > 20 && !isNaN(calcium));
+        isFiberValid = (fiber > 15 && !isNaN(fiber));
+        isProteinValid = (protein > 15 && !isNaN(protein));
+
+        if (isCalciumValid && isFiberValid && isProteinValid) {
+            content += "<tr>";
+            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
+            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
+            content += "<td hidden>-</td>";
+            content += getBtnContent(i);
+            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
+            content += "<td hidden></td>";
+            content += "</tr>";
+        }
+    }
+
+    $('tbody').append(content);
+
+    initDataTables();
+    customizeTableComponents();
+}
+
+function loadMaintainWeigthTable() {
+    var table = "";
+    var content = "";
+
+    table += "<table id='aliments' class='table'>";
+    table += "<thead>";
+    table += "<tr>";
+    table += "<th class='text-center'>Descrição</th>";
+    table += "<th class='text-center'>Calorias</th>";
+    table += "<th hidden>-</th>";
+    table += "<th class='text-center'>Detalhes</th>";
+    table += "<th hidden>Calorias Sort</th>";
+    table += "<th hidden>-</th>";
+    table += "</thead>";
+    table += "<tbody>";
+    table += "</tbody>";
+    table += "</table>";
+
+    $('#aliments-table').html("");
+    $('#aliments-table').append(table);
+
+    for (var i = 0; i < aliments.length; i++) {
+        var calcium = aliments[i].calcio;
+        var fiber = aliments[i].fibra_alimentar;
+        var protein = aliments[i].proteina;
+
+        calcium = parseFloat(calcium);
+        fiber = parseFloat(fiber);
+        protein = parseFloat(protein);
+
+        isCalciumValid = (calcium > 20 && !isNaN(calcium));
+        isFiberValid = (fiber > 15 && !isNaN(fiber));
+        isProteinValid = (protein > 15 && !isNaN(protein));
+
+        if (isCalciumValid && isFiberValid && isProteinValid) {
+            content += "<tr>";
+            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
+            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
+            content += "<td hidden>-</td>";
+            content += getBtnContent(i);
+            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
+            content += "<td hidden></td>";
+            content += "</tr>";
+        }
+    }
+
+    $('tbody').append(content);
+
+    initDataTables();
+    customizeTableComponents();
+}
+
 function bindSelectEvent() {
-    $('#sel1').change(function() {
+    $('#sel1').change(function () {
         $("#sel2").val("Selecionar Objetivo");
 
         var diet = $(this).val();
@@ -288,12 +392,135 @@ function bindSelectEvent() {
                 break;
         }
     });
+
+    $('#sel2').change(function () {
+        $("#sel1").val("Selecionar Restrição");
+
+        var goal = $(this).val();
+
+        switch (goal) {
+            case 'Reduzir Percentual de Gordura':
+                loadLowFatTable();
+                break;
+            case 'Manter o Peso':
+                loadMaintainWeigthTable();
+                break;
+            case 'Ganhar Massa Magra':
+                loadMassGainTable();
+                break;
+        }
+    });
+}
+
+function showAlimentDetails(arrayPos) {
+    var content = "";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Descrição</h6>";
+    content += "<p>" + aliments[arrayPos].descricao + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Categoria</h6>";
+    content += "<p>" + aliments[arrayPos].categoria + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Calorias</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].energia.kcal, "kcal") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Proteínas</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].proteina, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Lipídios</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].lipideos, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Colesterol</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].colesterol, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Fibra</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].fibra_alimentar, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Cálcio</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].calcio, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Magnésio</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].magnesio, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Fósforo</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].fosforo, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Ferro</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].ferro, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Sódio</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].sodio, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Potássio</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].potassio, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Cobre</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].cobre, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    content += "<div class='row'>";
+    content += "<div class='col-md-6'>";
+    content += "<h6>Zinco</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].zinco, "g") + "</p>";
+    content += "</div>";
+
+    content += "<div class='col-md-6'>";
+    content += "<h6>Vitamina C</h6>";
+    content += "<p>" + evalAlimentsContent(aliments[arrayPos].vitamina_c, "g") + "</p>";
+    content += "</div>";
+    content += "</div>";
+
+    $('.modal-body').html("");
+    $('.modal-body').append(content);
+
+    $('#myModal').modal('show');
 }
 
 function getBtnContent(arrayPos) {
     var btnContent =
 
-        "<td> " +
+        "<td onclick=showAlimentDetails(" + arrayPos + ")> " +
         "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
         "<i class='now-ui-icons ui-2_favourite-28'></i>" +
         "</button>" +

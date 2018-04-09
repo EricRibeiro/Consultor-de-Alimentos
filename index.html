@@ -80,13 +80,14 @@
             <div class="col-md-7">
                 <p class="category">Alimentos</p>
 
-                <input class="form-control" type="text" id="searchBar" onkeyup="filter(this.value)" placeholder="Procurar..">
+                <input class="form-control" type="text" id="searchBar" onkeyup="filter(this.value)"
+                       placeholder="Procurar..">
 
                 <div class="card">
                     <div class="card-body">
                         <!-- Tab panes -->
                         <div class="tab-content text-center" id="aliments-table">
-                        <!-- The table is being generated here -->
+                            <!-- The table is being generated here -->
                         </div>
                     </div>
                 </div>
@@ -104,18 +105,18 @@
             <div class="card">
                 <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist"
                     style="background-color: #4CAF50">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
+                    </li>
                 </ul>
                 <div class="card-body">
                     <!-- Tab panes -->
@@ -156,7 +157,24 @@
     </div>
 </div>
 
+<!-- Sart Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                </button>
+                <h4 class="title title-up">Tabela Nutricional</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
 <!--  End Modal -->
+
 <footer class="footer" data-background-color="black">
     <div class="container">
         <nav>
