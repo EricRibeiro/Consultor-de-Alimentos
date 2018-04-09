@@ -5,9 +5,8 @@ $(document).ready(function () {
 var aliments;
 
 function initTable() {
-    $.getJSON("assets/js/lib/aliments.json", function (data) {
+    $.getJSON("https://raw.githubusercontent.com/EricRibeiro/Mass-Builder/master/assets/js/lib/aliments.json", function (data) {
         aliments = data;
-        shuffle(aliments);
         loadDefaultTable();
         initDataTables();
         customizeTableComponents();
@@ -20,17 +19,13 @@ function loadDefaultTable() {
     var proteina = "";
 
     for (var i = 0; i < aliments.length; i++) {
-        caloria = aliments[i].energia.kcal;
-        caloria = parseInt(caloria);
-
-        proteina = aliments[i].proteina;
-        proteina = parseInt(proteina);
-
         content += "<tr>";
         content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-        content += "<td class='content-align'>" + caloria + " kcal</td>";
-        content += "<td class='content-align'>" + proteina + "g</td>";
+        content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
+        content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].proteina, "g") + "</td>";
         content += getBtnContent(i);
+        content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
+        content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].proteina) + "</td>";
         content += "</tr>";
     }
 
@@ -38,36 +33,38 @@ function loadDefaultTable() {
 
 }
 
-
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-}
-
-function getBtnContent(i) {
+function getBtnContent(arrayPos) {
     var btnContent =
 
         "<td> " +
-        "<button value='" + i + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
+        "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
         "<i class='now-ui-icons ui-2_favourite-28'></i>" +
         "</button>" +
         "</td>";
 
     return btnContent;
+}
+
+function evalAlimentsContent(value, unit) {
+    value = parseFloat(value);
+    value = value.toFixed(2);
+
+    if (isNaN(value))
+        value = "-"
+    else
+        value += unit;
+
+    return value;
+}
+
+function evalAlimentsContentWithZero(value) {
+    value = parseFloat(value);
+    value = value.toFixed(2);
+
+    if (isNaN(value))
+        value = 0;
+
+    return value;
 }
 
 function initDataTables() {
@@ -76,7 +73,9 @@ function initDataTables() {
         "aLengthMenu": [5, 10],
         "stripeClasses": [],
         "columnDefs": [
-            {"ordering": false}
+            {"orderable": false, "targets": 3},
+            {"orderData": [4], "targets": [1]},
+            {"orderData": [5], "targets": [2]}
         ]
     });
 }
@@ -89,4 +88,13 @@ function customizeTableComponents() {
 function filter(text) {
     $searchBar = $("input[type='search']");
     $("input[type='search']").val(text).keyup();
+}
+
+function scroll() {
+    var container = $('body'),
+        scrollTo = $('#alimentos');
+
+    container.animate({
+        scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+    });
 }

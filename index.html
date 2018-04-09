@@ -29,14 +29,16 @@
             <img class="n-logo" src="./assets/img/now-logo.png" alt="">
             <h1 class="h1-seo">Consultor de Alimentos</h1>
             <h3>Escolhar uma opção de exibição de alimentos</h3>
-            <img class="n-logo" src="./assets/img/arrow-down.png" alt="" width="48px" height="48px">
+            <a onclick="scroll()" href="#alimentos">
+                <img class="n-logo" src="./assets/img/arrow-down.png" alt="" width="48px" height="48px">
+            </a>
         </div>
     </div>
 </div>
 
 <div class="section">
     <div class="container">
-        <div class="row">
+        <div id="alimentos" class="row">
             <div class="col-md-5">
                 <p class="category">Exibir Alimentos por Restrição</p>
                 <div class="row">
@@ -78,7 +80,7 @@
             <div class="col-md-7">
                 <p class="category">Alimentos</p>
 
-                <input class="form-control" type="text" id="myInput" onkeyup="filter(this.value)" placeholder="Procurar..">
+                <input class="form-control" type="text" id="searchBar" onkeyup="filter(this.value)" placeholder="Procurar..">
 
                 <div class="card">
                     <div class="card-body">
@@ -87,10 +89,12 @@
                             <table id="aliments" class="table">
                                 <thead>
                                     <tr>
-                                        <th class="text-center"></th>
+                                        <th class="text-center">Descrição</th>
                                         <th class="text-center">Calorias</th>
                                         <th class="text-center">Proteína</th>
                                         <th class="text-center">Detalhes</th>
+                                        <th hidden>Calorias Sort</th>
+                                        <th hidden>Proteína Sort</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -214,11 +218,5 @@
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
 <script src="./assets/js/script.js" type="text/javascript"></script>
-
-<script>
-    $(document).ready( function () {
-
-    } );
-</script>
 
 </html>

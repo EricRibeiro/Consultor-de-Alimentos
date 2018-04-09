@@ -71,15 +71,17 @@ th {
 
 .form-control {
     background-color: white !important;
+    height: 48px !important;
+    font-size: 0.95em;
 }
 
 table.dataTable {
     border-collapse: collapse !important;
 }
 
-#myInput {
+#searchBar {
     background-image: url('../img/searchicon.png'); /* Add a search icon to input */
-    background-position: 6px 8px; /* Position the search icon */
+    background-position: 10px 12px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
     width: 100%; /* Full-width */
     font-size: 16px; /* Increase font-size */
@@ -87,3 +89,4 @@ table.dataTable {
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
 }
+
