@@ -44,10 +44,24 @@ $("#sel1").change(function(){
     loadQuizParam($('#sel1').val());
 });
 
-// $(".opcao").click(function(){
-//     $(this).removeClass("bg-primary");
-//     $(this).addClass("bg-secondary");
-// });
+$(".opcao").click(function(){
+    $(this).siblings('div').addClass("bg-primary");
+    $(this).removeClass("bg-primary");
+    $(this).addClass("bg-secondary");
+
+    var resposta = $(this).children().text();
+    var pergunta = $(this).siblings('p').text();
+
+    for (var i = 0; i < quiz.length; i++){
+        if(quiz[i].frase == pergunta){
+            var compara = quiz[i].correta;
+            console.log(compara);
+            if(compara == resposta){
+                certas += 1;
+            }
+        }
+    }
+});
 
 function loadQuizParam(param) {
     var numeroAleatorio;
@@ -64,27 +78,34 @@ function loadQuizParam(param) {
     }
 
     numeroAleatorio = Math.floor(Math.random() * novo.length);
-    $('#questao1').text(quiz[novo[numeroAleatorio]].frase);
-    $('#op11').text(quiz[novo[numeroAleatorio]].op1);
-    $('#op12').text(quiz[novo[numeroAleatorio]].op2);
-    $('#op13').text(quiz[novo[numeroAleatorio]].op3);
-    $('#op14').text(quiz[novo[numeroAleatorio]].op4);
+    $('#questao1').text(quiz[novo[0]].frase);
+    $('#op11').text(quiz[novo[0]].op1);
+    $('#op12').text(quiz[novo[0]].op2);
+    $('#op13').text(quiz[novo[0]].op3);
+    $('#op14').text(quiz[novo[0]].op4);
     numeroAleatorio = Math.floor(Math.random() * novo.length);
-    $('#questao2').text(quiz[novo[numeroAleatorio]].frase);
-    $('#op21').text(quiz[novo[numeroAleatorio]].op1);
-    $('#op22').text(quiz[novo[numeroAleatorio]].op2);
-    $('#op23').text(quiz[novo[numeroAleatorio]].op3);
-    $('#op24').text(quiz[novo[numeroAleatorio]].op4);
+    $('#questao2').text(quiz[novo[1]].frase);
+    $('#op21').text(quiz[novo[1]].op1);
+    $('#op22').text(quiz[novo[1]].op2);
+    $('#op23').text(quiz[novo[1]].op3);
+    $('#op24').text(quiz[novo[1]].op4);
     numeroAleatorio = Math.floor(Math.random() * novo.length);
-    $('#questao3').text(quiz[novo[numeroAleatorio]].frase);
-    $('#op31').text(quiz[novo[numeroAleatorio]].op1);
-    $('#op32').text(quiz[novo[numeroAleatorio]].op2);
-    $('#op33').text(quiz[novo[numeroAleatorio]].op3);
-    $('#op34').text(quiz[novo[numeroAleatorio]].op4);
+    $('#questao3').text(quiz[novo[2]].frase);
+    $('#op31').text(quiz[novo[2]].op1);
+    $('#op32').text(quiz[novo[2]].op2);
+    $('#op33').text(quiz[novo[2]].op3);
+    $('#op34').text(quiz[novo[2]].op4);
     numeroAleatorio = Math.floor(Math.random() * novo.length);
-    $('#questao4').text(quiz[novo[numeroAleatorio]].frase);
-    $('#op41').text(quiz[novo[numeroAleatorio]].op1);
-    $('#op42').text(quiz[novo[numeroAleatorio]].op2);
-    $('#op43').text(quiz[novo[numeroAleatorio]].op3);
-    $('#op44').text(quiz[novo[numeroAleatorio]].op4);
+    $('#questao4').text(quiz[novo[3]].frase);
+    $('#op41').text(quiz[novo[3]].op1);
+    $('#op42').text(quiz[novo[3]].op2);
+    $('#op43').text(quiz[novo[3]].op3);
+    $('#op44').text(quiz[novo[3]].op4);
+}
+
+function responde(i) {
+
+    // var opcoes = document.querySelectorAll('.opcao');
+    // console.log(opcoes[i]);
+    // console.log(resposta);
 }
