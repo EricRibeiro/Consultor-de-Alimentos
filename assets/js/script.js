@@ -1,13 +1,16 @@
 $(document).ready(function () {
-    loadAliments();
+    initTable();
 });
 
 var aliments;
 
-function loadAliments() {
+function initTable() {
     $.getJSON("assets/js/lib/aliments.json", function (data) {
         aliments = data;
+        shuffle(aliments);
         loadDefaultTable();
+        initDataTables();
+        customizeTableComponents();
     });
 }
 
@@ -16,9 +19,7 @@ function loadDefaultTable() {
     var caloria = "";
     var proteina = "";
 
-    shuffle(aliments);
-
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < aliments.length; i++) {
         caloria = aliments[i].energia.kcal;
         caloria = parseInt(caloria);
 
@@ -29,16 +30,14 @@ function loadDefaultTable() {
         content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
         content += "<td class='content-align'>" + caloria + " kcal</td>";
         content += "<td class='content-align'>" + proteina + "g</td>";
-        content += "<td> " +
-            "<button id='" + aliments[i]._id +  "' class='btn btn-primary btn-icon btn-round' type='button'>" +
-            "<i class='now-ui-icons ui-2_favourite-28'></i>" +
-            "</button>" +
-            "</td>";
+        content += getBtnContent(i);
         content += "</tr>";
     }
+
     $('tbody').append(content);
 
 }
+
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -57,4 +56,37 @@ function shuffle(array) {
     }
 
     return array;
+}
+
+function getBtnContent(i) {
+    var btnContent =
+
+        "<td> " +
+        "<button value='" + i + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
+        "<i class='now-ui-icons ui-2_favourite-28'></i>" +
+        "</button>" +
+        "</td>";
+
+    return btnContent;
+}
+
+function initDataTables() {
+    $('#aliments').DataTable({
+        "iDisplayLength": 5,
+        "aLengthMenu": [5, 10],
+        "stripeClasses": [],
+        "columnDefs": [
+            {"ordering": false}
+        ]
+    });
+}
+
+function customizeTableComponents() {
+    $("#aliments_filter").hide();
+    $('#aliments_length').hide();
+}
+
+function filter(text) {
+    $searchBar = $("input[type='search']");
+    $("input[type='search']").val(text).keyup();
 }

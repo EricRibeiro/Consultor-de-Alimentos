@@ -28,8 +28,8 @@ th {
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 
 .strike > span {
@@ -71,4 +71,19 @@ th {
 
 .form-control {
     background-color: white !important;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+#myInput {
+    background-image: url('../img/searchicon.png'); /* Add a search icon to input */
+    background-position: 6px 8px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 8px 20px 8px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
 }
