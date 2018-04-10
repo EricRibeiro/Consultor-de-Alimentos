@@ -2,8 +2,7 @@ $(document).ready(function () {
     init();
 });
 
-var certas;
-var erradas;
+var respostas = [];
 
 function init() {
     $.getJSON("https://raw.githubusercontent.com/EricRibeiro/Mass-Builder/master/assets/js/lib/perguntas.json", function (data) {
@@ -13,7 +12,7 @@ function init() {
 }
 
 function loadQuiz() {
-    var numeroAleatorio
+    var numeroAleatorio;
     numeroAleatorio = Math.floor(Math.random() * quiz.length);
     $('#questao1').text(quiz[numeroAleatorio].frase);
     $('#op11').text(quiz[numeroAleatorio].op1);
@@ -41,29 +40,38 @@ function loadQuiz() {
 }
 
 $("#sel1").change(function(){
+    $('.opcao').each(function(i){
+        $(this).removeClass('bg-secondary');
+        $(this).addClass('bg-primary');
+    })
     loadQuizParam($('#sel1').val());
+    $('#certas').text("Certas: 0");
+    $('#erradas').text("Erradas: 0");
 });
 
 $(".opcao").click(function(){
     $(this).siblings('div').addClass("bg-primary");
     $(this).removeClass("bg-primary");
     $(this).addClass("bg-secondary");
+    var tabAtual = parseInt($('.active').html());
 
     var resposta = $(this).children().text();
     var pergunta = $(this).siblings('p').text();
 
     for (var i = 0; i < quiz.length; i++){
         if(quiz[i].frase == pergunta){
-            var compara = quiz[i].correta;
-            console.log(compara);
-            if(compara == resposta){
-                certas += 1;
+            var respCorreta = quiz[i].correta;
+            if(respCorreta == resposta){
+                respostas[tabAtual - 1] = 1;
+            } else {
+                respostas[tabAtual - 1] = 0;
             }
         }
     }
 });
 
 function loadQuizParam(param) {
+
     var numeroAleatorio;
     $.getJSON("https://raw.githubusercontent.com/EricRibeiro/Mass-Builder/master/assets/js/lib/perguntas.json", function (data) {
         quiz = data;
@@ -103,9 +111,18 @@ function loadQuizParam(param) {
     $('#op44').text(quiz[novo[3]].op4);
 }
 
-function responde(i) {
+function criaPlacar(){
 
-    // var opcoes = document.querySelectorAll('.opcao');
-    // console.log(opcoes[i]);
-    // console.log(resposta);
+    var certas = 0;
+    var erradas = 0;
+
+    $('#certas').text("Certas: 0");
+    $('#erradas').text("Erradas: 0");
+
+    for(var i = 0; i < respostas.length; i++) {
+        (respostas[i] == 1) ? certas++ : erradas++;
+    }
+
+    $('#certas').text("Certas: " + certas);
+    $('#erradas').text("Erradas: " + erradas);
 }

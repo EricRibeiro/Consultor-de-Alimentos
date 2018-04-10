@@ -136,7 +136,7 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#q4" role="tab">4</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="criaPlacar()">
                         <a class="nav-link" data-toggle="tab" href="#placar" role="tab">Placar</a>
                     </li>
                 </ul>
@@ -145,43 +145,43 @@
                     <div class="tab-content text-center">
                         <div class="tab-pane active" id="q1" role="tabpanel" >
                             <p id="questao1"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(0)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
                                 <p id="op11"></p>
                             </div>
                             <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
                                 <p id="op12"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
                                 <p id="op13"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
                                 <p id="op14"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="q2" role="tabpanel" >
                             <p id="questao2"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(0)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
                                 <p id="op21"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
                                 <p id="op22"></p>
                             </div>
                             <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
                                 <p id="op23"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
                                 <p id="op24"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="q3" role="tabpanel" >
                             <p id="questao3"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(0)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
                                 <p id="op31"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
                                 <p id="op32"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
                                 <p id="op33"></p>
                             </div>
                             <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
@@ -190,21 +190,28 @@
                         </div>
                         <div class="tab-pane" id="q4" role="tabpanel" >
                             <p id="questao4"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(0)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
                                 <p id="op41"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
                                 <p id="op42"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
                                 <p id="op43"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
                                 <p id="op44"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="placar" role="tabpanel">
-                            <p id=""></p>
+                            <div class="alert-success p-3 m-5">
+                                <p id="certas"></p>
+                            </div>
+                            <div class="alert-danger p-3 m-5">
+                                <p id="erradas"></p>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
