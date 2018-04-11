@@ -120,7 +120,11 @@ function criaPlacar(){
     $('#erradas').text("Erradas: 0");
 
     for(var i = 0; i < respostas.length; i++) {
-        (respostas[i] == 1) ? certas++ : erradas++;
+        if (respostas[i] == 1)
+            certas++;
+        else if (respostas[i] == 0) {
+            erradas++;
+        }
     }
 
     $('#certas').text("Certas: " + certas);

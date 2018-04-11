@@ -53,6 +53,11 @@
                                 <option>Ricos em Fibra</option>
                             </select>
                         </div>
+
+                        <div id="explanation-restriction" class="alert-success p-2 m-1" hidden>
+                            <p></p>
+                        </div>
+
                     </div>
                 </div>
 
@@ -69,10 +74,15 @@
                             <select class="form-control" id="sel2">
                                 <option selected hidden>Selecionar Objetivo</option>
                                 <option>Reduzir Percentual de Gordura</option>
-                                <option>Manter o Peso</option>
-                                <option>Ganhar Massa Magra</option>
+                                <!--<option>Manter o Peso</option>-->
+                                <!--<option>Ganhar Massa Magra</option>-->
                             </select>
                         </div>
+
+                        <div id="explanation-goal" class="alert-success p-2 m-1" hidden>
+                            <p></p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -107,8 +117,12 @@
                 </button>
                 <h4 class="title title-up">Tabela Nutricional</h4>
             </div>
+            <p class="text-muted text-center m-1">Composição de alimentos por <strong>100g</strong> de parte comestível</p>
             <div class="modal-body">
 
+            </div>
+            <div class="modal-footer justify-content-center">
+                <p class="text-muted m-1">Legenda: <strong>Tr</strong> = Traços e <strong>NA</strong> = Não Aplicável</p>
             </div>
         </div>
     </div>
@@ -145,61 +159,61 @@
                     <div class="tab-content text-center">
                         <div class="tab-pane active" id="q1" role="tabpanel" >
                             <p id="questao1"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op11"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op12"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op13"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(1)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op14"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="q2" role="tabpanel" >
                             <p id="questao2"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op21"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op22"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op23"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(2)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op24"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="q3" role="tabpanel" >
                             <p id="questao3"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op31"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op32"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op33"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(3)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op34"></p>
                             </div>
                         </div>
                         <div class="tab-pane" id="q4" role="tabpanel" >
                             <p id="questao4"></p>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op41"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op42"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op43"></p>
                             </div>
-                            <div class="p-3 mb-2 bg-primary text-white opcao" onclick="responde(4)">
+                            <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op44"></p>
                             </div>
                         </div>
