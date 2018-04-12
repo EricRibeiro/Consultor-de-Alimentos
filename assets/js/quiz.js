@@ -1,5 +1,7 @@
 $(document).ready(function () {
     init();
+    showRightAnswer();
+    onDietChangeGenerateQuiz();
 });
 
 var respostas = [];
@@ -39,36 +41,52 @@ function loadQuiz() {
     $('#op44').text(quiz[numeroAleatorio].op4);
 }
 
-$("#sel1").change(function(){
-    $('.opcao').each(function(i){
-        $(this).removeClass('bg-secondary');
-        $(this).addClass('bg-primary');
-    })
-    loadQuizParam($('#sel1').val());
-    $('#certas').text("Certas: 0");
-    $('#erradas').text("Erradas: 0");
-});
+function onDietChangeGenerateQuiz() {
+    $("#sel1").change(function () {
+        $('.opcao').each(function (i) {
+            $(this).removeClass('bg-secondary');
+            $(this).addClass('bg-primary');
+        })
+        loadQuizParam($('#sel1').val());
+        $('#certas').text("Certas: 0");
+        $('#erradas').text("Erradas: 0");
+    });
+}
 
-$(".opcao").click(function(){
-    $(this).siblings('div').addClass("bg-primary");
-    $(this).removeClass("bg-primary");
-    $(this).addClass("bg-secondary");
-    var tabAtual = parseInt($('.active').html());
+function showRightAnswer() {
+    $(".opcao").click(function () {
+        $(this).siblings('.opcao').addClass("bg-primary");
+        $(this).removeClass("bg-primary");
+        $(this).addClass("bg-secondary");
+        var tabAtual = parseInt($('.active').html());
 
-    var resposta = $(this).children().text();
-    var pergunta = $(this).siblings('p').text();
+        var resposta = $(this).children().text();
+        var pergunta = $(this).siblings('p').text();
+        var respCorreta = "";
+        var acertou = false;
 
-    for (var i = 0; i < quiz.length; i++){
-        if(quiz[i].frase == pergunta){
-            var respCorreta = quiz[i].correta;
-            if(respCorreta == resposta){
-                respostas[tabAtual - 1] = 1;
-            } else {
-                respostas[tabAtual - 1] = 0;
+        for (var i = 0; i < quiz.length; i++) {
+            if (quiz[i].frase == pergunta) {
+                respCorreta = quiz[i].correta;
+                if (respCorreta == resposta) {
+                    respostas[tabAtual - 1] = 1;
+                    acertou = true;
+                } else {
+                    respostas[tabAtual - 1] = 0;
+                }
             }
         }
-    }
-});
+
+        if (acertou) {
+            $(this).siblings('.alert-danger').attr('hidden', true);
+            $(this).siblings('.alert-success').removeAttr('hidden');
+        } else {
+            $(this).siblings('.alert-success').attr('hidden', true);
+            $(this).siblings('.alert-danger').removeAttr('hidden');
+            $(this).siblings('.alert-danger').find(".respCorreta").text(respCorreta);
+        }
+    });
+}
 
 function loadQuizParam(param) {
 
@@ -79,8 +97,8 @@ function loadQuizParam(param) {
 
     var novo = [];
 
-    for(var i = 0; i < quiz.length; i++) {
-        if(quiz[i].restricao == param){
+    for (var i = 0; i < quiz.length; i++) {
+        if (quiz[i].restricao == param) {
             novo[novo.length] = i;
         }
     }
@@ -111,7 +129,7 @@ function loadQuizParam(param) {
     $('#op44').text(quiz[novo[3]].op4);
 }
 
-function criaPlacar(){
+function criaPlacar() {
 
     var certas = 0;
     var erradas = 0;
@@ -119,7 +137,7 @@ function criaPlacar(){
     $('#certas').text("Certas: 0");
     $('#erradas').text("Erradas: 0");
 
-    for(var i = 0; i < respostas.length; i++) {
+    for (var i = 0; i < respostas.length; i++) {
         if (respostas[i] == 1)
             certas++;
         else if (respostas[i] == 0) {

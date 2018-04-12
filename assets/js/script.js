@@ -581,7 +581,7 @@ function getBtnContent(arrayPos) {
 
         "<td onclick=showAlimentDetails(" + arrayPos + ")> " +
         "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
-        "<i class='now-ui-icons ui-1_simple-add'></i>" +
+        "<i class='now-ui-icons files_paper'></i>" +
         "</button>" +
         "</td>";
 
@@ -647,31 +647,31 @@ function loadExplanation($p, explanation) {
 }
 
 function lowCarbExplanation() {
-    return "Foram filtrados alimentos com menos de 15Kcal de <strong>calorias</strong>.";
+    return "Foram filtrados alimentos com menos de <strong>15Kcal</strong> de <strong>calorias</strong>.";
 }
 
 function proteinExplanation() {
-    return "Foram filtrados alimentos com mais de 30g de <strong>proteína</strong>.";
+    return "Foram filtrados alimentos com mais de <strong>30g</strong> de <strong>proteína</strong>.";
 }
 
 function calciumExplanation() {
-    return "Foram filtrados alimentos com mais de 50g de <strong>cálcio</strong>.";
+    return "Foram filtrados alimentos com mais de <strong>50g</strong> de <strong>cálcio</strong>.";
 }
 
 function ironExplanation() {
-    return "Foram filtrados alimentos com mais de 5g de <strong>ferro</strong>.";
+    return "Foram filtrados alimentos com mais de <strong>5g</strong> de <strong>ferro</strong>.";
 }
 
 function fiberExplanation() {
-    return "Foram filtrados alimentos com mais de 15g de <strong>fibras</strong>.";
+    return "Foram filtrados alimentos com mais de <strong>15g</strong> de <strong>fibras</strong>.";
 }
 
 function lowFatExplanation() {
     return "Foram filtrados alimentos com mais de:" +
         "<ul>" +
-        "<li>20g de <strong>cálcio</strong></li>" +
-        "<li>15g de <strong>fibras</strong></li>" +
-        "<li>15g de <strong>proteína</strong></li>" +
+        "<li><strong>20g</strong> de <strong>cálcio</strong></li>" +
+        "<li><strong>15g</strong> de <strong>fibras</strong></li>" +
+        "<li><strong>15g</strong> de <strong>proteína</strong></li>" +
         "</ul>";
 }
 

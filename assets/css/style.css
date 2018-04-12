@@ -108,3 +108,18 @@ table.dataTable {
     border-color: #81C784 !important;
 }
 
+.bg-tree {
+    background: url('../img/trees.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card-body {
+    /*background-color: #F5F5F5;*/
+}
+
+.bg-primary {
+    background-color: #4CAF50!important;
+}

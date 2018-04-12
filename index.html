@@ -21,22 +21,18 @@
 
 <body>
 
-<div class="page-header clear-filter">
-    <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/trees.jpg');">
+<section class="bg-tree text-center p-5">
+    <div class="container p-5">
+        <img class="n-logo" src="./assets/img/logo.png" alt="">
+        <h1 class="h1-seo text-white">Consultor de Alimentos</h1>
+        <h3 class="text-white">Escolha uma opção de exibição de alimentos</h3>
+        <a onclick="scroll()" href="#alimentos">
+            <img src="./assets/img/arrow-down.png" alt="" width="48px" height="48px">
+        </a>
     </div>
-    <div class="container">
-        <div class="content-center brand">
-            <img class="n-logo" src="./assets/img/logo.png" alt="">
-            <h1 class="h1-seo">Consultor de Alimentos</h1>
-            <h3>Escolha uma opção de exibição de alimentos</h3>
-            <a onclick="scroll()" href="#alimentos">
-                <img class="n-logo" src="./assets/img/arrow-down.png" alt="" width="48px" height="48px">
-            </a>
-        </div>
-    </div>
-</div>
+</section>
 
-<div class="section">
+<main class="section">
     <div class="container">
         <div id="alimentos" class="row">
             <div class="col-md-5">
@@ -103,12 +99,21 @@
                 </div>
             </div>
         </div>
+        <div class="row text-center mt-3">
+            <div class="col-md-12">
+                <a onclick="scroll()" href="#quiz">
+                    <img class="n-logo" src="./assets/img/arrow-down-green.png" alt="" width="48px"
+                         height="48px">
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+</main>
 
 
 <!-- Begin Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header justify-content-center">
@@ -117,25 +122,28 @@
                 </button>
                 <h4 class="title title-up">Tabela Nutricional</h4>
             </div>
-            <p class="text-muted text-center m-1">Composição de alimentos por <strong>100g</strong> de parte comestível</p>
+            <p class="text-muted text-center m-1">Composição de alimentos por <strong>100g</strong> de parte
+                comestível
+            </p>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer justify-content-center">
-                <p class="text-muted m-1">Legenda: <strong>Tr</strong> = Traços e <strong>NA</strong> = Não Aplicável</p>
+                <p class="text-muted m-1">Legenda: <strong>Tr</strong> = Traços e <strong>NA</strong> = Não
+                    Aplicável
+                </p>
             </div>
         </div>
     </div>
 </div>
 <!--  End Modal -->
 
-<div class="page-header clear-filter">
-    <div class="page-header-image" data-parallax="false" style="background-image: url('./assets/img/trees.jpg');">
-    </div>
+<section class="bg-tree">
     <div class="container">
-        <div class="content-center brand">
-            <h3>Quiz Nutricional</h3>
-            <div class="card">
+        <div class="content-center">
+            <h3 class="text-center pt-5 text-white">Quiz Nutricional</h3>
+
+            <div id="quiz" class="card">
                 <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist"
                     style="background-color: #4CAF50">
                     <li class="nav-item">
@@ -154,11 +162,15 @@
                         <a class="nav-link" data-toggle="tab" href="#placar" role="tab">Placar</a>
                     </li>
                 </ul>
+
                 <div class="card-body">
                     <!-- Tab panes -->
                     <div class="tab-content text-center">
-                        <div class="tab-pane active" id="q1" role="tabpanel" >
-                            <p id="questao1"></p>
+
+                        <div class="tab-pane active" id="q1" role="tabpanel">
+
+                            <p id="questao1" class="mb-5 mt-4"></p>
+
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op11"></p>
                             </div>
@@ -171,9 +183,21 @@
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op14"></p>
                             </div>
+
+                            <div hidden class="alert-success p-3 m-2">
+                                <p>Muito Bem!</p>
+                            </div>
+
+                            <div hidden class="alert-danger p-3 m-2">
+                                <p>Não desista de tentar! A resposta correta é:</p>
+                                <p><strong class="respCorreta"></strong></p>
+                            </div>
+
                         </div>
-                        <div class="tab-pane" id="q2" role="tabpanel" >
-                            <p id="questao2"></p>
+
+                        <div class="tab-pane" id="q2" role="tabpanel">
+                            <p id="questao2" class="mb-5 mt-4"></p>
+
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op21"></p>
                             </div>
@@ -186,9 +210,20 @@
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op24"></p>
                             </div>
+
+                            <div hidden class="alert-success p-3 m-2">
+                                <p>Muito Bem!</p>
+                            </div>
+
+                            <div hidden class="alert-danger p-3 m-2">
+                                <p>Não desista de tentar! A resposta correta é:</p>
+                                <p><strong class="respCorreta"></strong></p>
+                            </div>
                         </div>
-                        <div class="tab-pane" id="q3" role="tabpanel" >
-                            <p id="questao3"></p>
+
+                        <div class="tab-pane" id="q3" role="tabpanel">
+                            <p id="questao3" class="mb-5 mt-4"></p>
+
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op31"></p>
                             </div>
@@ -201,9 +236,20 @@
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op34"></p>
                             </div>
+
+                            <div hidden class="alert-success p-3 m-2">
+                                <p>Muito Bem!</p>
+                            </div>
+
+                            <div hidden class="alert-danger p-3 m-2">
+                                <p>Não desista de tentar! A resposta correta é:</p>
+                                <p><strong class="respCorreta"></strong></p>
+                            </div>
                         </div>
-                        <div class="tab-pane" id="q4" role="tabpanel" >
-                            <p id="questao4"></p>
+
+                        <div class="tab-pane" id="q4" role="tabpanel">
+                            <p id="questao4" class="mb-5 mt-4"></p>
+
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op41"></p>
                             </div>
@@ -216,7 +262,17 @@
                             <div class="p-3 mb-2 bg-primary text-white opcao">
                                 <p id="op44"></p>
                             </div>
+
+                            <div hidden class="alert-success p-3 m-2">
+                                <p>Muito Bem!</p>
+                            </div>
+
+                            <div hidden class="alert-danger p-3 m-2">
+                                <p>Não desista de tentar! A resposta correta é:</p>
+                                <p><strong class="respCorreta"></strong></p>
+                            </div>
                         </div>
+
                         <div class="tab-pane" id="placar" role="tabpanel">
                             <div class="alert-success p-3 m-5">
                                 <p id="certas"></p>
@@ -224,15 +280,14 @@
                             <div class="alert-danger p-3 m-5">
                                 <p id="erradas"></p>
                             </div>
-
-
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 <footer class="footer" data-background-color="black">
