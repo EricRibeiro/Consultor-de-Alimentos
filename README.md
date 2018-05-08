@@ -9,7 +9,7 @@ Ao realizar este projeto foram utilizados, entre outros, conceitos como:
 - Regras de Shneiderman
 - Princípios de Gestalt
 - Engenharia Cognitiva
-- [Modelagem de Dados](artifacts/README.md)
+- [Coleta e Modelagem de Dados](artifacts/README.md)
 
 ## Casos de Uso
 As funcionalidades propostas incluem:
