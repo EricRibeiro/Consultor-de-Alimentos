@@ -19,5 +19,7 @@ As funcionalidades propostas incluem:
 - Responder um quiz com perguntas associadas a restrição alimentar escolhida.
 
 ## Equipe
+- Ana Santos
+- Carlos Arantes
 - Eric Ribeiro
 - Ricardo Murta
