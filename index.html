@@ -124,7 +124,7 @@
 
                 <div class="row">
                     <div class="col-lg-9 col-md-8">
-                        <input class="form-control" type="text" id="searchBar" onkeyup="search(this.value)"
+                        <input class="form-control searchBar" type="text" name="aliments-table_filter" onkeyup="search(this.value, this.name)"
                                placeholder="Procurar..">
                     </div>
 
@@ -178,7 +178,7 @@
             <p class="text-muted text-center m-1">Composição de alimentos por <strong>100g</strong> de parte
                 comestível
             </p>
-            <div class="modal-body">
+            <div class="modal-body modal-body-details">
 
             </div>
             <div class="modal-footer justify-content-center">
@@ -192,7 +192,7 @@
 <!--  End Modal -->
 
 <!-- Begin Modal - Impressão de Alimentos-->
-<div class="modal fade" id="modal-impressao" tabindex="-1" role="dialog" aria-labelledby="modalImpressaoLabel"
+<div class="modal fade" id="modal-print" tabindex="-1" role="dialog" aria-labelledby="modalPrintLabel"
      aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -200,13 +200,41 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     <i class="now-ui-icons ui-1_simple-remove"></i>
                 </button>
+
                 <h4 class="title title-up">Imprimir Alimentos</h4>
             </div>
 
             <p class="text-muted text-center m-1">Remova os alimentos que não serão impressos</p>
 
-            <div class="modal-body" id="aliments-print">
-                <!-- The table is being generated here -->
+            <div class="modal-body modal-body-print">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input class="form-control searchBar" type="text" name="aliments-print-table_filter" onkeyup="search(this.value, this.name)"
+                               placeholder="Procurar..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12" id="aliments-print">
+                        <!-- The table is being generated here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+               <div class="row">
+                   <div class="col-md-6">
+                       <button class='btn btn-primary' data-dismiss="modal" type='button' style="width: 100%;">
+                           Cancelar
+                       </button>
+                   </div>
+
+                   <div class="col-md-6">
+                       <button class='btn btn-primary' type='button' style="width: 100%;">
+                           Confirmar
+                       </button>
+                   </div>
+               </div>
             </div>
         </div>
     </div>

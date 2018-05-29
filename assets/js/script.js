@@ -2,14 +2,19 @@ $(document).ready(function () {
     initTable();
     onSelectChangeReloadTable();
     onSelectOptionChangeShowFilters();
+    onBtnClickShowPrintModal();
+    onBtnClickRemoveRow();
 });
 
 var aliments;
+var filter;
+var alimentsPrintTable;
 
 function initTable() {
     $.getJSON("https://raw.githubusercontent.com/EricRibeiro/Consultor-de-Alimentos/master/assets/js/lib/aliments.json", function (data) {
         aliments = data;
-        loadTable('Todos', 'aliments');
+        setFilter('Todos');
+        loadTable(getFilter(), 'aliments');
     });
 }
 
@@ -21,28 +26,46 @@ function initDataTables(idTable) {
             "stripeClasses": [],
             "columnDefs": [
                 {"orderable": false, "targets": 7},
-                {"orderData": [4], "targets": [1]},
-                {"orderData": [5], "targets": [2]}
+                {"visible": false, "targets": 8},
             ]
         });
 
+    } else {
+        alimentsPrintTable = $("#" + idTable).DataTable({
+            "columnDefs": [
+                {"className": "dt-center", "targets": 8},
+                {"orderable": false, "targets": 8},
+                {"visible": false, "targets": [1, 2, 3, 4, 5, 6, 7]},
+            ],
+            "info": false,
+            "order": [[0, "asc"]],
+            "paging": false,
+            "scrollCollapse": true,
+            "scrollY": "250px",
+            fnDrawCallback: function () {
+                $('#aliments-print .dataTables_scrollHeadInner').css('width', '97%').css('padding-right', '13px');
+                $('#aliments-print .dataTables_scrollHeadInner > table:nth-child(1)').css('width', '100%');
+                $('#aliments-print .sorting_asc').css('width', '324px');
+                $('#aliments-print .sorting').css('width', '324px');
+            }
+        });
     }
 }
 
 function onSelectOptionChangeShowFilters() {
     $('#select-options').change(function () {
-        let selected = $(this).val();
+        let filter = $(this).val();
 
-        if (selected === 'Todos') {
-            loadTable('Todos', 'aliments');
+        if (filter === 'Todos') {
+            loadTable(getFilter(), 'aliments');
             $('#explanation').hide();
             $('.row-filters').children().hide(150);
 
-        } else if (selected === 'Categoria') {
+        } else if (filter === 'Categoria') {
             $('#category').show(150);
             $('#category').siblings().hide();
 
-        } else if (selected === 'Objetivo') {
+        } else if (filter === 'Objetivo') {
             $('#goal').show(150);
             $('#goal').siblings().hide();
 
@@ -55,9 +78,9 @@ function onSelectOptionChangeShowFilters() {
 
 function onSelectChangeReloadTable() {
     $('.select-filter').change(function () {
-        let filter = $(this).val();
-        loadTable(filter, 'aliments');
-        loadExplanation(filter);
+        setFilter($(this).val());
+        loadTable(getFilter(), 'aliments');
+        loadExplanation(getFilter());
     });
 }
 
@@ -70,13 +93,14 @@ function loadTable(filter, idTableContainer) {
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Cálcio</th>";
     table += "<th class='text-center'>Calorias</th>";
+    table += "<th class='text-center'>Cálcio</th>";
     table += "<th class='text-center'>Ferro</th>";
     table += "<th class='text-center'>Fibras</th>";
     table += "<th class='text-center'>Lipídios</th>";
     table += "<th class='text-center'>Proteínas</th>";
     table += "<th class='text-center'>Detalhes</th>";
+    table += "<th class='text-center'>Remover</th>";
     table += "</thead>";
     table += "<tbody>";
     table += "</tbody>";
@@ -88,13 +112,14 @@ function loadTable(filter, idTableContainer) {
         if (filter === 'Todos' || meetsFilterCondition(filter, aliments[i])) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].calcio, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
+            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].calcio, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].ferro, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].fibra_alimentar, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].lipideos, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].proteina, "g") + "</td>";
-            content += getBtnContent(i);
+            content += getDetailsBtnContent(i);
+            content += getRemoveBtnContent(i);
             content += "</tr>";
 
         }
@@ -106,12 +131,24 @@ function loadTable(filter, idTableContainer) {
     customizeTableComponents(idTable);
 }
 
-function getBtnContent(arrayPos) {
+function getDetailsBtnContent(arrayPos) {
     let btnContent =
 
         "<td onclick=showAlimentDetails(" + arrayPos + ")> " +
         "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
         "<i class='now-ui-icons files_paper'></i>" +
+        "</button>" +
+        "</td>";
+
+    return btnContent;
+}
+
+function getRemoveBtnContent(i) {
+    let btnContent =
+
+        "<td>" +
+        "<button class='btn btn-danger btn-icon btn-round' id='" + "btn-remove-" + i + "' onclick='removeRow(this.id)' type='button'>" +
+        "<i class='now-ui-icons ui-1_simple-delete'></i>" +
         "</button>" +
         "</td>";
 
@@ -349,8 +386,7 @@ function showAlimentDetails(arrayPos) {
     content += "</div>";
     content += "</div>";
 
-    $('.modal-body').html("");
-    $('.modal-body').append(content);
+    $('.modal-body-details').html(content);
 
     $('#myModal').modal('show');
 }
@@ -374,8 +410,8 @@ function customizeTableComponents(idTable) {
     $("#" + idTable + "_length").hide();
 }
 
-function search(text) {
-    $("input[type='search']").val(text).keyup();
+function search(text, name) {
+    $("#" + name + " input").val(text).keyup();
 }
 
 function scroll() {
@@ -387,14 +423,26 @@ function scroll() {
     });
 }
 
+function getFilter() {
+    return this.filter;
+}
+
+function setFilter(filter) {
+    this.filter = filter;
+}
+
 /* Below is the print feature code. Given time this will go in another file. */
 
+function onBtnClickShowPrintModal() {
+    $('#btn-print').click(function () {
+        loadTable(getFilter(), 'aliments-print');
+        $('#modal-print').modal('show');
+    });
+}
 
-// function onBtnClickShowPrintModal() {
-//     $('#btn-print').click(function() {
-//         let filter = $('.select-filter').val();
-//         alert(filter);
-//         loadTable(filter, 'aliments-print');
-//         $('#modal-impressao').modal('show');
-//     });
-// }
+function removeRow(idBtn) {
+    alimentsPrintTable
+        .row($("#" + idBtn).parents('tr'))
+        .remove()
+        .draw();
+}
