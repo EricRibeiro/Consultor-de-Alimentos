@@ -9,14 +9,16 @@
     <title>IHC</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
           name='viewport'/>
-    <!--     Fonts and icons     -->
+
+    <!-- Fonts and icons -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+
     <!-- CSS Files -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet"/>
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <link href="assets/css/datatables/jquery.dataTables.min.css " rel="stylesheet"/>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link href="./assets/css/datatables/jquery.dataTables.min.css " rel="stylesheet"/>
 </head>
 
 <body>
@@ -34,44 +36,56 @@
 
 <main class="section">
     <div class="container">
-        <div id="alimentos" class="row">
-            <div class="col-md-5">
-                <p class="category">Exibir Alimentos por Restrição</p>
+        <div class="row mb-2">
+            <div id="options" class="col-md-12">
+                <p class="category">Exibir Alimentos por</p>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
-                            <select class="form-control" id="sel1">
-                                <option selected hidden>Selecionar Restrição</option>
-                                <option>Reduzidos em Carboidratos</option>
-                                <option>Ricos em Proteína</option>
-                                <option>Ricos em Cálcio</option>
-                                <option>Ricos em Ferro</option>
-                                <option>Ricos em Fibra</option>
-                            </select>
-                        </div>
 
-                        <div id="explanation-restriction" class="alert-success p-2 m-1" hidden>
-                            <p></p>
+                        <div class="form-group">
+                            <select class="form-control" id="select-options">
+                                <option selected>Todos</option>
+                                <option>Categoria</option>
+                                <option>Objetivo</option>
+                                <option>Restrição</option>
+                            </select>
                         </div>
 
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="strike">
-                  <span class="category">
-                    ou
-                  </span>
-                </div>
-
-                <p class="category">Exibir Alimentos por Objetivo</p>
+        <div class="row row-filters mb-2">
+            <div id="category" class="col-md-12" style="display: none">
+                <p class="category">Categorias</p>
                 <div class="row">
                     <div class="col-md-12">
+
                         <div class="form-group">
-                            <select class="form-control" id="sel2">
+                            <select class="form-control select-filter" id="select-category">
+                                <option selected hidden>Selecionar Categoria</option>
+                                <option>Carnes</option>
+                                <option>Cereais</option>
+                                <option>Frutas</option>
+                                <option>Leite</option>
+                                <option>Ovos</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="goal" class="col-md-12" style="display: none">
+                <p class="category">Objetivos</p>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="form-group">
+                            <select class="form-control select-filter" id="select-goal">
                                 <option selected hidden>Selecionar Objetivo</option>
                                 <option>Reduzir Percentual de Gordura</option>
-                                <!--<option>Manter o Peso</option>-->
-                                <!--<option>Ganhar Massa Magra</option>-->
                             </select>
                         </div>
 
@@ -83,22 +97,61 @@
                 </div>
             </div>
 
-            <div class="col-md-7">
-                <p class="category">Alimentos</p>
+            <div id="restriction" class="col-md-12" style="display: none">
+                <p class="category">Restrições</p>
+                <div class="row">
+                    <div class="col-md-12">
 
-                <input class="form-control" type="text" id="searchBar" onkeyup="filter(this.value)"
-                       placeholder="Procurar..">
-
-                <div class="card">
-                    <div class="card-body">
-                        <!-- Tab panes -->
-                        <div class="tab-content text-center" id="aliments-table">
-                            <!-- The table is being generated here -->
+                        <div class="form-group">
+                            <select class="form-control select-filter" id="select-restriction">
+                                <option selected hidden>Selecionar Restrição</option>
+                                <option>Reduzidos em Carboidratos</option>
+                                <option>Ricos em Proteína</option>
+                                <option>Ricos em Cálcio</option>
+                                <option>Ricos em Ferro</option>
+                                <option>Ricos em Fibra</option>
+                            </select>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="alimentos" class="row">
+            <div class="col-md-12">
+                <p class="category">Alimentos</p>
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <input class="form-control" type="text" id="searchBar" onkeyup="search(this.value)"
+                               placeholder="Procurar..">
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <button id='btn-print' class='btn btn-primary' type='button' style="width: 100%;">
+                            Imprimir Alimentos
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content text-center" id="aliments">
+                            <!-- The table is being generated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="explanation" class="alert-success p-2" style="display: none">
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+
+
         <div class="row text-center mt-3">
             <div class="col-md-12">
                 <a onclick="scroll()" href="#quiz">
@@ -111,7 +164,7 @@
 </main>
 
 
-<!-- Begin Modal -->
+<!-- Begin Modal - Tabela Nutricional-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
     <div class="modal-dialog">
@@ -132,6 +185,28 @@
                 <p class="text-muted m-1">Legenda: <strong>Tr</strong> = Traços e <strong>NA</strong> = Não
                     Aplicável
                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End Modal -->
+
+<!-- Begin Modal - Impressão de Alimentos-->
+<div class="modal fade" id="modal-impressao" tabindex="-1" role="dialog" aria-labelledby="modalImpressaoLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                </button>
+                <h4 class="title title-up">Imprimir Alimentos</h4>
+            </div>
+
+            <p class="text-muted text-center m-1">Remova os alimentos que não serão impressos</p>
+
+            <div class="modal-body" id="aliments-print">
+                <!-- The table is being generated here -->
             </div>
         </div>
     </div>
@@ -288,7 +363,6 @@
         </div>
     </div>
 </section>
-
 
 <footer class="footer" data-background-color="black">
     <div class="container">
