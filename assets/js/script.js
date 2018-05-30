@@ -21,13 +21,14 @@ function initTable() {
 function initDataTables(idTable) {
     if (idTable === 'aliments-table') {
         $("#" + idTable).DataTable({
-            "iDisplayLength": 5,
             "aLengthMenu": [5, 10],
-            "stripeClasses": [],
             "columnDefs": [
                 {"orderable": false, "targets": 7},
                 {"visible": false, "targets": 8},
-            ]
+            ],
+            "iDisplayLength": 5,
+            "scrollX": true,
+            "stripeClasses": []
         });
 
     } else {

@@ -127,3 +127,11 @@ table.dataTable {
 .modal-body-print {
     margin-left: 0px;
 }
+
+.modal-content .modal-footer button {
+    margin: 5px 1px;
+}
+
+.h1-seo {
+    font-size: 2.5rem;
+}
