@@ -26,9 +26,7 @@ function initDataTables(idTable) {
                 {"orderable": false, "targets": 7},
                 {"visible": false, "targets": 8},
             ],
-            "iDisplayLength": 5,
-            "scrollX": true,
-            "stripeClasses": []
+            "responsive": true
         });
 
     } else {
