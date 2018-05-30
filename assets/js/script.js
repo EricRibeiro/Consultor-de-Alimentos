@@ -3,7 +3,7 @@ $(document).ready(function () {
     onSelectChangeReloadTable();
     onSelectOptionChangeShowFilters();
     onBtnClickShowPrintModal();
-    onBtnClickRemoveRow();
+    onBtnClickPrint();
 });
 
 var aliments;
@@ -32,11 +32,21 @@ function initDataTables(idTable) {
 
     } else {
         alimentsPrintTable = $("#" + idTable).DataTable({
+            buttons: [
+                {
+                    extend: 'print',
+                    title: 'Alimentos',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 5, 6]
+                    }
+                }
+            ],
             "columnDefs": [
                 {"className": "dt-center", "targets": 8},
                 {"orderable": false, "targets": 8},
                 {"visible": false, "targets": [1, 2, 3, 4, 5, 6, 7]},
             ],
+            dom: 'Bfrtip',
             "info": false,
             "order": [[0, "asc"]],
             "paging": false,
@@ -47,6 +57,7 @@ function initDataTables(idTable) {
                 $('#aliments-print .dataTables_scrollHeadInner > table:nth-child(1)').css('width', '100%');
                 $('#aliments-print .sorting_asc').css('width', '324px');
                 $('#aliments-print .sorting').css('width', '324px');
+                $('button.dt-button.buttons-print').hide();
             }
         });
     }
@@ -81,6 +92,16 @@ function onSelectChangeReloadTable() {
         setFilter($(this).val());
         loadTable(getFilter(), 'aliments');
         loadExplanation(getFilter());
+
+        new Noty({
+            closeWith: ['click', 'button'],
+            progressBar: false,
+            text: 'Alimentos filtrados.',
+            timeout: 1000,
+            theme    : 'bootstrap-v4',
+            type: 'success',
+        }).show();
+
     });
 }
 
@@ -440,9 +461,24 @@ function onBtnClickShowPrintModal() {
     });
 }
 
+function onBtnClickPrint() {
+    $('#btn-print-confirm').click(function () {
+        $('button.dt-button.buttons-print').click();
+    });
+}
+
 function removeRow(idBtn) {
     alimentsPrintTable
         .row($("#" + idBtn).parents('tr'))
         .remove()
         .draw();
+
+    new Noty({
+        closeWith: ['click', 'button'],
+        progressBar: false,
+        text: 'Alimento removido.',
+        timeout: 1000,
+        theme    : 'bootstrap-v4',
+        type: 'success',
+    }).show();
 }
