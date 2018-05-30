@@ -154,8 +154,8 @@ function loadTable(filter, idTableContainer) {
 function getDetailsBtnContent(arrayPos) {
     let btnContent =
 
-        "<td onclick=showAlimentDetails(" + arrayPos + ")> " +
-        "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
+        "<td> " +
+        "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' onclick=showAlimentDetails(" + arrayPos + ") type='button'>" +
         "<i class='now-ui-icons files_paper'></i>" +
         "</button>" +
         "</td>";
