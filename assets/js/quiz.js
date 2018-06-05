@@ -73,7 +73,6 @@ function criarEstruturaQuiz() {
 function loadQuiz() {
     var numeroAleatorio;
     var count = 0;
-    debugger;
     for (var i = 0; i < quantTiposRestricoesEObjetivos * quantQuestoesPorTipo; i++) {
         if (count == quantTiposRestricoesEObjetivos)
             count = 0;
@@ -118,7 +117,9 @@ function showRightAnswer() {
             $(this).siblings('.alert-danger').removeAttr('hidden');
             $(this).siblings('.alert-danger').find(".respCorreta").text(respCorreta);
         }
+        atualizarGraficoResultados();
     });
+    
 }
 
 function criaPlacar() {
@@ -139,6 +140,54 @@ function criaPlacar() {
 
     $('#certas').text("Certas: " + certas);
     $('#erradas').text("Erradas: " + erradas);
+}
+
+
+function atualizarGraficoResultados() {
+    var labels = [];
+    var dataAcertos = [];
+    var dataErros = [];
+
+    for (var i = 0; i < restricoes.length; i++) {
+        var questoesRestricao = filterRestriction(questoesQuiz, restricoes[i]);
+        var quantAcertos = 0;
+        var quantErros = 0
+        
+        for (var j = 0; j < questoesRestricao.length; j++) {
+            if (questoesRestricao[j].respostaUsuario == 1) {
+                quantAcertos += 1;
+            } else if (questoesRestricao[j].respostaUsuario == 0) {
+                quantErros += 1;
+            }
+        }
+        labels.push(restricoes[i]);
+        dataAcertos.push(quantAcertos);
+        dataErros.push(dataErros);
+    }
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Acertos",
+              fill: true,
+              backgroundColor: "rgba(179,181,198,0.2)",
+              borderColor: "rgba(179,181,198,1)",
+              pointBorderColor: "#fff",
+              pointBackgroundColor: "rgba(179,181,198,1)",
+              data: dataAcertos
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Distribuição de acertos das questões por tipos de restrições/objetivos'
+          }
+        }
+    });
 }
 
 function filterRestriction(array, restriction) {
