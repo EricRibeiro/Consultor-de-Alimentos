@@ -121,8 +121,17 @@ table.dataTable {
 }
 
 .bg-primary {
+    background-color: #868e96!important;
+}
+
+.bg-secondary {
     background-color: #4CAF50!important;
 }
+
+.bg-tertiary {
+    background-color: #ff001c!important;
+}
+
 
 .modal-body-print {
     margin-left: 0px;
