@@ -171,52 +171,27 @@ function showRightAnswer() {
             $(this).siblings('.alert-danger').removeAttr('hidden');
             $(this).siblings('.alert-danger').find(".respCorreta").text(respCorreta);
         }
-        atualizarGraficoResultados();
         $("#btnProximo").removeAttr("disabled");
     });
     
 }
 
 function criaPlacar() {
-
-    var certas = 0;
-    var erradas = 0;
-
-    $('#certas').text("Certas: 0");
-    $('#erradas').text("Erradas: 0");
-
-    for (var i = 0; i < respostas.length; i++) {
-        if (respostas[i] == 1)
-            certas++;
-        else if (respostas[i] == 0) {
-            erradas++;
-        }
-    }
-
-    $('#certas').text("Certas: " + certas);
-    $('#erradas').text("Erradas: " + erradas);
+		createChartResult();
+		createTextResult();
 }
 
-
-function atualizarGraficoResultados() {
+function createChartResult() {
     var labels = [];
     var dataAcertos = [];
     var dataErros = [];
 
     for (var i = 0; i < restricoes.length; i++) {
         var questoesRestricao = filterRestriction(questoesQuiz, restricoes[i]);
-        var quantAcertos = 0;
-        var quantErros = 0
-        
-        for (var j = 0; j < questoesRestricao.length; j++) {
-            if (questoesRestricao[j].respostaUsuario == 1) {
-                quantAcertos += 1;
-            } else if (questoesRestricao[j].respostaUsuario == 0) {
-                quantErros += 1;
-            }
-        }
+        var respostas = calcularRespostaQuestao(questoesRestricao);
+
         labels.push(restricoes[i]);
-        dataAcertos.push(quantAcertos);
+        dataAcertos.push(respostas.quantAcertos);
         dataErros.push(dataErros);
     }
     var ctx = document.getElementById("myChart");
@@ -244,6 +219,35 @@ function atualizarGraficoResultados() {
         }
     });
 }
+function calcularRespostaQuestao(questao){
+    var resultado = {
+        quantAcertos: 0,
+        quantErros: 0
+    };
+
+    for (var j = 0; j < questao.length; j++) {
+        if (questao[j].respostaUsuario == 1) {
+            resultado.quantAcertos += 1;
+        } else if (questao[j].respostaUsuario == 0) {
+            resultado.quantErros += 1;
+        }
+    }
+    return resultado;
+}
+
+function createTextResult(){
+	var restricaoSelecionada = $('#select-restriction').find(":selected").text();
+	var comentarioResultado = "Você não selecionou nenhuma restrição/objetivo. Veja o gráfico ao lado para analisar o seu conhecimento em cada restrição/objetivo.";
+	if(restricaoSelecionada != "Selecionar Restrição")
+	{
+	 var questoesRestricao = filterRestriction(questoesQuiz, restricaoSelecionada);
+	 var respostas = calcularRespostaQuestao(questoesRestricao);
+	 var totalQuestoes = resposta.quantAcertos + respostas.quantErros;
+	 comentarioResultado = "Você acertou " + respostas.quantAcertos + " de " + totalQuestoes + " questões da restrição/objetivo selecionado: " + restricaoSelecionada;
+	}
+	$("#result").text(comentarioResultado);
+
+};
 
 function filterRestriction(array, restriction) {
     return array.filter(function (el) {
@@ -256,3 +260,5 @@ function filterQuestion(array, question) {
         return el.frase == question
     });
 }
+
+
