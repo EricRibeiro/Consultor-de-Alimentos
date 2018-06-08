@@ -1,6 +1,7 @@
 $(document).ready(function () {
     init();
     onBtnClickShowQuestion();
+    setQuestaoAtual();
 });
 
 var respostas = [];
@@ -102,21 +103,33 @@ function loadQuiz() {
         $('#op' + (i + 1) + '4').text(questoesQuiz[i].op4);
         count++;
     }
+
 }
+
+function setQuestaoAtual(){
+        let currentTab = $(".tab-pane.active").attr('id');
+        let numQuestion = currentTab.charAt(1);
+        if(currentTab !== "placar")
+            $("#questaoAtual").html("Questão: " + numQuestion + " / " + quantTiposRestricoesEObjetivos);
+        else
+            $("#questaoAtual").text("");
+
+}       
+
 
 function onBtnClickShowQuestion() {
     $("#btnProximo").click( function (){
         $( "a[href='"+getQuestion('next')+"']" ).click();
         $("#btnProximo").attr("disabled",true);
         calcularRespostas();
-
+        setQuestaoAtual();
+    
     });
     $("#btnAnterior").click( function (){
         $( "a[href='"+getQuestion('prev')+"']" ).click();
         $("#btnProximo").attr("disabled",false);
-
+        setQuestaoAtual();
     });
-
 
 }
 
@@ -183,7 +196,7 @@ function showRightAnswer() {
     
 }
 
-function criaPlacar() {
+function criaPlacar() {    
 
     var certas = 0;
     var erradas = 0;
