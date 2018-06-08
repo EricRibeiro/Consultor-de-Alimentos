@@ -243,15 +243,16 @@ function calcularRespostaQuestao(questao){
 
 function createTextResult(){
 	var restricaoSelecionada = $('#select-restriction').find(":selected").text();
-	var comentarioResultado = "Você não selecionou nenhuma restrição/objetivo. Veja o gráfico ao lado para analisar o seu conhecimento em cada restrição/objetivo.";
+    var comentarioResultado = "Você não selecionou nenhuma restrição/objetivo.";
+    var comentarioVisualizarGrafico = "Veja o gráfico ao lado para analisar a distribuição de acertos em cada filtro de exibição de alimentos disponíveis.";
 	if(restricaoSelecionada != "Selecionar Restrição")
 	{
 	 var questoesRestricao = filterRestriction(questoesQuiz, restricaoSelecionada);
 	 var respostas = calcularRespostaQuestao(questoesRestricao);
-	 var totalQuestoes = resposta.quantAcertos + respostas.quantErros;
-	 comentarioResultado = "Você acertou " + respostas.quantAcertos + " de " + totalQuestoes + " questões da restrição/objetivo selecionado: " + restricaoSelecionada;
+	 var totalQuestoes = respostas.quantAcertos + respostas.quantErros;
+	 comentarioResultado = "Você acertou " + respostas.quantAcertos + " de " + totalQuestoes + " questões da restrição/objetivo selecionado: " + restricaoSelecionada + ".";
 	}
-	$("#result").text(comentarioResultado);
+	$("#result").html("<span class='font-weight-bold'>" + comentarioResultado + "</br>" + comentarioVisualizarGrafico + "</span>");
 
 };
 
