@@ -140,3 +140,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::
     top: 40% !important;
     line-height: 17px !important;
 }
+
+.nav-tabs.nav-tabs-neutral > .nav-item > .nav-link {
+
+        border-color: rgba(255, 255, 255, 1);
+
+}

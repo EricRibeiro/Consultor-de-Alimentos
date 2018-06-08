@@ -1,5 +1,6 @@
 $(document).ready(function () {
     init();
+    onBtnClickShowQuestion();
 });
 
 var respostas = [];
@@ -21,6 +22,22 @@ function init() {
         loadQuiz();
         showRightAnswer();
     });
+}
+
+function calcularRespostas (){
+
+    let certas=0;
+    let erradas=0;
+
+    for (var i = 0; i < respostas.length; i++) {
+        if (respostas[i] == 1)
+            certas++;
+        else if (respostas[i] == 0) {
+            erradas++;
+        }
+    }
+    $("#questoesCertas").html("Certas: "+certas);
+    $("#questoesErradas").html("Erradas: "+erradas);
 }
 
 function criarEstruturaQuiz() {
@@ -87,13 +104,50 @@ function loadQuiz() {
     }
 }
 
+function onBtnClickShowQuestion() {
+    $("#btnProximo").click( function (){
+        $( "a[href='"+getQuestion('next')+"']" ).click();
+        $("#btnProximo").attr("disabled",true);
+        calcularRespostas();
+
+    });
+    $("#btnAnterior").click( function (){
+        $( "a[href='"+getQuestion('prev')+"']" ).click();
+    });
+}
+
+function getQuestion(direction){
+
+        let currentTab = $(".tab-pane.active").attr('id');
+        let numQuestion = currentTab.charAt(1);
+        numQuestion = parseInt(numQuestion);
+        let maxQuestions = quantTiposRestricoesEObjetivos;
+        let question = "";
+        if ( direction === "prev" ){
+
+                if( numQuestion > 1 && numQuestion <= 5)
+                    question = "#q" + (--numQuestion);
+                else if(numQuestion === 1)
+                    question = "#q1";
+                else
+                    question = "#q" + maxQuestions;
+
+        } else
+                question = numQuestion<maxQuestions ? ("#q" + (++numQuestion)) : "#placar";
+
+        return question;
+
+}
+
 function showRightAnswer() {
     $(".opcao").click(function () {
         $(this).siblings('.opcao').addClass("bg-primary");
         $(this).removeClass("bg-primary");
         $(this).addClass("bg-secondary");
 
-        var tabAtual = parseInt($('.active').html());
+        var tabAtual = $('.active p').attr("id");
+        tabAtual = tabAtual.charAt(tabAtual.length-1);
+        tabAtual = parseInt(tabAtual);
         var resposta = $(this).children().text();
         var pergunta = $(this).siblings('p').text();
         var questaoRespondida = filterQuestion(questoesQuiz, pergunta)[0];
@@ -118,6 +172,7 @@ function showRightAnswer() {
             $(this).siblings('.alert-danger').find(".respCorreta").text(respCorreta);
         }
         atualizarGraficoResultados();
+        $("#btnProximo").removeAttr("disabled");
     });
     
 }

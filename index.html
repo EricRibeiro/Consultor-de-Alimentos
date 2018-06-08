@@ -250,28 +250,14 @@
             <h3 class="text-center pt-5 text-white">Quiz Nutricional</h3>
 
             <div id="quiz" class="card">
-                <ul id="body-quiz" class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist"
-                    style="background-color: #4CAF50">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#q1" role="tab">1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#q2" role="tab">2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#q3" role="tab">3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#q4" role="tab">4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#q5" role="tab">5</a>
-                    </li>
-                    <li class="nav-item" onclick="criaPlacar()">
-                        <a class="nav-link" data-toggle="tab" href="#placar" role="tab">Placar</a>
-                    </li>
-                </ul>
-
+                    <div class="row text-center" style="background-color: #fb3900">
+                        <div class="col-md-6 mt-2 mb-2 text-white" id="questoesCertas">
+                            Certas:
+                        </div>
+                        <div class="col-md-6 mt-2 mb-2 text-white" id="questoesErradas">
+                            Erradas:
+                        </div>
+                    </div>
                 <div class="card-body">
                     <!-- Tab panes -->
                     <div id="header-quiz" class="tab-content text-center">
@@ -427,6 +413,33 @@
                         </div>                     
                     </div>
                 </div>
+                <ul id="body-quiz" class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist"
+                    style="background-color: #fb3900">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#q1" role="tab" hidden>1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#q2" role="tab" hidden>2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#q3" role="tab" hidden>3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#q4" role="tab" hidden>4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#q5" role="tab" hidden>5</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a onclick="criaPlacar()" class="nav-link" data-toggle="tab" href="#placar" role="tab" hidden>Placar</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <button class="nav-link" id="btnAnterior">Anterior</button>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <button class="nav-link" id="btnProximo" disabled="true">Próxima</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
