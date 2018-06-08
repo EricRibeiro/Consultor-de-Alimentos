@@ -263,7 +263,7 @@ function createTextResult(){
 	 var questoesRestricao = filterRestriction(questoesQuiz, restricaoSelecionada);
 	 var respostas = calcularRespostaQuestao(questoesRestricao);
 	 var totalQuestoes = respostas.quantAcertos + respostas.quantErros;
-	 comentarioResultado = "Você acertou " + respostas.quantAcertos + " de " + totalQuestoes + " questões da restrição/objetivo selecionado: " + restricaoSelecionada + ".";
+	 comentarioResultado = "Você acertou " + respostas.quantAcertos + " de " + totalQuestoes + " questão (s) da restrição/objetivo selecionado: " + restricaoSelecionada + ".";
 	}
 	$("#result").html("<span class='font-weight-bold'>" + comentarioResultado + "</br>" + comentarioVisualizarGrafico + "</span>");
 
