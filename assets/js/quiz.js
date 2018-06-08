@@ -113,7 +113,11 @@ function onBtnClickShowQuestion() {
     });
     $("#btnAnterior").click( function (){
         $( "a[href='"+getQuestion('prev')+"']" ).click();
+        $("#btnProximo").attr("disabled",false);
+
     });
+
+
 }
 
 function getQuestion(direction){
@@ -141,10 +145,7 @@ function getQuestion(direction){
 
 function showRightAnswer() {
     $(".opcao").click(function () {
-        $(this).siblings('.opcao').addClass("bg-primary");
-        $(this).removeClass("bg-primary");
-        $(this).addClass("bg-secondary");
-
+        //$(this).siblings('.opcao').addClass("bg-primary");
         var tabAtual = $('.active p').attr("id");
         tabAtual = tabAtual.charAt(tabAtual.length-1);
         tabAtual = parseInt(tabAtual);
@@ -152,25 +153,30 @@ function showRightAnswer() {
         var pergunta = $(this).siblings('p').text();
         var questaoRespondida = filterQuestion(questoesQuiz, pergunta)[0];
         var respCorreta = questaoRespondida.correta;
+        $(".opcao").each(function() {
+            let opcao = $( this ).children("p").html();
+            if ( opcao === respCorreta ){
+                $(this).removeClass("bg-primary");
+                $(this).addClass("bg-secondary");
+            } 
+        });
         var acertou = false;
 
         if (respCorreta == resposta) {
             respostas[tabAtual - 1] = 1;
             questaoRespondida.respostaUsuario = 1;
             acertou = true;
+            $(this).removeClass("bg-primary");
+            $(this).addClass("bg-secondary");
         } else {
             respostas[tabAtual - 1] = 0;
             questaoRespondida.respostaUsuario = 0;
+            $(this).removeClass("bg-primary");
+            $(this).addClass("bg-tertiary");
         }
 
-        if (acertou) {
-            $(this).siblings('.alert-danger').attr('hidden', true);
-            $(this).siblings('.alert-success').removeAttr('hidden');
-        } else {
-            $(this).siblings('.alert-success').attr('hidden', true);
-            $(this).siblings('.alert-danger').removeAttr('hidden');
-            $(this).siblings('.alert-danger').find(".respCorreta").text(respCorreta);
-        }
+        $(this).siblings('.opcao').removeClass("bg-tertiary");
+        $(this).siblings('.opcao').addClass("bg-primary");
         $("#btnProximo").removeAttr("disabled");
     });
     
