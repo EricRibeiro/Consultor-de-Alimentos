@@ -1,474 +1,310 @@
 $(document).ready(function () {
     initTable();
-    bindSelectEvent();
+    onSelectChangeReloadTable();
+    onSelectOptionChangeShowFilters();
+    onBtnClickShowPrintModal();
+    onBtnClickPrint();
 });
 
 var aliments;
+var filter;
+var alimentsPrintTable;
 
 function initTable() {
-
     $.getJSON("https://raw.githubusercontent.com/EricRibeiro/Consultor-de-Alimentos/master/assets/js/lib/aliments.json", function (data) {
         aliments = data;
-        loadDefaultTable();
+        setFilter('Todos');
+        loadTable(getFilter(), 'aliments');
     });
 }
 
-function loadDefaultTable() {
-    let table = "";
-    let content = "";
+function initDataTables(idTable) {
+    if (idTable === 'aliments-table') {
+        $("#" + idTable).DataTable({
+            "aLengthMenu": [5, 10],
+            "columnDefs": [
+                {"orderable": false, "targets": 7},
+                {"visible": false, "targets": 8},
+            ],
+            "responsive": true
+        });
 
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Proteína</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Proteína Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        content += "<tr>";
-        content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-        content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
-        content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].proteina, "g") + "</td>";
-        content += getBtnContent(i);
-        content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-        content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].proteina) + "</td>";
-        content += "</tr>";
+    } else {
+        alimentsPrintTable = $("#" + idTable).DataTable({
+            buttons: [
+                {
+                    extend: 'print',
+                    title: 'Alimentos',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 5, 6]
+                    }
+                }
+            ],
+            "columnDefs": [
+                {"className": "dt-center", "targets": 8},
+                {"orderable": false, "targets": 8},
+                {"visible": false, "targets": [1, 2, 3, 4, 5, 6, 7]},
+            ],
+            dom: 'Bfrtip',
+            "info": false,
+            "order": [[0, "asc"]],
+            "paging": false,
+            "scrollCollapse": true,
+            "scrollY": "250px",
+            fnDrawCallback: function () {
+                $('#aliments-print .dataTables_scrollHeadInner').css('width', '97%').css('padding-right', '13px');
+                $('#aliments-print .dataTables_scrollHeadInner > table:nth-child(1)').css('width', '100%');
+                $('#aliments-print .sorting_asc').css('width', '324px');
+                $('#aliments-print .sorting').css('width', '324px');
+                $('button.dt-button.buttons-print').hide();
+            }
+        });
     }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
 }
 
-function loadLowCarbTable() {
-    let table = "";
-    let content = "";
+function onSelectOptionChangeShowFilters() {
+    $('#select-options').change(function () {
+        let filter = $(this).val();
 
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Lipídios</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Lipídios Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
+        if (filter === 'Todos') {
+            loadTable(getFilter(), 'aliments');
+            $('#explanation').hide();
+            $('.row-filters').children().hide(150);
 
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
+        } else if (filter === 'Categoria') {
+            $('#category').show(150);
+            $('#category').siblings().hide();
 
-    for (let i = 0; i < aliments.length; i++) {
-        let caloria = aliments[i].energia.kcal;
-        caloria = parseFloat(caloria);
+        } else if (filter === 'Objetivo') {
+            $('#goal').show(150);
+            $('#goal').siblings().hide();
 
-        if (caloria < 15 && !isNaN(caloria)) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].lipideos, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].lipideos) + "</td>";
-            content += "</tr>";
+        } else {
+            $('#restriction').show(150);
+            $('#restriction').siblings().hide();
         }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
+    });
 }
 
-function loadProteinTable() {
-    let table = "";
-    let content = "";
+function onSelectChangeReloadTable() {
+    $('.select-filter').change(function () {
+        setFilter($(this).val());
+        loadTable(getFilter(), 'aliments');
+        loadExplanation(getFilter());
 
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Proteína</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Proteína Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
+        new Noty({
+            closeWith: ['click', 'button'],
+            progressBar: false,
+            text: 'Alimentos filtrados.',
+            timeout: 1000,
+            theme    : 'bootstrap-v4',
+            type: 'success',
+        }).show();
 
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let proteina = aliments[i].proteina;
-        proteina = parseFloat(proteina);
-
-        if (proteina > 30 && !isNaN(proteina)) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].proteina, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].proteina) + "</td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
+    });
 }
 
-function loadCalciumTable() {
-    let table = "";
+function loadTable(filter, idTableContainer) {
     let content = "";
+    let idTable = idTableContainer + "-table";
+    let table = "";
 
-    table += "<table id='aliments' class='table'>";
+    table += "<table id='" + idTable + "' class='table'>";
     table += "<thead>";
     table += "<tr>";
     table += "<th class='text-center'>Descrição</th>";
     table += "<th class='text-center'>Calorias</th>";
     table += "<th class='text-center'>Cálcio</th>";
+    table += "<th class='text-center'>Ferro</th>";
+    table += "<th class='text-center'>Fibras</th>";
+    table += "<th class='text-center'>Lipídios</th>";
+    table += "<th class='text-center'>Proteínas</th>";
     table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Cálcio Sort</th>";
+    table += "<th class='text-center'>Remover</th>";
     table += "</thead>";
     table += "<tbody>";
     table += "</tbody>";
     table += "</table>";
 
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
+    $('#' + idTableContainer).html(table);
 
     for (let i = 0; i < aliments.length; i++) {
-        let calcio = aliments[i].calcio;
-        calcio = parseFloat(calcio);
-
-        if (calcio > 50 && !isNaN(calcio)) {
+        if (filter === 'Todos' || meetsFilterCondition(filter, aliments[i])) {
             content += "<tr>";
             content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].calcio, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].calcio) + "</td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
-}
-
-function loadIronTable() {
-    let table = "";
-    let content = "";
-
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Ferro</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Ferro Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let ferro = aliments[i].ferro;
-        ferro = parseFloat(ferro);
-
-        if (ferro > 5 && !isNaN(ferro)) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].ferro, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].ferro) + "</td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
-}
-
-function loadFiberTable() {
-    let table = "";
-    let content = "";
-
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Fibra</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Fibra Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let fibra = aliments[i].fibra_alimentar;
-        fibra = parseFloat(fibra);
-
-        if (fibra > 15 && !isNaN(fibra)) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].fibra_alimentar, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].fibra_alimentar) + "</td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
-}
-
-function loadLowFatTable() {
-    let table = "";
-    let content = "";
-
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th hidden>-</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>-</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let calcium = aliments[i].calcio;
-        let fiber = aliments[i].fibra_alimentar;
-        let protein = aliments[i].proteina;
-
-        calcium = parseFloat(calcium);
-        fiber = parseFloat(fiber);
-        protein = parseFloat(protein);
-
-        isCalciumValid = (calcium > 20 && !isNaN(calcium));
-        isFiberValid = (fiber > 15 && !isNaN(fiber));
-        isProteinValid = (protein > 15 && !isNaN(protein));
-
-        if (isCalciumValid && isFiberValid && isProteinValid) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
-            content += "<td hidden>-</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden></td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
-}
-
-function loadMaintainWeigthTable() {
-    let table = "";
-    let content = "";
-
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th hidden>-</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>-</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let calcium = aliments[i].calcio;
-        let fiber = aliments[i].fibra_alimentar;
-        let protein = aliments[i].proteina;
-
-        calcium = parseFloat(calcium);
-        fiber = parseFloat(fiber);
-        protein = parseFloat(protein);
-
-        isCalciumValid = (calcium > 20 && !isNaN(calcium));
-        isFiberValid = (fiber > 15 && !isNaN(fiber));
-        isProteinValid = (protein > 15 && !isNaN(protein));
-
-        if (isCalciumValid && isFiberValid && isProteinValid) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
-            content += "<td hidden>-</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden></td>";
-            content += "</tr>";
-        }
-    }
-
-    $('tbody').append(content);
-
-    initDataTables();
-    customizeTableComponents();
-}
-
-function loadMassGainTable() {
-    let table = "";
-    let content = "";
-
-    table += "<table id='aliments' class='table'>";
-    table += "<thead>";
-    table += "<tr>";
-    table += "<th class='text-center'>Descrição</th>";
-    table += "<th class='text-center'>Calorias</th>";
-    table += "<th class='text-center'>Proteína</th>";
-    table += "<th class='text-center'>Detalhes</th>";
-    table += "<th hidden>Calorias Sort</th>";
-    table += "<th hidden>Proteína Sort</th>";
-    table += "</thead>";
-    table += "<tbody>";
-    table += "</tbody>";
-    table += "</table>";
-
-    $('#aliments-table').html("");
-    $('#aliments-table').append(table);
-
-    for (let i = 0; i < aliments.length; i++) {
-        let proteina = aliments[i].proteina;
-        proteina = parseFloat(proteina);
-
-        if (proteina > 30 && !isNaN(proteina)) {
-            content += "<tr>";
-            content += "<td class='content-align'>" + aliments[i].descricao + "</td>";
-            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].energia.kcal, "kcal") + "</td>";
+            content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].lipideos, "g") + "</td>";
             content += "<td class='content-align'>" + evalAlimentsContent(aliments[i].proteina, "g") + "</td>";
-            content += getBtnContent(i);
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].energia.kcal) + "</td>";
-            content += "<td hidden>" + evalAlimentsContentWithZero(aliments[i].proteina) + "</td>";
+            content += getDetailsBtnContent(i);
+            content += getRemoveBtnContent(i);
             content += "</tr>";
+
         }
     }
 
-    $('tbody').append(content);
+    $('#' + idTable + ' tbody').html(content);
 
-    initDataTables();
-    customizeTableComponents();
+    initDataTables(idTable);
+    customizeTableComponents(idTable);
 }
 
-function bindSelectEvent() {
-    $('#sel1').change(function () {
-        $("#sel2").val("Selecionar Objetivo");
-        $("#explanation-goal").attr('hidden', true);
-        $("#explanation-restriction").removeAttr('hidden');
+function getDetailsBtnContent(arrayPos) {
+    let btnContent =
 
-        let diet = $(this).val();
-        const $p =  $("#explanation-restriction").children();
+        "<td> " +
+        "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' onclick=showAlimentDetails(" + arrayPos + ") type='button'>" +
+        "<i class='now-ui-icons files_paper'></i>" +
+        "</button>" +
+        "</td>";
 
-        switch (diet) {
-            case 'Reduzidos em Carboidratos':
-                loadLowCarbTable();
-                loadExplanation($p, lowCarbExplanation());
-                break;
-            case 'Ricos em Proteína':
-                loadProteinTable();
-                loadExplanation($p, proteinExplanation());
-                break;
-            case 'Ricos em Cálcio':
-                loadCalciumTable();
-                loadExplanation($p, calciumExplanation());
-                break;
-            case 'Ricos em Ferro':
-                loadIronTable();
-                loadExplanation($p, ironExplanation());
-                break;
-            case 'Ricos em Fibra':
-                loadFiberTable();
-                loadExplanation($p, fiberExplanation());
-                break;
-        }
-    });
+    return btnContent;
+}
 
-    $('#sel2').change(function () {
-        $("#sel1").val("Selecionar Restrição");
-        $("#explanation-restriction").attr('hidden', true);
-        $("#explanation-goal").removeAttr('hidden');
+function getRemoveBtnContent(i) {
+    let btnContent =
 
+        "<td>" +
+        "<button class='btn btn-danger btn-icon btn-round' id='" + "btn-remove-" + i + "' onclick='removeRow(this.id)' type='button'>" +
+        "<i class='now-ui-icons ui-1_simple-delete'></i>" +
+        "</button>" +
+        "</td>";
 
-        let goal = $(this).val();
-        const $p =  $("#explanation-goal").children();
+    return btnContent;
+}
 
-        switch (goal) {
-            case 'Reduzir Percentual de Gordura':
-                loadLowFatTable();
-                loadExplanation($p, lowFatExplanation());
-                break;
-            case 'Manter o Peso':
-                loadMaintainWeigthTable();
-                loadExplanation($p, maintainWeigthExplanation());
-                break;
-            case 'Ganhar Massa Magra':
-                loadMassGainTable();
-                loadExplanation($p, massGainExplanation());
-                break;
-        }
-    });
+function loadExplanation(filter) {
+    let explanation = "";
+
+    switch (filter) {
+        case 'Reduzidos em Carboidratos':
+            explanation = "Foram filtrados alimentos com menos de <strong>15Kcal</strong> de <strong>calorias</strong>.";
+            break;
+
+        case 'Ricos em Proteína':
+            explanation = "Foram filtrados alimentos com mais de <strong>30g</strong> de <strong>proteína</strong>.";
+            break;
+
+        case 'Ricos em Cálcio':
+            explanation = "Foram filtrados alimentos com mais de <strong>50g</strong> de <strong>cálcio</strong>.";
+            break;
+
+        case 'Ricos em Ferro':
+            explanation = "Foram filtrados alimentos com mais de <strong>5g</strong> de <strong>ferro</strong>.";
+            break;
+
+        case 'Ricos em Fibra':
+            explanation = "Foram filtrados alimentos com mais de <strong>15g</strong> de <strong>fibras</strong>.";
+            break;
+
+        case 'Reduzir Percentual de Gordura':
+            explanation = "Foram filtrados alimentos com mais de:" +
+                "<ul>" +
+                "<li><strong>20g</strong> de <strong>cálcio</strong></li>" +
+                "<li><strong>15g</strong> de <strong>fibras</strong></li>" +
+                "<li><strong>15g</strong> de <strong>proteína</strong></li>" +
+                "</ul>";
+            break;
+
+        case 'Carnes':
+            explanation = "Foram filtrados alimentos da categoria <strong>carne</strong> e/ou <strong>derivados</strong>.";
+            break;
+
+        case 'Cereais':
+            explanation = "Foram filtrados alimentos da categoria <strong>cereais</strong> e/ou <strong>derivados</strong>.";
+            break;
+
+        case 'Frutas':
+            explanation = "Foram filtrados alimentos da categoria <strong>frutas</strong> e/ou <strong>derivados</strong>.";
+            break;
+
+        case 'Leite':
+            explanation = "Foram filtrados alimentos da categoria <strong>leite</strong> e/ou <strong>derivados</strong>.";
+            break;
+
+        case 'Ovos':
+            explanation = "Foram filtrados alimentos da categoria <strong>ovos</strong> e/ou <strong>derivados</strong>.";
+            break;
+    }
+
+    $('#explanation').show();
+    $('#explanation').html(explanation);
+}
+
+function meetsFilterCondition(filter, aliment) {
+    let meetsFilterCondition = false;
+
+    switch (filter) {
+        case 'Reduzidos em Carboidratos':
+            let caloria = aliment.energia.kcal;
+            caloria = parseFloat(caloria);
+            meetsFilterCondition = caloria < 15 && !isNaN(caloria);
+            break;
+
+        case 'Ricos em Proteína':
+            let proteina = aliment.proteina;
+            proteina = parseFloat(proteina);
+            meetsFilterCondition = proteina > 30 && !isNaN(proteina);
+            break;
+
+        case 'Ricos em Cálcio':
+            let calcio = aliment.calcio;
+            calcio = parseFloat(calcio);
+            meetsFilterCondition = calcio > 50 && !isNaN(calcio);
+            break;
+
+        case 'Ricos em Ferro':
+            let ferro = aliment.ferro;
+            ferro = parseFloat(ferro);
+            meetsFilterCondition = ferro > 5 && !isNaN(ferro);
+            break;
+
+        case 'Ricos em Fibra':
+            let fibra = aliment.fibra_alimentar;
+            fibra = parseFloat(fibra);
+            meetsFilterCondition = fibra > 15 && !isNaN(fibra);
+            break;
+
+        case 'Reduzir Percentual de Gordura':
+            let calcium = aliment.calcio;
+            let fiber = aliment.fibra_alimentar;
+            let protein = aliment.proteina;
+
+            calcium = parseFloat(calcium);
+            fiber = parseFloat(fiber);
+            protein = parseFloat(protein);
+
+            let isCalciumValid = (calcium > 20 && !isNaN(calcium));
+            let isFiberValid = (fiber > 15 && !isNaN(fiber));
+            let isProteinValid = (protein > 15 && !isNaN(protein));
+
+            meetsFilterCondition = isCalciumValid && isFiberValid && isProteinValid;
+            break;
+
+        case 'Carnes':
+            meetsFilterCondition = aliment.categoria === 'Carnes e derivados';
+            break;
+
+        case 'Cereais':
+            meetsFilterCondition = aliment.categoria === 'Cereais e derivados';
+            break;
+
+        case 'Frutas':
+            meetsFilterCondition = aliment.categoria === 'Frutas e derivados';
+            break;
+
+        case 'Leite':
+            meetsFilterCondition = aliment.categoria === 'Leite e derivados';
+            break;
+
+        case 'Ovos':
+            meetsFilterCondition = aliment.categoria === 'Ovos e derivados';
+            break;
+    }
+
+    return meetsFilterCondition;
 }
 
 function showAlimentDetails(arrayPos) {
@@ -570,67 +406,32 @@ function showAlimentDetails(arrayPos) {
     content += "</div>";
     content += "</div>";
 
-    $('.modal-body').html("");
-    $('.modal-body').append(content);
+    $('.modal-body-details').html(content);
 
     $('#myModal').modal('show');
 }
 
-function getBtnContent(arrayPos) {
-    let btnContent =
-
-        "<td onclick=showAlimentDetails(" + arrayPos + ")> " +
-        "<button value='" + arrayPos + "' class='btn btn-primary btn-icon btn-round' type='button'>" +
-        "<i class='now-ui-icons files_paper'></i>" +
-        "</button>" +
-        "</td>";
-
-    return btnContent;
-}
-
 function evalAlimentsContent(value, unit) {
-    valueFloat = parseFloat(value);
+    let valueFloat = parseFloat(value);
     valueFloat = valueFloat.toFixed(2);
 
     if (!isNaN(valueFloat)) {
         valueFloat += unit;
         value = valueFloat;
+    } else {
+        value = "Tr";
     }
 
     return value;
 }
 
-function evalAlimentsContentWithZero(value) {
-    value = parseFloat(value);
-    value = value.toFixed(2);
-
-    if (isNaN(value))
-        value = 0;
-
-    return value;
+function customizeTableComponents(idTable) {
+    $("#" + idTable + "_filter").hide();
+    $("#" + idTable + "_length").hide();
 }
 
-function initDataTables() {
-    $('#aliments').DataTable({
-        "iDisplayLength": 5,
-        "aLengthMenu": [5, 10],
-        "stripeClasses": [],
-        "columnDefs": [
-            {"orderable": false, "targets": 3},
-            {"orderData": [4], "targets": [1]},
-            {"orderData": [5], "targets": [2]}
-        ]
-    });
-}
-
-function customizeTableComponents() {
-    $("#aliments_filter").hide();
-    $('#aliments_length').hide();
-}
-
-function filter(text) {
-    $searchBar = $("input[type='search']");
-    $("input[type='search']").val(text).keyup();
+function search(text, name) {
+    $("#" + name + " input").val(text).keyup();
 }
 
 function scroll() {
@@ -642,43 +443,41 @@ function scroll() {
     });
 }
 
-function loadExplanation($p, explanation) {
-    $p.html(explanation);
+function getFilter() {
+    return this.filter;
 }
 
-function lowCarbExplanation() {
-    return "Foram filtrados alimentos com menos de <strong>15Kcal</strong> de <strong>calorias</strong>.";
+function setFilter(filter) {
+    this.filter = filter;
 }
 
-function proteinExplanation() {
-    return "Foram filtrados alimentos com mais de <strong>30g</strong> de <strong>proteína</strong>.";
+/* Below is the print feature code. Given time this will go in another file. */
+
+function onBtnClickShowPrintModal() {
+    $('#btn-print').click(function () {
+        loadTable(getFilter(), 'aliments-print');
+        $('#modal-print').modal('show');
+    });
 }
 
-function calciumExplanation() {
-    return "Foram filtrados alimentos com mais de <strong>50g</strong> de <strong>cálcio</strong>.";
+function onBtnClickPrint() {
+    $('#btn-print-confirm').click(function () {
+        $('button.dt-button.buttons-print').click();
+    });
 }
 
-function ironExplanation() {
-    return "Foram filtrados alimentos com mais de <strong>5g</strong> de <strong>ferro</strong>.";
-}
+function removeRow(idBtn) {
+    alimentsPrintTable
+        .row($("#" + idBtn).parents('tr'))
+        .remove()
+        .draw();
 
-function fiberExplanation() {
-    return "Foram filtrados alimentos com mais de <strong>15g</strong> de <strong>fibras</strong>.";
-}
-
-function lowFatExplanation() {
-    return "Foram filtrados alimentos com mais de:" +
-        "<ul>" +
-        "<li><strong>20g</strong> de <strong>cálcio</strong></li>" +
-        "<li><strong>15g</strong> de <strong>fibras</strong></li>" +
-        "<li><strong>15g</strong> de <strong>proteína</strong></li>" +
-        "</ul>";
-}
-
-function maintainWeigthExplanation() {
-    return ""
-}
-
-function massGainExplanation() {
-    return ""
+    new Noty({
+        closeWith: ['click', 'button'],
+        progressBar: false,
+        text: 'Alimento removido.',
+        timeout: 1000,
+        theme    : 'bootstrap-v4',
+        type: 'success',
+    }).show();
 }
